@@ -1,0 +1,71 @@
+// base classes, font, inputs
+.user-access-label-font {
+  color: black;
+  font-size: 18px;
+}
+.user-access-input-dimensions {
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.user-access-box-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background: white;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  @extend .user-access-label-font;
+}
+
+.user-access-box-wrapper .or-word {
+  color: #000000;
+  font-size: 18px;
+}
+.user-access-box-wrapper-title {
+  color: #000000;
+  font-size: 20px;
+  line-height: 60px;
+  font-family: "lato";
+}
+
+.user-access-box-wrapper label {
+  line-height: 30px;
+}
+
+// confirm login, register, forgot password
+.user-access-bnt-submit,
+.user-access-bnt-submit:hover,
+.user-access-bnt-submit:after,
+.user-access-bnt-submit:active,
+.user-access-bnt-submit:visited {
+  background: $main-green-background-color;
+  border: 1px solid white;
+  width: 124px;
+  height: 46px;
+  border-radius: 0px;
+  color: white;
+  font-size: 18px;
+}
+
+.user-access-box-wrapper input {
+  @extend .user-access-input-dimensions;
+}
+
+.user-access-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* Secondary */
+  color: #6c757d;
+}

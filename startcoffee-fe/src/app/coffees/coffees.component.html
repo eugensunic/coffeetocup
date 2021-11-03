@@ -1,0 +1,15 @@
+<div id="coffees-heading-wrapper">
+  <h3 *ngIf="isOriginHeadingVisible" (click)="navigateToOrigin()" class="cursor-pointer font-lato"
+    [ngClass]="isOriginHeading ? 'activate-button-coffee' : 'deactivate-button-coffee'">
+    Coffees by origin
+  </h3>
+  <h3 *ngIf="isBrewHeadingVisible" (click)="navigateToBrew()" class="cursor-pointer font-lato"
+    [ngClass]="isBrewHeading ? 'activate-button-coffee' : 'deactivate-button-coffee'">
+    Coffees by brewing
+  </h3>
+</div>
+<div class="clearfix"></div>
+
+<router-outlet></router-outlet>
+
+<div *ngIf="showLoadingSpinner" id="spinner-coffees-allcoffees" class="loader"></div>

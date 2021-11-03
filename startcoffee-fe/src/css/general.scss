@@ -1,0 +1,260 @@
+$bootsrap-row-padding: 15px;
+
+.bootstrap-row-padding {
+  padding: 15px !important;
+}
+
+.brew-grid-item-bg-color {
+  background-color: #c3d0d6;
+}
+
+#angular-main-container {
+  position: relative;
+  background: $main-container-background-color;
+  opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #angular-main-container {
+    max-width: 991px;
+  }
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.center {
+  text-align: center;
+}
+
+.item-card {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px !important;
+  margin-bottom: 15px;
+}
+
+.error-container {
+  text-align: center;
+  color: #6b6363;
+  font-size: 24px;
+  background: #fff2f2;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+}
+
+.success-container {
+  text-align: center;
+  color: #6b6363;
+  font-size: 24px;
+  background: #b3efab;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+}
+
+.ngb-tp-hour[_ngcontent-c0] {
+  display: none;
+}
+
+.mg-left {
+  margin-left: 15px;
+}
+
+/* HIDE RADIO */
+.hide-roasting-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.red-validation {
+  background-color: pink;
+}
+
+.green-validation {
+  background-color: transparent;
+}
+
+.welcome-status-area {
+  background: #fafafa;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 5px;
+  clear: both;
+}
+
+.logout-btn-pos {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.numerate {
+  border: 1px solid grey;
+  padding: 2px;
+  box-shadow: 1px 1px 1px grey;
+  background: white;
+  float: left;
+  margin-left: -15px;
+}
+
+.hover-country {
+  background: #ffe082;
+}
+
+.hover-country:hover {
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.activate-button-coffee {
+  border-bottom: 2px solid rgb(1, 72, 42);
+  padding: 8px;
+  color: $main-green-text-color;
+}
+
+.deactivate-button-coffee {
+  border-radius: 4px;
+  padding: 8px;
+  color: $main-green-text-color;
+}
+
+.blurred-thick-horizontal-line {
+  height: 1px;
+  background: #000000;
+}
+
+.not-added-text {
+  opacity: 0.4;
+  font-size: 25px;
+  letter-spacing: 9px;
+}
+
+.not-added-text-table-list {
+  opacity: 0.4;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.username-value {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #00635d;
+  cursor: pointer;
+}
+
+// from delete custom.css file
+// angular, origin, brew, attributes
+.ng-dropdown-error-red {
+  border: 1px solid red;
+  background: #ffe2e5;
+}
+
+ng-select.ng-invalid.ng-touched.submit-coffee-origin .ng-select-container {
+  border-color: #dc3545;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px #fde6e8;
+}
+
+ng-select.ng-invalid.submit-country-elevation .ng-select-container {
+  border-color: #dc3545;
+}
+
+.brew-radio-validation-error {
+  background: #dc3545;
+  box-shadow: 0px 0px 10px #dc3545;
+  border-radius: 10px;
+}
+
+.brew-ratio-validation-error {
+  border: 1px solid #dc3545;
+}
+
+.attributes-input-validation-error {
+  border: 1px solid #dc3545;
+}
+
+.validation-error {
+  border-color: #dc3545;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px #dc3545;
+}
+
+.origin-tooltip-elevation {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+}
+
+.progress-bar-custom {
+  text-align: left;
+  padding-left: 3px;
+}
+
+.no-matching-items {
+  padding: 80px 50px;
+  font-family: $font-roboto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ng-option-label {
+  color: $main-green-text-color;
+}
+
+.ng-option:hover {
+  .ng-option-label {
+    color: white !important;
+  }
+  background: $main-green-background-color !important;
+}
+
+.list-group-item {
+  background: #b1b1b1;
+  border: 0px;
+  margin-bottom: 15px;
+  color: black !important;
+}
+
+.list-group-item:first-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.list-group-item:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.filter-country-input {
+  width: 300px;
+  margin-left: 48px;
+  bottom: 1px;
+  position: relative;
+}
+
+@media (max-width: 860px) {
+  .data-table-brew-action-wrapper {
+    left: -40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .filter-country-input {
+    width: 100%;
+    margin-left: 0px;
+  }
+}

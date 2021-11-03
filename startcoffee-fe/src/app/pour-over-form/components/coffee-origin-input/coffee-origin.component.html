@@ -1,0 +1,140 @@
+<div class="row">
+  <div id="origin-step-container" class="col-md-9 bootstrap-row-padding">
+    <form [formGroup]="coffeeForm">
+      <!--Country-->
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <p class="heading-label"
+            [ngStyle]="{'color': clicked && !coffeeForm.controls.country.value ? '#dc3545': '' }">Origin*</p>
+          <ng-select formControlName="country" [items]="(countryName$ | async).countryList" bindLabel="country"
+            bindValue="id" (change)="onChangeCountry()" placeholder="Select country origin"
+            [ngClass]="{'submit-country-elevation': clicked}">
+          </ng-select>
+        </div>
+
+        <!--Coffee maker (user input) -->
+        <div class="col-sm-6 form-group">
+          <label id="origin-roaster-label" for="origin-coffee-maker" class="heading-label">Roaster</label>
+          <app-tooltip placement="right"
+            content="Enter your roaster info as it follows 'Roaster name, City'. If coffee roasted at home enter 'Home roasted'."
+            styleClass="origin-roaster-tooltip">
+          </app-tooltip>
+          <input id="origin-coffee-maker" type="text" class="form-control" formControlName="manufacturer"
+            (ngModelChange)="onChangeManufacturer()" placeholder="Enter a roaster" maxlength="40"
+            [ngClass]="{'submit-country-elevation': clicked}">
+        </div>
+      </div>
+
+      <app-svg-horizontal-line></app-svg-horizontal-line>
+
+      <!-- roasting images -->
+      <p class="heading-label" [ngStyle]="{'color': clicked && !coffeeForm.controls.roasting.value ? '#dc3545': '' }">
+        Roasting*</p>
+      <div *ngIf="(roastingImage$ | async) as image" class="row" style="margin-bottom:30px">
+        <div class="col-4 text-center">
+          <label for="roasting-type-light"><span id="origin-roasting-text-light">Light</span>
+            <input id="roasting-type-light" type="radio" class="hide-radio-button" formControlName="roasting"
+              name="roasting" value="light" (click)="roastingTypeRadio='light'" (change)="onChangeRoastingImage($event)"
+              [checked]="roastingTypeRadio==='light'">
+            <img #roastingLight id="roasting-first" src="/assets/images/roasting/light.jpg" alt="Roasting light"
+              height="100" width="100" class="opacity-3"
+              [ngClass]="{'origin-validation-error':clicked && !image.imageSelected}">
+          </label>
+        </div>
+
+        <div class="col-4 text-center">
+          <label for="roasting-type-medium"> <span id="origin-roasting-text-medium">Medium</span>
+            <input id="roasting-type-medium" type="radio" class="hide-radio-button" formControlName="roasting"
+              name="roasting" value="medium" (click)="roastingTypeRadio='medium'"
+              (change)="onChangeRoastingImage($event)" [checked]="roastingTypeRadio==='medium'">
+            <img #roastingMedium id="roasting-second" src="/assets/images/roasting/medium.jpg" alt="Roasting medium"
+              height="100" width="100" class="opacity-3"
+              [ngClass]="{'origin-validation-error':clicked && !image.imageSelected}">
+          </label>
+        </div>
+
+        <div class="col-4 text-center">
+          <label for="roasting-type-dark"> <span id="origin-roasting-text-dark">Dark</span>
+            <input id="roasting-type-dark" type="radio" class="hide-radio-button" formControlName="roasting"
+              value="dark" (click)="roastingTypeRadio='dark'" (change)="onChangeRoastingImage($event)"
+              [checked]="roastingTypeRadio==='dark'" name="roasting">
+            <img #roastingDark id="roasting-third" src="/assets/images/roasting/dark.jpg" alt="Roasting dark"
+              height="100" width="100" class="opacity-3"
+              [ngClass]="{'origin-validation-error':clicked && !image.imageSelected}">
+          </label>
+        </div>
+      </div>
+
+      <!-- <app-svg-horizontal-line></app-svg-horizontal-line> -->
+
+      <!-- processing 3 radio -->
+      <!-- <p class="heading-label">Processing</p>
+      <div class="row">
+        <div class="col-4 text-center">
+          <input id="radio-process-one" type="radio" formControlName="process" value="process-natural"
+            [checked]="processingTypeRadio==='process-natural'" (click)="processingTypeRadio='process-natural'"
+            (change)="onChangeProcess($event)"><label for="radio-process-one" class="processing-label">Natural</label>
+        </div>
+        <div class="col-4 text-center">
+          <input id="radio-process-two" type="radio" formControlName="process" value="process-washed"
+            [checked]="processingTypeRadio==='process-washed'" (click)="processingTypeRadio='process-washed'"
+            (change)="onChangeProcess($event)"><label for="radio-process-two" class="processing-label">Washed</label>
+        </div>
+        <div class="col-4 text-center">
+          <input id="radio-process-three" type="radio" formControlName="process" value="process-hybrid"
+            [checked]="processingTypeRadio==='process-hybrid'" (click)="processingTypeRadio='process-hybrid'"
+            (change)="onChangeProcess($event)"><label for="radio-process-three" class="processing-label">Hybrid</label>
+        </div>
+      </div> -->
+
+      <app-svg-horizontal-line></app-svg-horizontal-line>
+
+      <!-- roasting date (user select + user input) -->
+      <p class="heading-label">Date of roasting</p>
+      <div id="origin-roasting-date-container" class="row">
+        <app-date-picker></app-date-picker>
+      </div>
+
+    </form>
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+
+    <!-- comment section-->
+    <div class="row">
+      <div id="comment-container" class="col-sm-9">
+        <label for="origin-comment-lg" class="heading-label">Comments</label>
+        <textarea id="origin-comment-lg" class="form-control" rows="5" [(ngModel)]="textAreaCommentLg"
+          (ngModelChange)="changeTextAreaLg()" value="" maxlength="500"></textarea>
+      </div>
+    </div>
+
+    <button id="origin-next-button" (click)="nextStepBrewing()">Next</button>
+  </div>
+
+  <!-- ---------------------------------------- -->
+  <!-- Results section -->
+  <div id="pour-over-results-container" class="col-md-3">
+    <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length!==0">
+      <h5 class="font-lato" style="font-size:18px">Recently added coffees</h5>
+      <ul id="pour-over-list-results" class="list-group">
+        <li *ngFor="let item of coffeeOriginJson; let i=index;" class="list-group-item font-roboto"
+          style="background:#F6F5F3">
+          <span class="pour-over-order-number">{{i+1+"."}}</span>
+          <br>
+          <span class="font-weight-bold">Origin: </span><span>{{item.country}}</span>
+          <br>
+          <span class="font-weight-bold">Roasting: </span><span>{{item.roastingType}}</span>
+          <br>
+          <span class="font-weight-bold">Date of roasting:
+          </span><span>{{item.productionDate?.month+'/'+item.productionDate?.day+'/'+item.productionDate?.year}}</span>
+          <br>
+          <span class="font-weight-bold">Brewing date: </span><span>{{item.originSubmitDate}}</span>
+        </li>
+      </ul>
+    </ng-container>
+    <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length===0">
+      <p class="text-center">No Matching items!</p>
+      <p class="text-center">The list of your recently added coffees will appear here.</p>
+    </ng-container>
+  </div>
+</div>

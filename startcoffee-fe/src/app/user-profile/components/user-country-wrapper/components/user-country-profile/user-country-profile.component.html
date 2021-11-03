@@ -1,0 +1,203 @@
+<ng-container>
+  <label>
+    <input id="profile-filter-country" type="text" [(ngModel)]="countryFilter"
+      (ngModelChange)="onCountryNameChange($event)" placeholder="Search Origin" maxlength="60"
+      class="form-control filter-country-input">
+  </label>
+  <!-- ------------------------------LG,XL--------------------------------- -->
+  <div id="numeric-data" class="d-none d-md-flex row">
+    <!-- COFFEE DATA SECTION-->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" (click)="sortCountry()" class="th-green-text cursor-pointer">Origin
+            <app-sorting-wrapper [showWrapper]="showOriginSortingWrapper" [isDescSort]="sortFilteredCountry">
+            </app-sorting-wrapper>
+          </th>
+          <th scope="col" (click)="sortCoffees()" class="th-green-text cursor-pointer">Coffees
+            <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortCoffeesAmount">
+            </app-sorting-wrapper>
+          </th>
+          <th scope="col" (click)="sortTotalBrewsAttributes()" class="th-green-text cursor-pointer">Brews
+            <app-sorting-wrapper [showWrapper]="showTotalBrewsSortingWrapper"
+              [isDescSort]="sortFilteredBrewsAttributes">
+            </app-sorting-wrapper>
+          </th>
+          <th scope="col" (click)="lastBrewSubmitDateTimeSort()" class="th-green-text cursor-pointer">
+            <app-sorting-wrapper [showWrapper]="showLastBrewingSortingWrapper" [isDescSort]="sortOriginSubmitDateFlag">
+            </app-sorting-wrapper>
+            <span>Last brewing</span>
+          </th>
+          <th scope="col" (click)="sortAvgOverallRating()" class="th-green-text cursor-pointer">Avg. rate
+            <app-sorting-wrapper [showWrapper]="showAvgRatingSortingWrapper" [isDescSort]="sortFilteredAvgOverall">
+            </app-sorting-wrapper>
+          </th>
+          <th scope="col">Flavors</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <li *ngFor="let area of areaList | filterCountries:countryName"></li> -->
+        <ng-container *ngFor="let item of coffeeJson | filterCountries:countryFilter; let i = index ">
+          <tr style="height: 145px;">
+            <td class="user-country-profile-order-number">{{ i + 1 + '.' }}</td>
+            <td class="user-country-profile-country-name td-country-name">
+              <span (click)="navigateToUniqueCountryProfile(item.country)" class="cursor-pointer">{{ item.country }}
+              </span>
+            </td>
+            <td>{{ item.totalCoffees.amount }}</td>
+            <td>{{ item.totalBrewsAttr.amount }}</td>
+            <td>
+              {{ item.lastBrewSubmitDateTime }}
+            </td>
+            <td>
+              <app-ngbd-rating [ratingValue]="item.avgOverall.avg"></app-ngbd-rating>
+            </td>
+            <td>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Fruity'" [propValue]="item.flavors.amount.fruity"
+                  [backgroundColor]=fruityBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Nutty'" [propValue]="item.flavors.amount.nutty"
+                  [backgroundColor]=nuttyBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Choco'" [propValue]="item.flavors.amount.choco"
+                  [backgroundColor]=chocoBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Caramel'" [propValue]="item.flavors.amount.caramel"
+                  [backgroundColor]=caramelBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Floral'" [propValue]="item.flavors.amount.floral"
+                  [backgroundColor]=floralBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+            </td>
+            <td (click)="navigateToUniqueCountryProfile(item.country)">
+              <div class="user-country-profile-details-svg">
+                <app-svg-details></app-svg-details>
+              </div>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="d-md-none">
+    <!-- ------------------------------SM,XS--------------------------------- -->
+    <div class="grid-sorting-wrapper">
+      <h6 class="d-inline">Sort by:</h6>
+      <div class="grid-sorting-list">
+        <span #sortByCountry (click)="sortCountry()">Origin
+          <app-sorting-wrapper [showWrapper]="showOriginSortingWrapper" [isDescSort]="sortFilteredCountry">
+          </app-sorting-wrapper>
+        </span>
+        <span #sortByCoffees (click)="sortCoffees()">Coffees
+          <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortCoffeesAmount">
+          </app-sorting-wrapper>
+        </span>
+        <span #sortByBrewing (click)="sortTotalBrewsAttributes()">Brews
+          <app-sorting-wrapper [showWrapper]="showTotalBrewsSortingWrapper" [isDescSort]="sortFilteredBrewsAttributes">
+          </app-sorting-wrapper>
+        </span>
+        <span #sortByRating (click)="sortAvgOverallRating()">Rating
+          <app-sorting-wrapper [showWrapper]="showAvgRatingSortingWrapper" [isDescSort]="sortFilteredAvgOverall">
+          </app-sorting-wrapper>
+        </span>
+        <span #sortByDate (click)="lastBrewSubmitDateTimeSort()">Date
+          <app-sorting-wrapper [showWrapper]="showLastBrewingSortingWrapper" [isDescSort]="sortOriginSubmitDateFlag">
+          </app-sorting-wrapper>
+        </span>
+      </div>
+    </div>
+
+    <ng-container *ngFor="let item of coffeeJson | filterCountries:countryFilter; let i = index">
+      <div class="user-country-profile-grid-list item-card  mb-2">
+        <div (click)="navigateToUniqueCountryProfile(item.country)" class="cursor-pointer">{{i+1+"."}}
+          {{ item.country }}</div>
+        <div class="font-weight-bold">Avg. rate:</div>
+        <div class="user-country-profile-coffee-brews">
+          <span class="font-weight-bold">Coffees:</span>
+          <span>{{ item.totalCoffees.amount }}</span>
+          <span class="font-weight-bold">Brews:</span>
+          <span>{{ item.totalBrewsAttr.amount }}</span>
+        </div>
+        <div>
+          <app-ngbd-rating [ratingValue]="item.avgOverall.avg"></app-ngbd-rating>
+        </div>
+        <div class="font-weight-bold">Last brewing:</div>
+        <div>
+          {{ item.lastBrewSubmitDateTime }}
+        </div>
+
+        <div class="span-2-column p-0">
+          <app-svg-horizontal-line></app-svg-horizontal-line>
+        </div>
+        <!-- {{item | json}} -->
+        <div (click)=toggleFlavorsDropdownSm(i) class="cursor-pointer p-0">
+          <ng-container *ngIf="item.totalBrewsAttr.amount">
+            <app-svg-flavors-icon-down *ngIf="toggleFlavorsSm[i]" style="position: relative;top: 6px;">
+            </app-svg-flavors-icon-down>
+            <app-svg-flavors-icon-up *ngIf="!toggleFlavorsSm[i]" style="position: relative;top: 6px;">
+            </app-svg-flavors-icon-up>
+          </ng-container>
+        </div>
+        <div (click)="navigateToUniqueCountryProfile(item.country)"
+          class="cursor-pointer d-flex justify-content-center align-items-center p-0">
+          <app-svg-details style="position: relative;top: 6px;"></app-svg-details>
+        </div>
+        <div class="span-2-column horizontal-bar-sm" *ngIf="!toggleFlavorsSm[i]">
+          <span class="d-block">
+            <app-coffee-horizontal-bar [propName]="'Fruity'" [propValue]="item.flavors.amount.fruity"
+              [backgroundColor]=fruityBarBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </span>
+          <span class="d-block">
+            <app-coffee-horizontal-bar [propName]="'Nutty'" [propValue]="item.flavors.amount.nutty"
+              [backgroundColor]=nuttyBarBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </span>
+          <span class="d-block">
+            <app-coffee-horizontal-bar [propName]="'Choco'" [propValue]="item.flavors.amount.choco"
+              [backgroundColor]=chocoBarBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </span>
+          <span class="d-block">
+            <app-coffee-horizontal-bar [propName]="'Caramel'" [propValue]="item.flavors.amount.caramel"
+              [backgroundColor]=caramelBarBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </span>
+          <span class="d-block">
+            <app-coffee-horizontal-bar [propName]="'Floral'" [propValue]="item.flavors.amount.floral"
+              [backgroundColor]=floralBarBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="coffeeJson && coffeeJson.length === 0">
+  <p class="font-roboto text-center">No matching items!
+
+  </p>
+  <p class="text-center font-roboto ">
+    When you add your coffee, the list of entered coffee's details will appear here. It will include the
+    <br> data regarding
+    Origin, Brewing process and Coffee taste.
+
+  </p>
+  <p class="text-center font-roboto "> To add the coffee, click the <span class="font-weight-bold">button. "Add new
+      coffee"</span>
+  </p>
+</ng-container>

@@ -1,0 +1,52 @@
+<!-- --------------------LG,XL------------------- -->
+<label>
+  <input id="profile-default-filter-country" type="text" [(ngModel)]="countryFilter"
+    (ngModelChange)="onCountryNameChange($event)" placeholder="Search Origin" maxlength="60"
+    class="form-control filter-country-input">
+</label>
+
+<div class="d-none d-md-flex row">
+  <div class="table-responsive-sm" *ngIf="coffeeJson && coffeeJson.length">
+    <!-- DATA TABLE (default) -->
+    <app-data-table [isGuest]="isGuest" [coffeeJson]="coffeeJson" [useCoffee]="useCoffee.bind(this)"
+      [countryFilter]="countryFilter" [archiveCoffee]="archiveCoffee.bind(this)" [editOrigin]="editOrigin.bind(this)"
+      [showBrewsNums]="showBrewsNums" [showAttributesNums]="showAttributesNums" [showTable]="showBasicTable"
+      [showDeleteCoffeeAttributes]="true" [showActionSection]="true" [showComments]="openModalCommentSection.bind(this)"
+      [hideSharedIcon]="hideSharedIcon" [hasQueryParams]="hasQueryParams">
+    </app-data-table>
+  </div>
+</div>
+
+<!-- -------------------XS,SM--------------------- -->
+<!-- DATA LIST -->
+<div class="d-md-none" *ngIf="coffeeJson && coffeeJson.length">
+  <app-data-list [isGuest]="isGuest" [coffeeJson]="coffeeJson" [useCoffee]="useCoffee.bind(this)"
+    [countryFilter]="countryFilter" [archiveCoffee]="archiveCoffee.bind(this)" [editOrigin]="editOrigin.bind(this)"
+    [showButtonSection]="true" [showBrewsNums]="showBrewsNums" [showAttributesNums]="showAttributesNums"
+    [showActionPartSmDefault]="showActionPartSmDefault" [showTable]="showBasicTable" [showActionSection]="true"
+    [showDeleteCoffeeOrigin]="false" [showComments]="openModalCommentSection.bind(this)"
+    [hideSharedIcon]="hideSharedIcon" [hasQueryParams]="hasQueryParams">
+  </app-data-list>
+</div>
+
+<ng-container *ngIf="coffeeJson && coffeeJson.length === 0">
+  <ng-container *ngIf="!isGuest">
+    <p class="font-roboto text-center">No matching items!
+    </p>
+    <p class="text-center font-roboto ">
+      When you add your coffee, the list of entered coffee's details will appear here. It will include the
+      <br> data regarding
+      Origin, Brewing process and Coffee taste.
+
+    </p>
+    <p class="text-center font-roboto "> To add the coffee, click the <span class="font-weight-bold">button. "Add new
+        coffee"</span>
+    </p>
+  </ng-container>
+  <ng-container *ngIf="isGuest">
+    <p class="font-roboto text-center">No matching items!
+    <p class="font-roboto text-center">
+      User has not entered any coffee yet
+    </p>
+  </ng-container>
+</ng-container>

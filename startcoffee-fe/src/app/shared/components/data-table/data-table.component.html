@@ -1,0 +1,209 @@
+<table class="table" *ngIf="showTable">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Origin</th>
+      <th scope="col">
+        Roasting
+      </th>
+      <th scope="col">Date of Roasting</th>
+      <th scope="col">Roaster</th>
+
+      <th (click)="sortTotalBrewsAttributes($event)" scope="col" class="cursor-pointer th-green-text">Brews
+        <app-sorting-wrapper [showWrapper]="showBrewsSortingWrapper" [isDescSort]="sortBrewsFlag"></app-sorting-wrapper>
+      </th>
+      <th (click)="sortAvgOverallRating($event)" scope="col" class="cursor-pointer th-green-text">Avg. rate
+        <app-sorting-wrapper [showWrapper]="showAvgSortingWrapper" [isDescSort]="sortAvgRatingFlag">
+        </app-sorting-wrapper>
+      </th>
+      <th (click)="sortLastBrewSubmitDateTime($event)" scope="col" class="cursor-pointer th-green-text">Last Brewing
+        <app-sorting-wrapper [showWrapper]="showFormSubmitDateSortingWrapper" [isDescSort]="sortFormSubmitDateFlag">
+        </app-sorting-wrapper>
+      </th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <ng-container *ngFor="let item of coffeeJson | filterCountries:countryFilter; let i=index;">
+      <tr>
+        <td>{{(i+1)+"."}}</td>
+        <td class="p-0">
+          <div [ngStyle]="{'position': !hideSharedIcon? 'relative' : '', 'top': !hideSharedIcon? '12px' : ''}">
+            {{item.country }}</div>
+          <!-- generate url -->
+          <div *ngIf="!hideSharedIcon" class="cursor-pointer"
+            [ngStyle]="{'position':'relative', 'top': item.country.length > 15? '37px' : '48px'}"
+            (click)="generateDataUrl(item,i)">
+            <app-svg-share-icon style="position: absolute;left:-25px"></app-svg-share-icon>
+            <span class="share-coffee-txt">Share coffee</span>
+            <a *ngIf="!!sharedCoffeeOriginId[i]" target="_blank" href="{{'shared/'+sharedCoffeeOriginId[i]}}"
+              class="d-inline" style="position: absolute; margin-left: 10px; width: 73px; z-index: 1000;"
+              (click)="onGeneratedLinkClick($event,i)">Open link</a>
+          </div>
+        </td>
+        <td class="font-weight-bold">{{item.roastingType.type}}</td>
+        <td>
+          {{item.productionDate?item.productionDate.month+'/'+item.productionDate.day+'/'+item.productionDate.year:''}}
+        </td>
+        <td>
+          <span *ngIf="item.manufacturer"> {{item.manufacturer}}</span>
+          <span *ngIf="!item.manufacturer" class="not-added-text-table-list">Not added</span>
+
+          <div *ngIf="!!item.coffeeBrew.length" (click)="showBrews(i)" class="cursor-pointer"
+            style="position: absolute;z-index: 1000;" [style.top]="isArchivePage || hideSharedIcon ? '70px' : '125px'">
+            <div *ngIf="showBrewsNums[i]===i && item.coffeeAttributes.length>0; else svg_brewing_down">
+              <app-svg-brewing-details-up></app-svg-brewing-details-up>
+            </div>
+            <ng-template #svg_brewing_down>
+              <app-svg-brewing-details></app-svg-brewing-details>
+            </ng-template>
+          </div>
+        </td>
+        <td>{{ item.coffeeBrew?.length || '0' }}</td>
+        <td>
+          <app-ngbd-rating [ratingValue]="item.avgRating"></app-ngbd-rating>
+        </td>
+        <td>{{item.lastBrewSubmitDateTime}}</td>
+        <td>
+          <ng-container *ngIf="showActionSection && !isGuest">
+            <!-- brew icon -->
+            <div class="data-table-brew-action-wrapper" (click)="useCoffee(item)">
+              <div class="data-table-brew-icon d-inline">
+                <app-svg-brew-icon style="position: relative;top: -7px;"></app-svg-brew-icon>
+              </div>
+              <span class="data-table-brew-text d-inline">Brew</span>
+            </div>
+            <br>
+            <!-- edit icon -->
+            <div class="data-table-edit-action-wrapper" (click)="editOrigin(item)">
+              <div class="data-table-edit-icon d-inline">
+                <app-svg-edit-icon></app-svg-edit-icon>
+              </div>
+              <span class="data-table-edit-text">Edit</span>
+            </div>
+            <br>
+            <!-- archive icon -->
+            <div class="data-table-archive-action-wrapper" (click)="archiveCoffee(item)">
+              <div class="data-table-archive-icon d-inline">
+                <app-svg-archive-icon></app-svg-archive-icon>
+              </div>
+              <span class="data-table-archive-text d-inline">Archive</span>
+            </div>
+          </ng-container>
+          <div *ngIf="showDeleteCoffeeOrigin && !isGuest" (click)="deleteCoffeeOrigin(item)" class="cursor-pointer"
+            style="position: absolute;left: -10px">
+            <app-svg-delete-coffee-icon></app-svg-delete-coffee-icon>
+          </div>
+        </td>
+      </tr>
+      <ng-container *ngIf="showBrewsNums[i]===i">
+        <tr>
+          <th></th>
+          <th scope="col">Brew method</th>
+          <th scope="col">Grinding</th>
+          <th scope="col">Ratio</th>
+          <th scope="col">Time</th>
+          <th (click)="sortOverall(i)" scope="col" class="cursor-pointer th-green-text">Rate
+            <app-sorting-wrapper [showWrapper]="showOverallSortingWrapper" [isDescSort]="sortOverallFlag">
+            </app-sorting-wrapper>
+          </th>
+          <th (click)="sortBrewSubmitDate(i)" scope="col" class="cursor-pointer th-green-text">Brew date
+            <app-sorting-wrapper [showWrapper]="showBrewSubmitDateSortingWrapper"
+              [isDescSort]="!sortBrewSubmitDateFlag">
+            </app-sorting-wrapper>
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <ng-container *ngFor="let subitem of item.coffeeBrew; let j=index;">
+          <ng-container>
+            <tr style="border-top: none;border-bottom:none;height: 160px;"
+              [ngStyle]="{'background-color': showAttributesNums[i][j]===j ? attributesSectionBackground : brewsSectionBackground}">
+              <td></td>
+              <td>
+                {{subitem.brewMethod}}
+                <ng-container *ngIf="subitem.brewMethod=='Other methods'">
+                  <app-tooltip placement="bottom" content="(Clever dripper, Wilfa, Bonavita)">
+                  </app-tooltip>
+                </ng-container>
+              </td>
+              <td>{{subitem.grindType}}</td>
+              <td class="p-0">
+                <span class="d-block" style="font-size:14px">{{subitem.ratio?.coffeeNumerator +'g Coffee'}}</span>
+                <span class="d-block" style="font-size:14px">{{subitem.ratio?.waterDenominator +'g Water'}}</span>
+                <span class="d-block font-weight-bold pt-4">{{'1:'+subitem.ratio?.ratio}}</span>
+              </td>
+              <td>{{subitem.brewTime?.minute + ":" + subitem.brewTime?.second}}</td>
+              <td>
+                <app-ngbd-rating *ngIf="item.coffeeAttributes[j]" [ratingValue]="item.coffeeAttributes[j].overall">
+                </app-ngbd-rating>
+              </td>
+              <td>{{subitem.brewSubmitDate }}</td>
+              <td>
+                <div style="position:absolute;z-index: 1000;top:130px" class="cursor-pointer"
+                  (click)="showAttributes(i,j)">
+                  <div *ngIf="showAttributesNums[i][j]===j;else svg_attributes_down">
+                    <app-svg-flavor-and-comments-up>
+                    </app-svg-flavor-and-comments-up>
+                  </div>
+                  <ng-template #svg_attributes_down>
+                    <app-svg-flavor-and-comments class="cursor-pointer"></app-svg-flavor-and-comments>
+                  </ng-template>
+                </div>
+                <div *ngIf="showDeleteCoffeeAttributes && !isGuest" class="cursor-pointer"
+                  (click)="deleteCoffeeBrewAttribute(subitem._id, item.coffeeAttributes[j]._id,i,j,item.country)"
+                  style="position: absolute;top: 10px;left: 140px;z-index: 1000;">
+                  <app-svg-delete-coffee-icon></app-svg-delete-coffee-icon>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </ng-container>
+          <tr *ngIf="showAttributesNums[i][j]===j"
+            [ngStyle]="{'background-color': showAttributesNums[i][j]===j ? attributesSectionBackground : 'white', 'color':'#8c8c8c'}">
+            <td colspan="1" class="text-left font-weight-bold" style="padding-left:50px!important;">
+              <span class="d-block">Acidity:</span>
+              <span class="d-block">Bitterness:</span>
+              <span class="d-block">Sweetness:</span>
+              <span class="d-block">Intensity:</span>
+            </td>
+            <td colspan="2" class="font-weight-bold">
+              <span class="d-block">{{item.coffeeAttributes[j]?.acidity}}</span>
+              <span class="d-block">{{item.coffeeAttributes[j]?.bitterness}}</span>
+              <span class="d-block">{{item.coffeeAttributes[j]?.sweetness}}</span>
+              <span clas="d-block">{{item.coffeeAttributes[j]?.intensity}}</span>
+            </td>
+
+            <td colspan="1" style="vertical-align: top;">
+              <span class="d-block font-lato font-weight-bold" style="color:#212529;font-size: 14px;">Flavors</span>
+              <ng-container
+                *ngIf="!(item.coffeeAttributes[j]?.flavour?.fruity || item.coffeeAttributes[j]?.flavour?.nutty || item.coffeeAttributes[j]?.flavour?.choco || item.coffeeAttributes[j]?.flavour?.caramel || item.coffeeAttributes[j]?.flavour?.floral); else hasFlavor">
+                No flavours added
+              </ng-container>
+              <ng-template #hasFlavor>
+                <app-svg-fruity-flavor class="d-inline" *ngIf="item.coffeeAttributes[j]?.flavour?.fruity">
+                </app-svg-fruity-flavor>
+                <app-svg-nutty-flavor class="d-inline" *ngIf="item.coffeeAttributes[j]?.flavour?.nutty">
+                </app-svg-nutty-flavor>
+                <app-svg-choco-flavor class="d-inline" *ngIf="item.coffeeAttributes[j]?.flavour?.choco">
+                </app-svg-choco-flavor>
+                <br>
+                <app-svg-caramel-flavor class="d-inline" *ngIf="item.coffeeAttributes[j]?.flavour?.caramel">
+                </app-svg-caramel-flavor>
+                <app-svg-floral-flavor class="d-inline" *ngIf="item.coffeeAttributes[j]?.flavour?.floral">
+                </app-svg-floral-flavor>
+              </ng-template>
+            </td>
+
+            <td colspan="5" style="vertical-align: top;">
+              <span class="font-weight-bold font-lato float-left" style="color:#212529;font-size: 14px;">Comment</span>
+              <p class="float-left" style="clear:both">
+                {{item.coffeeAttributes[j]?.commentText || 'Comment not added'}}</p>
+            </td>
+          </tr>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </tbody>
+</table>

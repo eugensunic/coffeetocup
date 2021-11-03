@@ -1,0 +1,45 @@
+{
+  "name": "startcoffee-be",
+  "version": "1.0.0",
+  "description": "coffee backend application",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha 'main/**/*.test.js' --timeout 10000",
+    "start": "NODE_ENV=develop supervisor ./main/app.js",
+    "prod": "forever start ./main/app.js",
+    "applint": "eslint --fix ./main/app.js"
+  },
+  "author": "eugen sunic",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "build-url": "^2.0.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "forever": "^3.0.4",
+    "mongoose": "^5.12.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "sinon": "^9.0.1",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.6.0",
+    "karma": "^6.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-requirejs": "^1.1.0",
+    "request": "^2.88.0",
+    "server": "^1.0.32",
+    "typescript": "^3.2.2"
+  }
+}

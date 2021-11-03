@@ -1,0 +1,141 @@
+<!-- ------------------------------LG,XL--------------------------------- -->
+<div class="d-none d-md-flex row">
+  <table *ngIf="byBrewList" class="table">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 30px;"></th>
+        <th scope="col" style="width: 200px;">Brew method</th>
+        <th scope="col" style="width: 100px;">Coffees</th>
+        <th scope="col" style="width: 100px;">Brews</th>
+        <th scope="col" style="width: 100px;">Avg. Coffee</th>
+        <th scope="col" style="width: 100px;">Avg. Water</th>
+        <th scope="col" style="width: 150px;">Most used grind</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let brew of byBrewList.brewMethod; let i = index">
+        <tr
+          *ngIf="byBrewList.totalCoffees[i]?.brewMethodCounter && byBrewList.totalBrews[i]?.brewMethodCounter;else other_content"
+          style="height: 145px;">
+          <td>{{ i + 1 + '.' }}</td>
+          <td>
+            <span (click)="navigateOnClick(brew)" class="cursor-pointer">
+              {{ byBrewList.brewMethod[i] }}
+            </span>
+            <ng-container *ngIf="byBrewList.brewMethod[i]=='Other methods'">
+              <app-tooltip placement="bottom" content="(Clever dripper, Wilfa, Bonavita)">
+              </app-tooltip>
+            </ng-container>
+          </td>
+          <td>{{ byBrewList.totalCoffees[i]?.brewMethodCounter }}</td>
+          <td>{{ byBrewList.totalBrews[i]?.brewMethodCounter }}</td>
+          <td>
+            <span>
+              {{ byBrewList.avgCoffeeAmount[i].avgcoffeeNumerator }}
+            </span>
+            <div (click)="navigateOnClick(brew)" class="coffees-svg-show-countries">
+              <app-svg-show-countries *ngIf="svgName==='origins'"></app-svg-show-countries>
+              <app-svg-show-users *ngIf="svgName==='users'"></app-svg-show-users>
+            </div>
+          </td>
+          <td>{{ byBrewList.avgWaterAmount[i].avgwaterDenominator }}</td>
+          <td>
+            <app-coffee-horizontal-bar [propName]="'Fine'" [propValue]="byBrewList.mostUsedGrind[i]['fine']"
+              [backgroundColor]=grindingBackgroundColor>
+            </app-coffee-horizontal-bar>
+            <app-coffee-horizontal-bar [propName]="'Medium Fine'"
+              [propValue]="byBrewList.mostUsedGrind[i]['medium-fine']" [backgroundColor]=grindingBackgroundColor>
+            </app-coffee-horizontal-bar>
+            <app-coffee-horizontal-bar [propName]="'Medium'" [propValue]="byBrewList.mostUsedGrind[i]['medium']"
+              [backgroundColor]=grindingBackgroundColor>
+            </app-coffee-horizontal-bar>
+            <app-coffee-horizontal-bar [propName]="'Medium Coarse'"
+              [propValue]="byBrewList.mostUsedGrind[i]['medium-coarse']" [backgroundColor]=grindingBackgroundColor>
+            </app-coffee-horizontal-bar>
+            <app-coffee-horizontal-bar [propName]="'Coarse'" [propValue]="byBrewList.mostUsedGrind[i]['coarse']"
+              [backgroundColor]=grindingBackgroundColor>
+            </app-coffee-horizontal-bar>
+          </td>
+        </tr>
+        <ng-template #other_content>
+          <tr style="height: 150px;">
+            <td>{{ i + 1 + '.' }}</td>
+            <td>{{ byBrewList.brewMethod[i] }}</td>
+            <td colspan="5" class="not-added-text">
+              Not added
+            </td>
+          </tr>
+        </ng-template>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<!-- ------------------------------SM,XS--------------------------------- -->
+<div *ngIf="byBrewList" class="d-md-none">
+  <div class="coffees-grid-list-wrapper item-card" *ngFor="let brew of byBrewList.brewMethod; let i = index">
+    <div class="span-2-column text-left font-weight-bold">{{ i + 1 + '.' }}
+      <span (click)="navigateOnClick(brew)" class="cursor-pointer">
+        {{ byBrewList.brewMethod[i] }}
+      </span>
+      <div *ngIf="byBrewList.brewMethod[i]=='Other methods'" style="position:relative">
+        <app-tooltip placement="bottom" content="(Clever dripper, Wilfa, Bonavita)"
+          style="position:absolute; left:128px; top:-20px">
+        </app-tooltip>
+      </div>
+    </div>
+
+    <div *ngIf="!byBrewList.totalCoffees[i]?.brewMethodCounter" class="span-2-column text-center"
+      class="not-added-text">
+      Not added
+    </div>
+
+    <div *ngIf="byBrewList.totalCoffees[i]?.brewMethodCounter" class="margin-left-vertical-align ">
+      <span class="font-weight-bold">Coffees: </span>
+      <span> {{ byBrewList.totalCoffees[i]?.brewMethodCounter }}</span>
+    </div>
+
+    <div *ngIf="byBrewList.totalCoffees[i]?.brewMethodCounter" class="text-center">
+      <span class="font-weight-bold">Brews: </span>
+      <span>{{ byBrewList.totalBrews[i]?.brewMethodCounter }}</span>
+    </div>
+
+    <div *ngIf="byBrewList.totalCoffees[i]?.brewMethodCounter" class="margin-left-vertical-align ">
+      <span class="font-weight-bold">Avg. coffee: </span>
+      <span>{{ byBrewList.avgCoffeeAmount[i].avgcoffeeNumerator }}</span>
+    </div>
+
+    <div *ngIf="byBrewList.totalCoffees[i]?.brewMethodCounter" class="text-center">
+      <span class="font-weight-bold">Avg. water: </span>
+      <span>{{ byBrewList.avgWaterAmount[i].avgwaterDenominator }}</span>
+    </div>
+
+    <div *ngIf="byBrewList.mostUsedGrind[i]?.counter" class="span-2-column text-left margin-left-vertical-align mt-4">
+      <span class="d-block font-weight-bold mb-2">Most used grind:</span>
+      <app-coffee-horizontal-bar [propName]="'Fine'" [propValue]="byBrewList.mostUsedGrind[i]['fine']"
+        [backgroundColor]=grindingBackgroundColor>
+      </app-coffee-horizontal-bar>
+      <app-coffee-horizontal-bar [propName]="'Medium Fine'" [propValue]="byBrewList.mostUsedGrind[i]['medium-fine']"
+        [backgroundColor]=grindingBackgroundColor>
+      </app-coffee-horizontal-bar>
+      <app-coffee-horizontal-bar [propName]="'Medium'" [propValue]="byBrewList.mostUsedGrind[i]['medium']"
+        [backgroundColor]=grindingBackgroundColor>
+      </app-coffee-horizontal-bar>
+      <app-coffee-horizontal-bar [propName]="'Medium Coarse'" [propValue]="byBrewList.mostUsedGrind[i]['medium-coarse']"
+        [backgroundColor]=grindingBackgroundColor>
+      </app-coffee-horizontal-bar>
+      <app-coffee-horizontal-bar [propName]="'Coarse'" [propValue]="byBrewList.mostUsedGrind[i]['coarse']"
+        [backgroundColor]=grindingBackgroundColor>
+      </app-coffee-horizontal-bar>
+    </div>
+
+    <div class="span-2-column">
+      <app-svg-horizontal-line></app-svg-horizontal-line>
+    </div>
+
+    <div (click)="navigateOnClick(brew)" class="span-2-column text-right cursor-pointer">
+      <app-svg-show-countries *ngIf="svgName==='origins'"></app-svg-show-countries>
+      <app-svg-show-users *ngIf="svgName==='users'"></app-svg-show-users>
+    </div>
+
+  </div>
+</div>

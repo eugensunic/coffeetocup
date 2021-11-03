@@ -1,0 +1,4 @@
+{
+  "prettier.printWidth": 90,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

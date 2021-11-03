@@ -1,0 +1,59 @@
+<!-- <p>Submit date: {{extraParam.originSubmitDate}}</p>
+<p>Country: {{extraParam.country}}</p>
+<hr>
+<p>Roasting<strong></strong></p>
+<div class="row bootstrap-row-padding">
+  <div class="col-sm-4">
+    <label for="roasting-type-light"> light
+      <input type="radio" id="roasting-type-light" class="" name="roasting" value="roasting-light" (click)="roastingTypeRadio='roasting-light'"
+        (change)="onChangeRoastingImage($event)" [checked]="roastingTypeRadio==='roasting-light'">
+      <img id="roasting-first" src="/assets/images/roasting/imagecoffee1.jpg" alt="" height="100" width="100" [ngClass]="{'validation-error':clicked && !(roastingImage$ | async).imageSelected}">
+    </label>
+  </div>
+
+  <div class="col-sm-4">
+    <label for="roasting-type-medium"> medium
+      <input type="radio" id="roasting-type-medium" class="" name="roasting" value="roasting-medium" (click)="roastingTypeRadio='roasting-medium'"
+        (change)="onChangeRoastingImage($event)" [checked]="roastingTypeRadio==='roasting-medium'">
+      <img id="roasting-second" src="/assets/images/roasting/imagecoffee2.jpg" alt="" height="100" width="100"
+        [ngClass]="{'validation-error':clicked && !(roastingImage$ | async).imageSelected}">
+    </label>
+  </div>
+
+  <div class="col-sm-4">
+    <label for="roasting-type-dark"> dark
+      <input type="radio" id="roasting-type-dark" class="" value="roasting-dark" (click)="roastingTypeRadio='roasting-dark'"
+        (change)="onChangeRoastingImage($event)" [checked]="roastingTypeRadio==='roasting-dark'" name="roasting">
+      <img id="roasting-third" src="/assets/images/roasting/imagecoffee3.jpg" alt="" height="100" width="100" [ngClass]="{'validation-error':clicked && !(roastingImage$ | async).imageSelected}">
+    </label>
+  </div>
+</div>
+
+<!-- processing 3 radio -->
+<!-- <div class="center">
+  <input id="radio-process-one" type="radio" value="process-natural" class="form-radio"
+    [checked]="processingTypeRadio==='process-natural'" (click)="processingTypeRadio='process-natural'"
+    (change)="onChangeProcess($event)"><label for="radio-process-one">Natural</label>
+
+  <input id="radio-process-two" type="radio" value="process-washed" class="form-radio"
+    [checked]="processingTypeRadio==='process-washed'" (click)="processingTypeRadio='process-washed'"
+    (change)="onChangeProcess($event)"><label for="radio-process-two">Washed</label>
+
+  <input id="radio-process-three" type="radio" value="process-hybrid" class="form-radio"
+    [checked]="processingTypeRadio==='process-hybrid'" (click)="processingTypeRadio='process-hybrid'"
+    (change)="onChangeProcess($event)"><label for="radio-process-three">Hybrid</label>
+</div> -->
+
+<p class="font-lato font-weight-bold" style="font-size: 15px;">Roaster</p>
+<!--Coffee maker (user input) -->
+<div class="row bootstrap-row-padding">
+  <input id="edit-origin-coffee-maker" type="text" class="form-control" style="width:300px" [(ngModel)]="manufacturer"
+    (ngModelChange)="onChangeManufacturer($event)" placeholder="Enter a roaster" maxlength="40">
+</div>
+
+<!-- roasting date (user select + user input) -->
+<p class="font-lato font-weight-bold" style="font-size: 15px;">Date of roasting</p>
+<div class="row bootstrap-row-padding">
+  <app-date-picker></app-date-picker>
+  <p></p>
+</div>

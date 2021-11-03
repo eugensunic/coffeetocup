@@ -1,0 +1,223 @@
+<div class="row">
+  <div id="brew-step-container" class="col-md-9 bootstrap-row-padding">
+    <form [formGroup]="brewForm">
+
+      <!-- Brew method 3 radio -->
+      <p class="heading-label" [ngStyle]="{'color': clicked && !isBrewMethodSelected() ? '#dc3545': '' }">
+        Brewing method*</p>
+      <div id="brew-method-wrapper" class="row">
+        <div class="col-sm-6 text-center">
+          <input id="radio-method-brew-one" type="radio" formControlName="brewing" name="brewing" value="Hario V60"
+            (click)="brewingTypeRadio='Hario V60'" (change)="onChangeBrewMethod($event)"
+            [checked]="brewingTypeRadio==='Hario V60'"
+            [ngClass]="{'brew-radio-validation-error':clicked && !isBrewMethodSelected()}">
+          <label for="radio-method-brew-one" class="brew-method-label">Hario V60</label>
+        </div>
+        <div class="col-sm-6 text-center">
+          <input id="radio-method-brew-two" type="radio" formControlName="brewing" name="brewing" value="Chemex"
+            (click)="brewingTypeRadio='Chemex'" (change)="onChangeBrewMethod($event)"
+            [checked]="brewingTypeRadio==='Chemex'"
+            [ngClass]="{'brew-radio-validation-error':clicked && !isBrewMethodSelected()}">
+          <label for="radio-method-brew-two" class="brew-method-label">Chemex</label>
+        </div>
+        <div class="col-sm-6 text-center">
+          <input id="radio-method-brew-three" type="radio" formControlName="brewing" name="brewing"
+            value="Other methods" (click)="brewingTypeRadio='Other methods'" (change)="onChangeBrewMethod($event)"
+            [checked]="brewingTypeRadio==='Other methods'"
+            [ngClass]="{'brew-radio-validation-error':clicked && !isBrewMethodSelected()}">
+
+          <label for="radio-method-brew-three" class="brew-method-label">
+            <span>Other methods</span>
+            <span (click)="brewMethodInfoClick($event)" class="brew-other-methods-tooltip">
+                <app-tooltip placement="right" content="(Clever dripper, Wilfa, Bonavita)">
+                </app-tooltip>
+              </span>
+          </label>
+
+        </div>
+        <!-- <div class="col-sm-6 text-center">
+          <input id="radio-method-brew-four" type="radio" formControlName="brewing" name="brewing" value="Small hole(s)"
+            (click)="brewingTypeRadio='Small hole(s)'" (change)="onChangeBrewMethod($event)"
+            [checked]="brewingTypeRadio==='Small hole(s)'"
+            [ngClass]="{'brew-radio-validation-error':clicked && !isBrewMethodSelected()}">
+          <label for="radio-method-brew-four" class="brew-method-label">Small hole(s) Wilfa, Bonvita, Bonmac</label>
+        </div> -->
+        <div class="col-sm-6 text-center">
+          <input id="radio-method-brew-five" type="radio" formControlName="brewing" name="brewing"
+            value="Flat bottom dripper" (click)="brewingTypeRadio='Flat bottom dripper'"
+            (change)="onChangeBrewMethod($event)" [checked]="brewingTypeRadio==='Flat bottom dripper'"
+            [ngClass]="{'brew-radio-validation-error':clicked && !isBrewMethodSelected()}">
+          <label for="radio-method-brew-five" class="brew-method-label"> Flat bottom dripper</label>
+        </div>
+      </div>
+
+      <app-svg-horizontal-line></app-svg-horizontal-line>
+
+      <!-- Grinding 5 radio-->
+      <p class="heading-label" [ngStyle]="{'color': clicked && !isGrindSelected() ? '#dc3545': '' }">
+        Grinding*
+      </p>
+      <div id="brew-grinding-wrapper" class="row justify-content-center">
+        <div class="m-3">
+          <label #grindingFine for="radio-grinding-fine" class="position-relative">
+            <span id="brew-grinding-text-fine">
+              fine
+            </span>
+            <input id="radio-grinding-fine" type="radio" class="hide-radio-button" formControlName="grinding"
+              name="grinding" value="fine" (change)="onChangeBrewGrind($event)" [checked]="grindingTypeRadio==='fine'">
+            <img src="/assets/images/grinding/fine.jpg" alt="Grinding fine" height="200" width="200"
+              [ngClass]="{'validation-error':clicked && !isGrindSelected()}">
+          </label>
+        </div>
+
+        <div class="m-3">
+          <label #grindingMediumFine for="radio-grinding-medium-fine" class="position-relative">
+            <span id="brew-grinding-text-medium-fine">
+              medium fine
+            </span>
+            <input id="radio-grinding-medium-fine" type="radio" class="hide-radio-button" formControlName="grinding"
+              name="grinding" value="medium-fine" (change)="onChangeBrewGrind($event)"
+              [checked]="grindingTypeRadio==='medium-fine'">
+            <img src="/assets/images/grinding/medium_fine.jpg" alt="Grinding medium fine" height="200" width="200"
+              [ngClass]="{'validation-error':clicked && !isGrindSelected()}" style="position:relative;top:15px">
+          </label>
+        </div>
+
+
+        <div class="m-3">
+          <label #grindingMedium for="radio-grinding-medium" class="position-relative">
+            <span id="brew-grinding-text-medium">medium
+            </span>
+            <input id="radio-grinding-medium" type="radio" class="hide-radio-button" formControlName="grinding"
+              name="grinding" value="medium" (change)="onChangeBrewGrind($event)"
+              [checked]="grindingTypeRadio==='medium'">
+            <img src="/assets/images/grinding/medium.jpg" alt="Grinding medium" height="200" width="200"
+              [ngClass]="{'validation-error':clicked && !isGrindSelected()}">
+          </label>
+        </div>
+
+
+        <div class="m-3">
+          <label #grindingMediumCoarse for="radio-grinding-medium-coarse" class="position-relative">
+            <span id="brew-grinding-text-medium-coarse">
+              medium coarse
+            </span>
+            <input id="radio-grinding-medium-coarse" type="radio" class="hide-radio-button" formControlName="grinding"
+              name="grinding" value="medium-coarse" (change)="onChangeBrewGrind($event)"
+              [checked]="grindingTypeRadio==='medium-coarse'">
+            <img src="/assets/images/grinding/medium_coarse.jpg" alt="Grinding medium coarse" height="200" width="200"
+              [ngClass]="{'validation-error':clicked && !isGrindSelected()}" style="position:relative;top:15px">
+          </label>
+        </div>
+
+
+        <div class="m-3">
+          <label #grindingCoarse for="radio-grinding-coarse" class="position-relative">
+            <span id="brew-grinding-text-coarse">coarse
+            </span>
+            <input id="radio-grinding-coarse" type="radio" class="hide-radio-button" formControlName="grinding"
+              name="grinding" value="coarse" (change)="onChangeBrewGrind($event)"
+              [checked]="grindingTypeRadio==='coarse'">
+            <img src="/assets/images/grinding/coarse.jpg" alt="Grinding coarse" height="200" width="200"
+              [ngClass]="{'validation-error':clicked && !isGrindSelected()}">
+          </label>
+        </div>
+      </div>
+
+      <app-svg-horizontal-line></app-svg-horizontal-line>
+
+      <!-- Coffee Water ratio 2 dropdown -->
+      <p class="heading-label" [ngStyle]="{'color': clicked && !isBrewRatioValid() ? '#dc3545': '' }">Ratio*</p>
+      <div id="brew-ratio-wrapper" class="row bootstrap-row-padding">
+        <div id="brew-input-ratio" class="col-6 justify-content-center d-inline-flex">
+          <div class="form-group">
+            <label for="brew-coffee-ratio" class="font-weight-bold font-roboto" style="font-size:16px">Coffee</label>
+            <input id="brew-coffee-ratio" formControlName="brewCoffee" (ngModelChange)="onChangeBrewCoffee()"
+              type="text" class="form-control brew-ratio" maxlength="4"
+              [ngClass]="{'brew-ratio-validation-error':clicked && !isBrewRatioValid()}">
+          </div>
+
+          <div class="form-group">
+            <label for="brew-water-ratio" class="font-weight-bold font-roboto" style="font-size:16px">Water</label>
+            <input id="brew-water-ratio" formControlName="brewWater" (ngModelChange)="onChangeBrewWater()" type="text"
+              class="form-control brew-ratio" maxlength="4"
+              [ngClass]="{'brew-ratio-validation-error':clicked && !isBrewRatioValid()}">
+          </div>
+        </div>
+
+        <div id="brew-calculated-ratio" class="col-6">
+          <div class="heading-label">Calculated ratio</div>
+          <div id="brew-coffee-water-calculation-wrapper" style="color:grey">
+            <p class="d-inline" style="font-size:20px;">{{coffeeWaterCalculation}}</p>
+            <p class="d-inline" style="font-size:20px; margin-left:15px">:</p>
+            <p class="d-inline" style="font-size:20px; margin-left:15px;">1 </p>
+          </div>
+        </div>
+        <p class="row font-roboto" style="position: relative;top: 29px;padding-left: 15px;">Enter the values for
+          coffee and Water.
+          Values will be shown in grams.</p>
+      </div>
+    </form>
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+
+    <!-- Time picker mm:ss -->
+
+    <p class="heading-label" [ngStyle]="{'color': clicked && !isBrewTimeValid() ? '#dc3545': '' }">Time*</p>
+    <div id="brew-time-wrapper" class="row">
+      <app-timepicker-basic [time]="brewTimeValue"></app-timepicker-basic>
+    </div>
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+
+    <div class="row">
+      <div id="comment-container" class="col-sm-9">
+        <label for="brew-comment-lg" class="heading-label">Comments</label>
+        <textarea id="brew-comment-lg" class="form-control" rows="5" [(ngModel)]="textAreaCommentLg"
+          (ngModelChange)="changeTextAreaLg()" value="" maxlength="500">
+      </textarea>
+      </div>
+      <div class="col-sm-3">
+        <button id="brew-next-button" (click)="nextStepAttributes()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------- -->
+  <!-- Results section -->
+  <div id="pour-over-results-container" class="col-md-3">
+    <h5 class="font-lato" style="font-size:18px">You added at previous step</h5>
+    <ul class="list-group">
+      <li class="list-group-item font-roboto" style="background:#F6F5F3">
+        <span class="font-weight-bold">Origin: </span><span>{{coffeeInMaking.country}}</span>
+        <br>
+        <span class="font-weight-bold">Roasting: </span><span>{{coffeeInMaking.roastingType}}</span>
+        <br>
+        <span class="font-weight-bold">Date of roasting:
+        </span><span>{{coffeeInMaking.productionDate?.month+'/'+coffeeInMaking.productionDate?.day+'/'+coffeeInMaking.productionDate?.year}}</span>
+      </li>
+    </ul>
+    <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length!==0">
+      <ul class="list-group">
+        <h5 class="font-lato" style="font-size:18px">Used brewing measures</h5>
+        <p id="brew-from-country-text">From {{coffeeInMaking.country}}</p>
+        <li *ngFor="let item of coffeeOriginJson; let i=index;" class="list-group-item font-roboto"
+          style="background:#F6F5F3">
+          <span class="font-weight-bold">Brew method: </span><span>{{item.brewMethod}}</span>
+          <br>
+          <span class="font-weight-bold">Grinding: </span><span>{{item.grindType}}</span>
+          <br>
+          <span class="font-weight-bold">Ratio: </span><span>{{item.ratio?.ratio +":1"}}</span>
+          <br>
+          <span class="font-weight-bold">Brewing time:
+          </span><span>{{item.brewTime?.minute+":"+item.brewTime?.second}}</span>
+          <br>
+        </li>
+      </ul>
+      <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length===0">
+        <p class="no-matching-items">No Matching items!</p>
+      </ng-container>
+    </ng-container>
+  </div>
+
+</div>

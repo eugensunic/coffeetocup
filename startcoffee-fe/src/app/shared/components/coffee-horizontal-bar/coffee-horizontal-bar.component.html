@@ -1,0 +1,8 @@
+<span *ngIf="!!propValue" class="d-block" style="margin-bottom:10px">
+  <div class="progress" style="border-radius:0px">
+    <div class="progress-bar progress-bar-custom" role="progressbar" [style.width]="propValue + '%'"
+      [style.backgroundColor]="backgroundColor" [attr.aria-valuenow]="propValue" aria-valuemin="0" aria-valuemax="100">
+      <span style="width: 100px;">{{ propName }}</span>
+    </div>
+  </div>
+</span>

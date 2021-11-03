@@ -1,0 +1,29 @@
+<h3 class="font-lato text-center main-heading" style="margin-bottom:50px;margin-top: 23px;">Archive page</h3>
+<ng-container *ngIf="coffeeJson && coffeeJson.length!==0">
+  <div class="d-none d-md-flex">
+    <app-data-table [showBrewsNums]="showBrewsNums" [showAttributesNums]="showAttributesNums"
+      [showTable]="showBasicTable" [showActionSection]="false" [showDeleteCoffeeOrigin]="true"
+      [deleteCoffeeOrigin]="deleteCoffeeOrigin.bind(this)" [coffeeJson]="coffeeJson"
+      [showComments]="openModalCommentSection.bind(this)" [isArchivePage]="true" [hideSharedIcon]="true">
+    </app-data-table>
+  </div>
+  <!-- show [xs-sm] -->
+  <div class="d-md-none">
+    <app-data-list [showButtonSection]="true" [showActionPartSmDefault]="showActionPartSmDefault"
+      [showBrewsNums]="showBrewsNums" [showAttributesNums]="showAttributesNums" [showTable]="showBasicTable"
+      [showActionSection]="false" [showDeleteCoffeeOrigin]="true" [deleteCoffeeOrigin]="deleteCoffeeOrigin.bind(this)"
+      [coffeeJson]="coffeeJson" [showComments]="openModalCommentSection.bind(this)" [hideSharedIcon]="true">
+    </app-data-list>
+  </div>
+</ng-container>
+<ng-container *ngIf="coffeeJson && coffeeJson.length===0">
+  <p class="font-roboto text-center">No matching items!
+  </p>
+  <p class="text-center font-roboto ">
+    The list of archived coffees will appear here.
+    From here you can completely delete your coffee from the app using "Delete" button which will be located at
+    this page once an entry appears. If you delete it, coffee will be removed permanently and will not be visible in
+    the community section nor coffees.
+  </p>
+</ng-container>
+<div *ngIf="showLoadingSpinner" id="spinner-coffee-archive" class="loader"></div>

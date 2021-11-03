@@ -1,0 +1,33 @@
+<p>Username: <span class="font-weight-bold">{{username}}</span></p>
+
+<!-- ------------------------------LG, XL--------------------------------- -->
+<ng-container *ngIf="!hasError">
+  <div class="d-none d-md-flex row">
+    <app-data-table [isGuest]="true" [showTable]="true" [showBrewsNums]="[]" [showAttributesNums]="showAttributesNums"
+      [showActionSection]="false" [showDeleteCoffeeAttributes]="false" [coffeeJson]="coffeeJson"
+      [hideSharedIcon]="true">
+    </app-data-table>
+  </div>
+
+  <!-- ------------------------------SM, XS--------------------------------- -->
+
+  <div class="d-md-none">
+    <app-data-list [isGuest]="true" [showButtonSection]="false" [showActionPartSmDefault]="[]" [showBrewsNums]="[]"
+      [showAttributesNums]="showAttributesNums" [showTable]="true" [showActionSection]="false" [coffeeJson]="coffeeJson"
+      [hideSharedIcon]="true">
+    </app-data-list>
+  </div>
+</ng-container>
+
+<div *ngIf="hasError" style="
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  font-size: 30px;
+  margin-top: -80px;
+  ">
+  Could not find Shared coffee
+</div>

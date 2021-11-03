@@ -1,0 +1,175 @@
+// main global variables
+$text-grey-color: #6c757d;
+$main-green-text-color: #01482a;
+$main-green-border-color: #01482a;
+$main-green-background-color: rgba(1, 72, 42, 0.8);
+$light-green-background-color: rgba(1, 72, 42, 0.14);
+$main-container-background-color: rgba(253, 255, 250, 0.98);
+$main-container-steps-background-color: rgba(210, 211, 213, 0.9);
+$white-background-color: white;
+$coffee-steps-border-container-color: #be8a3c;
+
+$font-lato: 'lato';
+$font-roboto: 'Roboto';
+$font-sanspro: 'Source Sans Pro';
+
+$grid-list-wrapper-mg-left: 20px;
+$grid-list-wrapper-mg-top: 10px;
+
+// first override
+@import './css/bootstrap-override.scss';
+// angular
+@import '~@ng-select/ng-select/themes/default.theme.css';
+// main general files
+@import './css/form-elements.scss';
+@import './css/spinner.scss';
+@import './css/stepper.scss';
+
+@import './css/general.scss';
+
+@import './css/navbar.scss';
+@import './css/table.scss';
+@import './css/user-profile/index.scss';
+@import './css/community/index.scss';
+@import './css/coffees/index.scss';
+@import './css/user-settings/index.scss';
+@import './css/modal.scss';
+@import './css/change-password.scss';
+
+// pour over form steps
+@import './css/pour-over-form/index.scss';
+
+// static pages
+@import './css/static-pages/brew-collect-explore.scss';
+@import './css/static-pages/how-it-works.scss';
+@import './css/static-pages/learn.scss';
+
+#login-signout {
+  position: absolute;
+  top: 17px;
+  right: 0px;
+  display: flex;
+}
+
+// about page css
+.border-limit-yellow {
+  border-left: 3px solid rgba(190, 138, 60, 1);
+}
+
+.about-gap {
+  margin-bottom: 50px;
+}
+
+// fonts begin
+.font-lato {
+  font-family: lato;
+}
+
+.font-roboto {
+  font-family: Roboto;
+}
+
+.font-sanspro {
+  font-family: 'Source Sans Pro';
+}
+
+.main-heading {
+  font-size: 23px;
+}
+// fonts end
+
+// grid sorting cotainer
+.grid-sorting-wrapper {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: $font-lato;
+}
+
+.grid-sorting-wrapper span {
+  border: 1px solid black;
+  padding: 11px 7px;
+  cursor: pointer;
+}
+
+.grid-sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.span-2-column {
+  grid-column: 1 / span 2;
+}
+
+.span-6-column {
+  grid-column: 1 / span 6;
+}
+
+// hide scrollbar in chrome, firefox, ie
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
+// you can delete this later begin
+
+// you can delete this later end
+
+.disable-link {
+  text-decoration: none !important;
+  opacity: 0.3;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+// center content relative to main container BEGIN
+.main-container-center {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .main-container-center {
+    max-width: 960px;
+  }
+}
+
+// about page only
+@media (max-width: 768px) {
+  .border-limit-yellow {
+    border-left: 0px;
+  }
+  .about-gap {
+    margin-bottom: 20px;
+  }
+  .about-wrapper-gap {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container-center {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-overwrite {
+    top: 54px !important;
+    transform: none!important;
+  }
+  .navbar {
+    padding: 0px;
+  }
+
+  #logo-desktop {
+    display: none;
+  }
+}
+
+// center content relative to main container END

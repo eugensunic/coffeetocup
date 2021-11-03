@@ -1,0 +1,41 @@
+//register
+#facebook-register {
+  position: relative;
+  left: -30px;
+}
+
+#google-register {
+  position: relative;
+  left: 20px;
+}
+// login
+#facebook-login {
+  position: relative;
+  left: -20px;
+}
+
+#google-login {
+  position: relative;
+  left: 20px;
+}
+
+.social-media-split-wrapper {
+  position: relative;
+  top: -20px;
+}
+
+.social-media-or-word {
+  text-align: center;
+}
+
+.social-media-horizontal-line {
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+@media (max-width: 350px) {
+  .social-media-split-wrapper {
+    display: none;
+  }
+}

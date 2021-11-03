@@ -1,0 +1,97 @@
+[
+          {
+              "_id" : ObjectId("5c2a19824dfdac2903f5faf7"),
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "__v" : 0,
+              "city" : "Croatia",
+              "country" : "Zagreb",
+              "dateOfBirth" : null,
+              "profileImagePath" : null,
+              "profileImage" : null
+          },
+          {
+              "_id" : ObjectId("5cd8399216f0597f11a0a6e5"),
+              "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+              "__v" : 0,
+              "city" : null,
+              "country" : null,
+              "dateOfBirth" : null,
+              "profileImage" : {
+                  "originalName" : "2019-05-11 (1).png",
+                  "fileName" : "b17438de5a9f0c8dcb156696c9ac6fb3",
+                  "path" : "uploads\\profile-image\\b17438de5a9f0c8dcb156696c9ac6fb3",
+                  "mimeType" : "image/png"
+              }
+          },
+          {
+              "_id" : ObjectId("5d13b4a2e2ac9356379b86e4"),
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "__v" : 0,
+              "city" : "asdfa",
+              "country" : "asdfas",
+              "dateOfBirth" : null,
+              "profileImage" : {
+                  "originalName" : "11472415.png",
+                  "fileName" : "f44699ef0ebb7e7f841b934f6f42bc47",
+                  "path" : "uploads/profile-image/f44699ef0ebb7e7f841b934f6f42bc47",
+                  "mimeType" : "image/png"
+              },
+              "profileImagePath" : null
+          },
+          {
+              "_id" : ObjectId("5d2608028138108549ff73b4"),
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "__v" : 0,
+              "city" : null,
+              "country" : null,
+              "dateOfBirth" : null
+          },
+          {
+              "_id" : ObjectId("5eaa7bf10a48c69319c1216d"),
+              "user_FK" : ObjectId("5ea6f616b8438f0ee0df8e04"),
+              "__v" : 0,
+              "city" : "Croatia",
+              "country" : "Zagreb",
+              "dateOfBirth" : {
+                  "year" : 2020,
+                  "month" : 4,
+                  "day" : 30
+              }
+          },
+          {
+              "_id" : ObjectId("5ec19d980a48c69319d336e0"),
+              "user_FK" : ObjectId("5ebd97c39d2bdb1d44af4787"),
+              "__v" : 0,
+              "city" : "Rijeka",
+              "country" : "Hrvatska",
+              "dateOfBirth" : null,
+              "profileImage" : {
+                  "originalName" : "main_image.png",
+                  "fileName" : "166e0527d69fd2062b3084c921a9aa1b",
+                  "path" : "uploads/profile-image/166e0527d69fd2062b3084c921a9aa1b",
+                  "mimeType" : "image/png"
+              }
+          },
+          {
+              "_id" : ObjectId("5f17424aa9505fed5139adc5"),
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "__v" : 0,
+              "profileImage" : {
+                  "originalName" : "2020-01-21 (2).png",
+                  "fileName" : "434bbc95b5918536b878d9a15777a9ec",
+                  "path" : "uploads\\profile-image\\434bbc95b5918536b878d9a15777a9ec",
+                  "mimeType" : "image/png"
+              },
+              "city" : "Country",
+              "country" : "City",
+              "dateOfBirth" : null
+          },
+          {
+              "_id" : ObjectId("5f451d2bc0c5288ff7e9d8d8"),
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "__v" : 0,
+              "city" : "Zgreb",
+              "country" : "Cro",
+              "dateOfBirth" : null
+          }
+      ]

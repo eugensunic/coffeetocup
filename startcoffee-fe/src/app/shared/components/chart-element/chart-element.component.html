@@ -1,0 +1,12 @@
+<div class="chart-wrapper">
+  <ng-select *ngIf="showDropdownMenu" searchable="false" placeholder="Select country"
+    (change)="selectOptionChart($event)">
+    <ng-option *ngFor="let item of dropdownData" [value]="item">
+      {{item}}
+    </ng-option>
+  </ng-select>
+
+  <div class="chart-display-section" style="position:relative">
+    <canvas #chart width="400" height="400"></canvas>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div *ngIf="!!selectedBrew">
+  <h4 class="font-lato coffees-main-heading">Origin list</h4>
+  <p class="font-roboto">The list below shows all origins by selected brewing method.</p>
+  <div class="row flex-column" style="margin-top:50px;flex-direction: column;padding-left:15px">
+    <div>
+      <p>
+        <span class="font-weight-bold font-lato user-profile-filtrated-title">Brew method &rarr;</span>
+        <span class="font-weight-bold user-profile-filtrated-origin font-lato"> {{ selectedBrew }}</span>
+      </p>
+    </div>
+    <div>
+      <p class="coffees-back-navigation" (click)="navigateToCoffeesBrewFilter()">
+        <app-svg-back-to-brew class="cursor-pointer"></app-svg-back-to-brew>
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-origin-display [coffeeJson]="coffeeJson" [coffeesHtmlView]="coffeesHtmlView" [allUsers]="allUsers"
+  [countryFilter]="countryFilter" [selectedCountry]="selectedCountry" [navigateOnClick]="navigateOnClick.bind(this)"
+  [svgName]="'users'">
+</app-origin-display>

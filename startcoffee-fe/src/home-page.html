@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+
+<body>
+    test users:
+    <br>
+    <p></p>
+    marko.koprivnjak1@gmail.com, mark_91
+    <br>
+    <p></p>
+    tester@live.com, mili7788
+
+    <div style="border: 1px solid #999999;width: 150px;padding: 5px; position:absolute;">
+        <p>Login:</p>
+        <input id="login-email" type="email" value="" style="width:140px" />
+        <input id="login-password" type="password" value="" style="display:block;width:140px" />
+        <button id="login" type="button" class="btn btn-secondary" style="display:block;margin-top:5px">Log in</button>
+        <button id="google-login" style="display:block" style="margin-top:5px">google login</button>
+        <button id="facebook-login" style="margin-top:5px">facebook login</button>
+    </div>
+
+    <script>
+        const email = document.getElementById("login-email");
+        const password = document.getElementById("login-password");
+        const login = document.getElementById("login");
+        const isEugen = localStorage.getItem('eugen');
+        email.value = isEugen ? 'tester@live.com' : ''
+        password.value = isEugen ? 'mili7788' : ''
+
+        login.addEventListener("click", () => {
+            fetch('/login', {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    email: email.value,
+                    password: password.value
+                })
+            })
+                .then(res => res)
+                .then(x => {
+                    if (x.status >= 500) {
+                        
+                        throw new Error();
+                    }
+                    if (x.status !== 200) {
+                        
+                        throw new Error();
+                        return;
+                    }
+                    
+                    //navigate to user profile page
+                    window.location.href = "/profile";
+                })
+                .catch(err => {
+                    const htmlNode = document.createElement('h3');
+                    htmlNode.textContent = "Error occurred";
+                    htmlNode.style.color = "red";
+                    document.body.appendChild(htmlNode)
+                    
+                });
+        })
+    </script>
+
+    <div id="error-container"></div>
+
+</body>
+
+
+</html>

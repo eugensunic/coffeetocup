@@ -1,0 +1,1069 @@
+[
+    {
+        "_id" : ObjectId("5c4de6705c4c6326e4307d46"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "elevation" : "1400",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 6,
+            "day" : 14
+        },
+        "originSubmitDate" : "01/27/2019, 18:08",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4ded945c4c6326e4307d4f"),
+        "isArchived" : false,
+        "country" : "Columbia",
+        "elevation" : "1800",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "medium",
+        "processingType" : "process-natural",
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 6,
+            "day" : 15
+        },
+        "originSubmitDate" : "01/27/2019, 18:40",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4df0cc5c4c6326e4307d56"),
+        "isArchived" : false,
+        "country" : "Guatemala",
+        "elevation" : null,
+        "elevationFrom" : "1300",
+        "elevationTo" : "1600",
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Stow, Ljubljana",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 4,
+            "day" : 11
+        },
+        "originSubmitDate" : "01/27/2019, 18:53",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4df4085c4c6326e4307d5e"),
+        "isArchived" : false,
+        "country" : "Kenya",
+        "elevation" : "1700",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "light",
+        "processingType" : "process-washed",
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 6,
+            "day" : 20
+        },
+        "originSubmitDate" : "01/27/2019, 19:07",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4df8735c4c6326e4307d6e"),
+        "isArchived" : false,
+        "country" : "Brazil",
+        "elevation" : "1300",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "medium",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 6,
+            "day" : 29
+        },
+        "originSubmitDate" : "01/27/2019, 19:26",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "elevation" : "1400",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 8,
+            "day" : 23
+        },
+        "originSubmitDate" : "01/27/2019, 22:23",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c4e2829cb804718e4329658"),
+        "isArchived" : false,
+        "country" : "Guatemala",
+        "elevation" : "1600",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Stow, Ljubljana",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 3,
+            "day" : 13
+        },
+        "originSubmitDate" : "02/11/2019, 12:49",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+        "isArchived" : false,
+        "country" : "Columbia",
+        "elevation" : "n/a (not available)",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 2,
+            "day" : 8
+        },
+        "originSubmitDate" : "02/13/2019, 11:08",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c6546e90757291e107396c7"),
+        "isArchived" : false,
+        "country" : "Costa Rica",
+        "elevation" : "1700",
+        "elevationFrom" : null,
+        "elevationTo" : null,
+        "roastingType" : "light",
+        "processingType" : "process-washed",
+        "manufacturer" : "Cogito Coffee, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 1,
+            "day" : 25
+        },
+        "originSubmitDate" : "02/14/2019, 11:40",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c716cf0756a5742f487dc73"),
+        "isArchived" : false,
+        "country" : "El Salvador",
+        "roastingType" : null,
+        "processingType" : "process-washed",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 2,
+            "day" : 18
+        },
+        "originSubmitDate" : "03/10/2019, 17:47",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5c979d0835365e3600772991"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 3,
+            "day" : 4
+        },
+        "originSubmitDate" : "03/24/2019, 15:55",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5cbc7a6a34a2cfa2965ddf86"),
+        "isArchived" : false,
+        "country" : "Nicaragua",
+        "roastingType" : "light",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 4,
+            "day" : 4
+        },
+        "originSubmitDate" : "04/21/2019, 16:12",
+        "user_FK" : ObjectId("5cbc7a4434a2cfa2965ddf85"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5cbc7b1934a2cfa2965ddf89"),
+        "isArchived" : false,
+        "country" : "Nicaragua",
+        "roastingType" : "light",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "04/21/2019, 16:15",
+        "user_FK" : ObjectId("5cbc7a4434a2cfa2965ddf85"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5cdd45ced90c0f2f98a4951d"),
+        "isArchived" : false,
+        "country" : "Burundi",
+        "roastingType" : "medium",
+        "processingType" : "process-hybrid",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 5,
+            "day" : 11
+        },
+        "originSubmitDate" : "05/16/2019, 13:12",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d2304ba0b9db61a83b2ffe9"),
+        "isArchived" : false,
+        "country" : "Bolivia",
+        "roastingType" : "medium",
+        "processingType" : "process-natural",
+        "manufacturer" : "e",
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "07/08/2019, 10:46",
+        "user_FK" : ObjectId("5d2301400b9db61a83b2ffe8"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d25abd17eec5a032281daa4"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2016,
+            "month" : 6,
+            "day" : 14
+        },
+        "originSubmitDate" : "07/10/2019, 11:09",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d2603077eec5a032281daab"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 8,
+            "day" : 23
+        },
+        "originSubmitDate" : "07/10/2019, 17:20",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d26060f7eec5a032281dab0"),
+        "isArchived" : false,
+        "country" : "Guatemala",
+        "roastingType" : "dark",
+        "processingType" : "process-natural",
+        "manufacturer" : "Stow, Ljubljana",
+        "productionDate" : {
+            "year" : 2018,
+            "month" : 4,
+            "day" : 11
+        },
+        "originSubmitDate" : "07/10/2019, 17:34",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d2607ad7eec5a032281dab3"),
+        "isArchived" : true,
+        "country" : "Yemen",
+        "roastingType" : "light",
+        "processingType" : "process-natural",
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 7,
+            "day" : 2
+        },
+        "originSubmitDate" : "07/10/2019, 17:43",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d2850d87eec5a032281dacd"),
+        "isArchived" : false,
+        "country" : "Burundi",
+        "roastingType" : "medium",
+        "processingType" : "process-washed",
+        "manufacturer" : "Testni maker",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 7,
+            "day" : 10
+        },
+        "originSubmitDate" : "07/12/2019, 11:19",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5d285d447eec5a032281dad0"),
+        "isArchived" : false,
+        "country" : "Bolivia",
+        "roastingType" : "light",
+        "processingType" : "process-natural",
+        "manufacturer" : "proba",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 7,
+            "day" : 8
+        },
+        "originSubmitDate" : "07/12/2019, 12:12",
+        "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5e9c406ac87cd12170c0e3b2"),
+        "isArchived" : false,
+        "country" : "Kenya",
+        "roastingType" : "medium",
+        "processingType" : "process-washed",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2019,
+            "month" : 8,
+            "day" : 8
+        },
+        "originSubmitDate" : "04/19/2020, 14:10",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ebb1de57c14cb4cbcc5a6c3"),
+        "isArchived" : true,
+        "country" : "Bolivia",
+        "roastingType" : "light",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "05/12/2020, 23:05",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ebb20937c14cb4cbcc5a6c6"),
+        "isArchived" : true,
+        "country" : "Burundi",
+        "roastingType" : "medium",
+        "processingType" : "process-washed",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "05/12/2020, 23:17",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ebc610b0463d125fbbbf077"),
+        "isArchived" : true,
+        "country" : "Brazil",
+        "roastingType" : "medium",
+        "processingType" : "process-washed",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "05/13/2020, 22:04",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ebecde4b946c51a18f556b4"),
+        "isArchived" : false,
+        "country" : "El Salvador",
+        "roastingType" : "medium",
+        "processingType" : "process-hybrid",
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 5,
+            "day" : 11
+        },
+        "originSubmitDate" : "05/15/2020, 19:06",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ec191171f575e788de38d85"),
+        "isArchived" : true,
+        "country" : "Zambia",
+        "roastingType" : "Medium",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 6,
+            "day" : 5
+        },
+        "originSubmitDate" : "06/16/2020, 21:53",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ec1ad7fe02a37af6e7e776b"),
+        "isArchived" : true,
+        "country" : "Bolivia",
+        "roastingType" : "medium",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 7
+        },
+        "originSubmitDate" : "08/09/2020, 12:00",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ec1ad9be02a37af6e7e776e"),
+        "isArchived" : true,
+        "country" : "Ethiopia",
+        "roastingType" : "Medium",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "06/13/2020, 21:16",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ec1ae95e02a37af6e7e7775"),
+        "isArchived" : true,
+        "country" : "Ethiopia",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "asdfa",
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "05/17/2020, 22:37",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ee1f2995938412894c8fb7b"),
+        "isArchived" : false,
+        "country" : "Yemen",
+        "roastingType" : "dark",
+        "processingType" : "process-washed",
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 6,
+            "day" : 11
+        },
+        "originSubmitDate" : "06/11/2020, 10:53",
+        "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5ee5dc52e04f9e0bfddc06ab"),
+        "isArchived" : true,
+        "country" : "Brazil",
+        "roastingType" : "medium",
+        "processingType" : "process-natural",
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 6,
+            "day" : 5
+        },
+        "originSubmitDate" : "06/14/2020, 09:13",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f21ba13d6d6af05a5d4f193"),
+        "isArchived" : true,
+        "country" : "Brazil",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "07/29/2020, 20:03",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f21dfb0d6d6af05a5d4f196"),
+        "isArchived" : true,
+        "country" : "Peru",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "07/29/2020, 22:42",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f21e073d6d6af05a5d4f199"),
+        "isArchived" : true,
+        "country" : "Tanzania",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "07/29/2020, 22:47",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f305d8022d97d255b129c9c"),
+        "isArchived" : true,
+        "country" : "Malawi",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 10,
+            "day" : 1
+        },
+        "originSubmitDate" : "10/03/2020, 18:09",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f39aa14ff32a9096f362631"),
+        "isArchived" : false,
+        "country" : "Brazil",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "08/16/2020, 22:49",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f3f95bf43a0d723c487682f"),
+        "isArchived" : false,
+        "country" : "Columbia",
+        "roastingType" : "dark",
+        "processingType" : null,
+        "manufacturer" : "Elis, Zagreb",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 5
+        },
+        "originSubmitDate" : "08/21/2020, 11:32",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f46103ecef3f03280dad0e0"),
+        "isArchived" : false,
+        "country" : "Cuba",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "testin 56",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 1,
+            "day" : 4
+        },
+        "originSubmitDate" : "08/26/2020, 09:32",
+        "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f461abbcef3f03280dad0f1"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "TEST 56",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 3
+        },
+        "originSubmitDate" : "08/26/2020, 10:12",
+        "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f462470cef3f03280dad100"),
+        "isArchived" : false,
+        "country" : "India",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "Test 01",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 25
+        },
+        "originSubmitDate" : "08/26/2020, 10:58",
+        "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f462538cef3f03280dad10b"),
+        "isArchived" : false,
+        "country" : "Jamaica",
+        "roastingType" : "dark",
+        "processingType" : null,
+        "manufacturer" : "test 01",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 26
+        },
+        "originSubmitDate" : "08/26/2020, 11:02",
+        "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4a850d46b88310ec371056"),
+        "isArchived" : false,
+        "country" : "Mexico",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "Test 560",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 19
+        },
+        "originSubmitDate" : "08/29/2020, 18:39",
+        "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4a86c346b88310ec37105b"),
+        "isArchived" : false,
+        "country" : "Mexico",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 5,
+            "day" : 4
+        },
+        "originSubmitDate" : "08/29/2020, 18:47",
+        "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4a874d46b88310ec37105e"),
+        "isArchived" : false,
+        "country" : "Mexico",
+        "roastingType" : "dark",
+        "processingType" : null,
+        "manufacturer" : "test 035",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 1
+        },
+        "originSubmitDate" : "08/29/2020, 18:49",
+        "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4a879246b88310ec371061"),
+        "isArchived" : false,
+        "country" : "Mexico",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "Test 45682",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 3
+        },
+        "originSubmitDate" : "08/29/2020, 18:50",
+        "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4a87ea46b88310ec371064"),
+        "isArchived" : false,
+        "country" : "Mexico",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "testoijsdado jiadsjf čadsfč jadslkfčjasi",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 8,
+            "day" : 5
+        },
+        "originSubmitDate" : "08/29/2020, 18:52",
+        "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f4e4c540fcbeb07ae4d9c6a"),
+        "isArchived" : true,
+        "country" : "Burundi",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "Home roasted",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 6,
+            "day" : 18
+        },
+        "originSubmitDate" : "09/01/2020, 15:26",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f5dc18131180b2fdc6461ea"),
+        "isArchived" : false,
+        "country" : "Honduras",
+        "roastingType" : "dark",
+        "processingType" : null,
+        "manufacturer" : "Cogito, Zagreb",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 7,
+            "day" : 13
+        },
+        "originSubmitDate" : "09/13/2020, 08:34",
+        "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e1378beb2131cc3f0cde"),
+        "isArchived" : false,
+        "country" : "Bolivia",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 16
+        },
+        "originSubmitDate" : "09/30/2020, 21:48",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e14e8beb2131cc3f0ce1"),
+        "isArchived" : false,
+        "country" : "Columbia",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "ASDF",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 24
+        },
+        "originSubmitDate" : "09/30/2020, 21:49",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e1678beb2131cc3f0ce4"),
+        "isArchived" : false,
+        "country" : "Venezuela",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 24
+        },
+        "originSubmitDate" : "09/30/2020, 21:49",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e20f8beb2131cc3f0cf2"),
+        "isArchived" : false,
+        "country" : "Bolivia",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "ASDF",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 24
+        },
+        "originSubmitDate" : "09/30/2020, 21:52",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e2288beb2131cc3f0cf5"),
+        "isArchived" : false,
+        "country" : "Venezuela",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "ASDF",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 9
+        },
+        "originSubmitDate" : "09/30/2020, 21:53",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e2778beb2131cc3f0cf8"),
+        "isArchived" : false,
+        "country" : "Bolivia",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "ASDF",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 4
+        },
+        "originSubmitDate" : "09/30/2020, 21:54",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e28b8beb2131cc3f0cfb"),
+        "isArchived" : true,
+        "country" : "Cuba",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "ASDF",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 29
+        },
+        "originSubmitDate" : "09/30/2020, 21:54",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74e2ab8beb2131cc3f0cfe"),
+        "isArchived" : false,
+        "country" : "Cuba",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "JKLČ",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 2
+        },
+        "originSubmitDate" : "09/30/2020, 21:55",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f74fa250062835536ef2d79"),
+        "isArchived" : false,
+        "country" : "Brazil",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "asdfasfa",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 17
+        },
+        "originSubmitDate" : "09/30/2020, 22:35",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f77a9470062835536ef2db2"),
+        "isArchived" : false,
+        "country" : "Brazil",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : null,
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 10,
+            "day" : 1
+        },
+        "originSubmitDate" : "10/02/2020, 23:26",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f78699c0062835536ef2db9"),
+        "isArchived" : true,
+        "country" : "Papua New Guinea",
+        "roastingType" : null,
+        "processingType" : null,
+        "manufacturer" : "mia buva",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 17
+        },
+        "originSubmitDate" : "10/03/2020, 18:55",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f78eec80d811c1eefd881ca"),
+        "isArchived" : true,
+        "country" : "Ecuador",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "asdfasa",
+        "productionDate" : {
+            "year" : 0,
+            "month" : 0,
+            "day" : 0
+        },
+        "originSubmitDate" : "10/03/2020, 22:35",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f79983f4b7268373fe9b067"),
+        "isArchived" : false,
+        "country" : "Burundi",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "new roaster",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 10,
+            "day" : 3
+        },
+        "originSubmitDate" : "10/04/2020, 15:59",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f7a0dd5ecb5265886634714"),
+        "isArchived" : false,
+        "country" : "Jamaica",
+        "roastingType" : "light",
+        "processingType" : null,
+        "manufacturer" : "roaster jamaica",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 9,
+            "day" : 30
+        },
+        "originSubmitDate" : "10/04/2020, 19:00",
+        "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f7a173eb7bf69319863e886"),
+        "isArchived" : false,
+        "country" : "Cuba",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "test03",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 10,
+            "day" : 4
+        },
+        "originSubmitDate" : "10/04/2020, 20:40",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("5f7a1835b7bf69319863e895"),
+        "isArchived" : false,
+        "country" : "Cuba",
+        "roastingType" : "medium",
+        "processingType" : null,
+        "manufacturer" : "asdf",
+        "productionDate" : {
+            "year" : 2020,
+            "month" : 10,
+            "day" : 4
+        },
+        "originSubmitDate" : "10/04/2020, 20:44",
+        "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+        "__v" : 0
+    }
+]

@@ -1,0 +1,80 @@
+#login-wrapper {
+  @extend .user-access-label-font;
+}
+
+#login-wrapper input {
+  @extend .user-access-input-dimensions;
+}
+
+#login-submit-wrapper {
+  clear: both;
+}
+
+#login-modal-title {
+  font-size: 20px;
+}
+
+#forgot-password-navigation {
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #6ba2bb;
+  float: right;
+}
+
+#my-account-header-label {
+  color: white;
+  font-size: 18px;
+}
+
+#my-account-dropdown {
+  position: static;
+}
+
+#logout {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#logout-wrapper {
+  position: absolute;
+  right: 0px;
+  top: 18px;
+  z-index: 100;
+}
+
+#logout-wrapper .dropdown-item:hover {
+  background-color: transparent;
+}
+
+.logo-logged-in {
+  left: 0px !important;
+}
+
+@media (max-width: 767px) {
+  .logout-mobile-container {
+    margin-left: -170px;
+  }
+}
+
+@media (max-width: 530px) {
+  .logout-mobile-container {
+    margin-left: -112px;
+  }
+}
+
+@media (max-width: 415px) {
+  .logout-mobile-container {
+    margin-left: -64px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logout-mobile-container {
+    margin-left: -28px;
+  }
+}

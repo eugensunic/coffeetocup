@@ -1,0 +1,38 @@
+<div *ngIf="!!selectedBrew" class="row">
+  <h4 class="font-lato coffees-main-heading coffee-users-list">Users list</h4>
+  <div class="col-12">
+    <div class="d-block mt-4">
+      <span class="font-lato font-weight-bold user-profile-filtrated-title">Origin &rarr; </span>
+      <span class="user-profile-filtrated-origin font-weight-bold font-lato"> {{ selectedCountry }}</span>
+    </div>
+    <div class="d-block">
+      <span class="font-lato font-weight-bold user-profile-filtrated-title">Brew method &rarr; </span>
+      <span class="user-profile-filtrated-origin font-weight-bold font-lato"> {{ selectedBrew }}</span>
+    </div>
+  </div>
+  <div class="offset-sm-5 offset-md-7 user-origin-search-wrapper-lg">
+    <p class="font-roboto" style="font-size:14px">Search for user within this page</p>
+    <ng-select placeholder="Search user" [items]="users" (change)="onUserSearchBoxChange($event)" value=""
+      style="margin:10px 0px;width: 300px;"></ng-select>
+    <div (click)="onLoad()" class="back-to-default-users">Reset list</div>
+  </div>
+  <div class="col-12">
+    <div class="coffees-back-navigation user-origin-back-to-origin-list">
+      <app-svg-back-to-origin-list (click)="navigateToCountryDisplay()" class="cursor-pointer">
+      </app-svg-back-to-origin-list>
+    </div>
+    <div class="coffees-back-navigation">
+      <app-svg-back-to-brew (click)="navigateToBrewDisplay()" class="cursor-pointer"></app-svg-back-to-brew>
+    </div>
+  </div>
+  <div class="col-12 user-origin-search-wrapper-sm">
+    <p class="font-roboto" style="font-size:14px">Search for user within this page</p>
+    <ng-select placeholder="Select user" [items]="users" (change)="onUserSearchBoxChange($event)" value=""
+      style="margin:10px 0px;width: 100%;">
+    </ng-select>
+    <div (click)="onLoad()" class="back-to-default-users">Reset list</div>
+  </div>
+</div>
+
+<app-user-display [coffeesHtmlView]="coffeesHtmlView" [onUser]="onUser.bind(this)">
+</app-user-display>

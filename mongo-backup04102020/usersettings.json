@@ -1,0 +1,121 @@
+[
+          {
+              "_id" : ObjectId("5c1e43ef4dfdac2903c542eb"),
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5cb63d1a001c0e1795cebacf"),
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5cbc7a4e001c0e1795a2d36e"),
+              "user_FK" : ObjectId("5cbc7a4434a2cfa2965ddf85"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5cd8397416f0597f11a09257"),
+              "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5d2302e68138108549f8d583"),
+              "user_FK" : ObjectId("5d2301400b9db61a83b2ffe8"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5d25aa588138108549bf54fc"),
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5d26090881381085490025bc"),
+              "user_FK" : ObjectId("5d2608ef7eec5a032281dab8"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : null
+          },
+          {
+              "_id" : ObjectId("5d2775738138108549e19458"),
+              "user_FK" : ObjectId("5d2775627eec5a032281dabe"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5d27763d8138108549e21d40"),
+              "user_FK" : ObjectId("5d27762d7eec5a032281dacc"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5d2ca69681381085495ac3dd"),
+              "user_FK" : ObjectId("5d2ca6877eec5a032281dad3"),
+              "__v" : 0,
+              "gdprConfirmed" : true,
+              "originModalConfirmed" : null
+          },
+          {
+              "_id" : ObjectId("5e88d7d61c6d0c10b9c64122"),
+              "user_FK" : ObjectId("5e88d7c55a8478e63a4adfc9"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5ea6f69d0a48c69319269492"),
+              "user_FK" : ObjectId("5e91d29145206735a01cd7a4"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5eaa70620a48c69319bf4861"),
+              "user_FK" : ObjectId("5ea6f616b8438f0ee0df8e04"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5ef08910e2543e9c97747c1f"),
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5f037755a9505fed51b2ee7f"),
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5f1600c1a9505fed51ff9871"),
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          },
+          {
+              "_id" : ObjectId("5f43e9ecc0c5288ff7a23de8"),
+              "user_FK" : ObjectId("5f43e9519fa0a335bceb4718"),
+              "__v" : 0,
+              "gdprConfirmed" : false,
+              "originModalConfirmed" : true
+          }
+      ]

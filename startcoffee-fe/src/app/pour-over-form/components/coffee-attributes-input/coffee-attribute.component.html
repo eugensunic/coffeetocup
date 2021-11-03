@@ -1,0 +1,332 @@
+<div class="row">
+  <div id="attributes-step-container" class="col-md-9 bootstrap-row-padding">
+
+    <!-- attributes change -->
+    <p class="heading-label" style="margin-bottom:0px"
+      [ngStyle]="{'color': clicked && !isFormAttributesValid(this.attributesValid)  ? '#dc3545': '' }">
+      Coffee taste*</p>
+    <p class="font-roboto" style="margin-bottom: 30px;font-size:16px;">rates are within a scale 1-10</p>
+    <div class="row">
+      <!-- lg -->
+      <div class="col-sm-6 d-none d-md-block ">
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 10px;" class="font-roboto">
+              Acidity</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="attributes-acidity" [(ngModel)]="attributes.acidity" (ngModelChange)="onChangeAcidity()"
+              type="number" class="form-control attributes-taste-input" maxlength="2"
+              [ngClass]="{'attributes-input-validation-error':!attributesValid.acidity && clicked }" />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 center d-none d-md-block">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.acidity+'%'"
+            [attr.aria-valuenow]="progress.acidity/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Acidity: '+progress.acidity/10}}
+          </div>
+        </div>
+      </div>
+      <!-- sm -->
+      <p class="col-12 d-md-none font-roboto">Acidity</p>
+      <div class="col-9 d-md-none">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.acidity+'%'"
+            [attr.aria-valuenow]="progress.acidity/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Acidity: '+progress.acidity/10}}</div>
+        </div>
+      </div>
+      <div class="col-3 d-md-none">
+        <input id="attributes-acidity" [(ngModel)]="attributes.acidity" (ngModelChange)="onChangeAcidity()"
+          type="number" class="form-control attributes-taste-input" maxlength="2"
+          [ngClass]="{'attributes-input-validation-error':!attributesValid.acidity && clicked }" />
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- lg -->
+      <div class="col-sm-6 d-none d-md-block">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 10px;" class="font-roboto">Bitterness</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="attributes-bitterness" [(ngModel)]="attributes.bitterness" (ngModelChange)="onChangeBitterness()"
+              type="number" class="form-control attributes-taste-input" maxlength="2"
+              [ngClass]="{'attributes-input-validation-error':!attributesValid.bitterness && clicked }" />
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6 center d-none d-md-block">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.bitterness+'%'"
+            [attr.aria-valuenow]="progress.bitterness/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Bitterness: '+progress.bitterness/10}}</div>
+        </div>
+      </div>
+      <!-- sm -->
+      <p class="col-12 d-md-none font-roboto">Bitterness</p>
+      <div class="col-9 d-md-none">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.bitterness+'%'"
+            [attr.aria-valuenow]="progress.bitterness/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Bitterness: '+progress.bitterness/10}}</div>
+        </div>
+      </div>
+      <div class="col-3 d-md-none">
+        <input id="attributes-bitterness" [(ngModel)]="attributes.bitterness" (ngModelChange)="onChangeBitterness()"
+          type="number" class="form-control attributes-taste-input" maxlength="2"
+          [ngClass]="{'attributes-input-validation-error':!attributesValid.bitterness && clicked }" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!-- lg -->
+      <div class="col-sm-6 d-none d-md-block">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 10px;" class="font-roboto">Sweetness</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="attributes-sweetness" [(ngModel)]="attributes.sweetness" (ngModelChange)="onChangeSweetness()"
+              type="number" class="form-control attributes-taste-input" maxlength="2"
+              [ngClass]="{'attributes-input-validation-error':!attributesValid.sweetness && clicked }" />
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6 center d-none d-md-block">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.sweetness+'%'"
+            [attr.aria-valuenow]="progress.sweetness/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Sweetness: '+progress.sweetness/10}}
+          </div>
+        </div>
+      </div>
+      <!-- sm -->
+      <p class="col-12 d-md-none font-roboto">Sweetness</p>
+      <div class="col-9 d-md-none">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.sweetness+'%'"
+            [attr.aria-valuenow]="progress.sweetness/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Sweetness: '+progress.sweetness/10}}
+          </div>
+        </div>
+      </div>
+      <div class="col-3 d-md-none">
+        <input id="attributes-sweetness" [(ngModel)]="attributes.sweetness" (ngModelChange)="onChangeSweetness()"
+          type="number" class="form-control attributes-taste-input" maxlength="2"
+          [ngClass]="{'attributes-input-validation-error':!attributesValid.sweetness && clicked }" />
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- lg -->
+      <div class="col-sm-6 d-none d-md-block">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 10px;" class="font-roboto"> Intensity</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="attributes-intensity" [(ngModel)]="attributes.intensity" (ngModelChange)="onChangeIntensity()"
+              type="number" class="form-control attributes-taste-input" maxlength="2"
+              [ngClass]="{'attributes-input-validation-error':!attributesValid.intensity && clicked }" />
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6 center d-none d-md-block">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.intensity+'%'"
+            [attr.aria-valuenow]="progress.intensity/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Intensity: '+progress.intensity/10}}
+          </div>
+        </div>
+      </div>
+      <!-- sm -->
+      <p class="col-12 d-md-none font-roboto">Intensity</p>
+      <div class="col-9 d-md-none">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.intensity+'%'"
+            [attr.aria-valuenow]="progress.intensity/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Intensity: '+progress.intensity/10}}
+          </div>
+        </div>
+      </div>
+      <div class="col-3 d-md-none">
+        <input id="attributes-intensity" [(ngModel)]="attributes.intensity" (ngModelChange)="onChangeIntensity()"
+          type="number" class="form-control attributes-taste-input" maxlength="2"
+          [ngClass]="{'attributes-input-validation-error':!attributesValid.intensity && clicked }" />
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- lg -->
+      <div class="col-sm-6 d-none d-md-block">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 10px;" class="font-roboto">Overall rate</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="attributes-overall" [(ngModel)]="attributes.overall" (ngModelChange)="onChangeOverall()"
+              type="number" class="form-control attributes-taste-input" maxlength="2"
+              [ngClass]="{'attributes-input-validation-error':!attributesValid.overall && clicked }" />
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6 center d-none d-md-block">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.overall+'%'"
+            [attr.aria-valuenow]="progress.overall/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Overall: '+progress.overall/10}}
+          </div>
+        </div>
+      </div>
+      <!-- sm -->
+      <p class="col-12 d-md-none font-roboto">Overall</p>
+      <div class="col-9 d-md-none">
+        <div class="progress attributes-progress">
+          <div class="progress-bar attributes-progress-bar" role="progressbar" [style.width]="progress.overall+'%'"
+            [attr.aria-valuenow]="progress.overall/10" aria-valuemin="1" aria-valuemax="10">
+            {{'Overall: '+progress.overall/10}}
+          </div>
+        </div>
+      </div>
+      <div class="col-3 d-md-none">
+        <input id="attributes-overall" [(ngModel)]="attributes.overall" (ngModelChange)="onChangeOverall()"
+          type="number" class="form-control attributes-taste-input" maxlength="2"
+          [ngClass]="{'attributes-input-validation-error':!attributesValid.overall && clicked }" />
+      </div>
+    </div>
+    <br />
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+
+    <p class="heading-label">Coffee taste chart</p>
+    <canvas #donut></canvas>
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+    <!-- flavours change -->
+    <p class="heading-label">Coffee flavours</p>
+    <div class="row">
+      <div class="col-4 text-center">
+        <input id="checkbox-flavour-one" type="checkbox" value="fruity" [(ngModel)]="flavour.fruity"
+          class="form-checkbox" (ngModelChange)="onFlavourChangeFruity($event)" />
+        <label for="checkbox-flavour-one" class="attributes-flavor-label font-roboto">Fruity</label>
+      </div>
+      <div class="col-4 text-center">
+        <input id="checkbox-flavour-two" type="checkbox" value="nutty" [(ngModel)]="flavour.nutty" class="form-checkbox"
+          (ngModelChange)="onFlavourChangeNutty($event)" />
+        <label for="checkbox-flavour-two" class="attributes-flavor-label font-roboto">Nutty</label>
+      </div>
+      <div class="col-4 text-center">
+        <input id="checkbox-flavour-five" type="checkbox" value="floral" [(ngModel)]="flavour.floral"
+          class="form-checkbox" (ngModelChange)="onFlavourChangeFloral($event)" />
+        <label for="checkbox-flavour-five" class="attributes-flavor-label font-roboto">Floral</label>
+      </div>
+      <div class="col-6 text-center">
+        <input id="checkbox-flavour-three" type="checkbox" value="choco" [(ngModel)]="flavour.choco"
+          class="form-checkbox" (ngModelChange)="onFlavourChangeChoco($event)" />
+        <label for="checkbox-flavour-three" class="attributes-flavor-label font-roboto">Choco</label>
+      </div>
+      <div class="col-6 text-center">
+        <input id="checkbox-flavour-four" type="checkbox" value="caramel" [(ngModel)]="flavour.caramel"
+          class="form-checkbox" (ngModelChange)="onFlavourChangeCaramel($event)" />
+        <label for="checkbox-flavour-four" class="attributes-flavor-label font-roboto">Caramel</label>
+      </div>
+    </div>
+
+    <app-svg-horizontal-line></app-svg-horizontal-line>
+
+    <!-- extraction change 3 radio EXCLUDED FOR NOW -->
+    <!-- <p>Extraction</p> -->
+    <!-- <div class="row bootstrap-row-padding">
+      <div class="col-sm-4">
+        <input type="radio" id="under-extracted" class="form-radio" value="under-extracted" (click)="extractionTypeRadio='under-extracted'"
+          (change)="onExtractedChange($event)" [checked]="extractionTypeRadio==='under-extracted'" name="under-extracted">
+        <label for="under-extracted"> under extracted</label>
+      </div>
+
+      <div class="col-sm-4">
+        <input type="radio" id="perfectly-extracted" class="form-radio" value="perfectly-extracted" (click)="extractionTypeRadio='perfectly-extracted'"
+          (change)="onExtractedChange($event)" [checked]="extractionTypeRadio==='perfectly-extracted'" name="perfectly-extracted">
+        <label for="perfectly-extracted"> perfectly extracted</label>
+      </div>
+
+      <div class="col-sm-4">
+        <input type="radio" id="over-extracted" class="form-radio" value="over-extracted" (click)="extractionTypeRadio='over-extracted'"
+          (change)="onExtractedChange($event)" [checked]="extractionTypeRadio==='over-extracted'" name="over-extracted">
+        <label for="over-extracted"> over extracted</label>
+      </div>
+    </div> -->
+    <div class="row">
+      <div id="comment-container" class="col-sm-9">
+        <label for="comment-attributes-lg" class="heading-label">Comments</label>
+        <textarea id="comment-attributes-lg" class="form-control attributes-comment-section" rows="5"
+          [(ngModel)]="textAreaCommentLg" (ngModelChange)="changeTextAreaLg()" value="" maxlength="500"></textarea>
+      </div>
+    </div>
+    <button id="attributes-submit-form-button" (click)="submitForm()" [disabled]="disableSubmitButton">Submit</button>
+  </div>
+
+  <!-- ---------------------------------------- -->
+  <!-- Results section -->
+  <div id="pour-over-results-container" class="col-md-3">
+    <h5 class="font-lato" style="font-size:18px">You added at previous step</h5>
+    <ul class="list-group">
+      <li class="list-group-item font-roboto" style="background:#F6F5F3">
+        <span class="font-weight-bold">Origin: </span><span>{{coffeeInMaking.country}}</span>
+        <br>
+        <span class="font-weight-bold">Roasting: </span><span>{{coffeeInMaking.roastingType}}</span>
+        <br>
+        <span class="font-weight-bold">Date of roasting:
+        </span><span>{{coffeeInMaking.productionDate?.month+'/'+coffeeInMaking.productionDate?.day+'/'+coffeeInMaking.productionDate?.year}}</span>
+        <p></p>
+        <span class="font-weight-bold">Brew method: </span><span>{{coffeeInMaking.brewMethodType}}</span>
+        <br>
+        <span class="font-weight-bold">Grinding: </span><span>{{coffeeInMaking.grindType}}</span>
+        <br>
+        <span class="font-weight-bold">Ratio: </span><span>{{coffeeInMaking.ratio+":1"}}</span>
+        <br>
+        <span class="font-weight-bold">Brewing time: </span>
+        <span *ngIf="!coffeeInMaking.brewTime">N/A</span>
+        <span *ngIf="coffeeInMaking.brewTime">
+          {{brewTimeValue.minute+ ":" +brewTimeValue.second + ' minutes'}}
+        </span>
+      </li>
+    </ul>
+    <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length!==0">
+      <ul class="list-group">
+        <h5 class="font-lato" style="font-size:18px">Used brewing measures</h5>
+        <p id="attributes-from-country-text"> From {{coffeeInMaking.country}}
+        </p>
+        <li *ngFor="let item of coffeeOriginJson; let i=index;" class="list-group-item font-roboto"
+          style="background:#F6F5F3">
+          <span class="font-weight-bold">Brew method: </span><span>{{item.brewMethod}}</span>
+          <br>
+          <span class="font-weight-bold">Grinding: </span><span>{{item.grindType}}</span>
+          <br>
+          <span class="font-weight-bold">Ratio: </span><span>{{item.ratio?.ratio +":1"}}</span>
+          <br>
+          <span class="font-weight-bold">Brewing time: </span>
+          <span>{{item.brewTime?.minute+":"+item.brewTime?.second}}</span>
+          <br>
+        </li>
+      </ul>
+    </ng-container>
+
+    <ng-container *ngIf="coffeeOriginJson && coffeeOriginJson.length===0">
+      <p class="text-center">No matching items!</p>
+      <p class="text-center">The list of used brewing measurements for origin you’re adding will appear here.</p>
+    </ng-container>
+  </div>
+</div>

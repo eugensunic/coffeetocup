@@ -1,0 +1,110 @@
+<!-- ------------------------------LG,XL--------------------------------- -->
+<div class="d-none d-md-flex row">
+  <table *ngIf="coffeesHtmlView" class="table">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 30px;">#</th>
+        <th scope="col" style="width: 100px;">Username</th>
+        <th scope="col" (click)="sortTotalCoffees()" style="width: 100px;" class="cursor-pointer th-green-text">Coffees
+          <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortTotalCoffeesFlag ">
+          </app-sorting-wrapper>
+        </th>
+        <th scope="col" style="width: 100px;">Brews</th>
+        <th scope="col" (click)="sortAvgOverallRating()" style="width: 100px;" class="cursor-pointer th-green-text">
+          Avg. rate
+          <app-sorting-wrapper [showWrapper]="showAvgOverallSortingWrapper" [isDescSort]="sortFilteredAvgOverall">
+          </app-sorting-wrapper>
+        </th>
+        <th scope="col" (click)="sortOriginSubmitDate()" style="width: 100px;" class="cursor-pointer th-green-text">
+          Submit date
+          <app-sorting-wrapper [showWrapper]="showOriginSubmitDateSortingWrapper"
+            [isDescSort]="sortOriginSubmitDateFlag">
+          </app-sorting-wrapper>
+        </th>
+      </tr>
+    </thead>
+    <tbody *ngIf="coffeesHtmlView.length">
+      <ng-container *ngFor="let item of coffeesHtmlView; let i = index">
+        <tr>
+          <td>{{ i + 1 + '.' }}</td>
+          <td (click)="onUser(item.username)" class="username-value">
+            {{item.username? item.username:'Not defined'}}
+          </td>
+          <td>{{ item.totalCoffees.amount }}</td>
+          <td>{{ item.totalBrews.amount }}</td>
+          <td>
+            <app-ngbd-rating [ratingValue]="item.avgOverall">
+            </app-ngbd-rating>
+          </td>
+          <td>{{ item.lastSubmittedCoffee }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+    <tbody *ngIf="!coffeesHtmlView.length">
+      <tr>
+        <td colspan="6" class="not-added-text "> Selected user has no data</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- ------------------------------SM,XS--------------------------------- -->
+<div class="d-md-none">
+  <div class="grid-sorting-wrapper">
+    <h6 class="d-inline">Sort by:</h6>
+    <div class="grid-sorting-list">
+      <span #sortByCoffee (click)="sortTotalCoffees()">Coffees
+        <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortTotalCoffeesFlag">
+        </app-sorting-wrapper>
+      </span>
+      <span #sortByRating (click)="sortAvgOverallRating()">Avg.rate
+        <app-sorting-wrapper [showWrapper]="showAvgOverallSortingWrapper" [isDescSort]="sortFilteredAvgOverall">
+        </app-sorting-wrapper>
+      </span>
+      <span #sortByDate (click)="sortOriginSubmitDate()">Submit date
+        <app-sorting-wrapper [showWrapper]="showOriginSubmitDateSortingWrapper" [isDescSort]="sortOriginSubmitDateFlag">
+        </app-sorting-wrapper>
+      </span>
+    </div>
+  </div>
+  <ng-container *ngIf="coffeesHtmlView">
+    <div *ngIf="coffeesHtmlView.length">
+      <div class="coffees-grid-list-wrapper item-card" *ngFor="let item of coffeesHtmlView; let i = index">
+        <div class="span-2-column font-weight-bold">
+          <span>{{ i + 1 + '.' }}</span>
+          <span (click)="onUser(item.username)" class="username-value">
+            {{item.username? item.username:'Not defined'}}
+          </span>
+        </div>
+
+        <div class="margin-left-vertical-align">
+          <span class="font-weight-bold">Coffees: </span>
+          <span>{{ item.totalCoffees.amount }}</span>
+        </div>
+
+        <div class="text-center">
+          <span class="font-weight-bold">Brews: </span>
+          <span>{{ item.totalBrews.amount }}</span>
+        </div>
+
+
+        <div class="margin-left-vertical-align d-flex">
+          <span class="font-weight-bold">Avg. rate: </span>
+          <span class="d-flex justify-content-center ml-1" style="position: relative;top: 3px;">
+            <app-ngbd-rating [ratingValue]="item.avgOverall">
+            </app-ngbd-rating>
+          </span>
+        </div>
+
+        <div class="text-center">
+          <span class="font-weight-bold d-block">Submit date: </span>
+          <span class="d-block"> {{ item.lastSubmittedCoffee }}</span>
+        </div>
+
+      </div>
+    </div>
+    <div *ngIf="!coffeesHtmlView.length" class="text-center font-roboto opacity-2"
+      style="font-size: 25px;letter-spacing: 9px;">
+      Selected user has no data
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,135 @@
+#community-general-statistics-white-border {
+  border: 2px solid #be8a3c;
+  margin-bottom: 23px;
+  margin-top: 23px;
+  background: #be8a3c;
+}
+
+#community-heading {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 23px;
+  font-family: $font-lato;
+}
+
+#community-statistics-content {
+  display: grid;
+  grid-template-columns: 340px auto;
+}
+#community-statistics-content p:nth-child(odd) {
+  font-size: 14px;
+}
+#community-statistics-content p:nth-child(even) {
+  font-weight: bold;
+}
+
+#community-user-search-box {
+  width: 300px;
+  margin-left: '60px';
+  margin-top: '30px';
+}
+
+.user-search-box {
+  width: 300px;
+}
+
+#community-introduction-text {
+  line-height: 30px;
+  margin-top: 30px;
+  font-family: $font-roboto;
+  font-size: 16px;
+  text-align: left;
+}
+
+//links
+.community-general-statistics,
+.community-most-coffees,
+.community-most-brews {
+  margin-bottom: 12px;
+  display: block;
+  text-decoration: underline;
+  border-bottom: 0px;
+  cursor: pointer;
+  font-family: $font-lato;
+  font-size: 16px;
+}
+#community-coffees-table th,
+#community-coffees-table td {
+  height: auto !important;
+}
+
+#community-brews-table th,
+#community-brews-table td {
+  height: auto !important;
+}
+
+#general-statistics-heading,
+#most-brews-heading,
+#most-coffees-heading {
+  font-family: $font-lato;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .user-search-box {
+    width: 250px;
+  }
+  #community-heading {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  #community-statistics-content {
+    grid-template-columns: auto auto;
+  }
+}
+
+// MOBILE VIEW BEGIN
+@media screen and (max-width: 575px) {
+  .user-search-box {
+    width: 100%;
+  }
+
+  #community-user-search-box {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #community-heading {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  #community-introduction-text {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+
+  .community-links {
+    margin-top: 50px;
+  }
+
+  .community-links > div:first-child {
+    display: flex;
+    background: $white-background-color;
+  }
+
+  .community-general-statistics,
+  .community-most-coffees,
+  .community-most-brews {
+    padding-left: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: $main-green-text-color;
+  }
+
+  #general-statistics-heading,
+  #most-brews-heading,
+  #most-coffees-heading {
+    margin-top: 20px;
+  }
+}

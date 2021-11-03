@@ -1,0 +1,245 @@
+#brew-step-container {
+  padding: 0px;
+  border-top: 3px solid $coffee-steps-border-container-color;
+  border-right: 3px solid $coffee-steps-border-container-color;
+}
+
+// method
+#brew-method-wrapper {
+  margin-bottom: 10px;
+}
+
+.brew-method-label {
+  position: relative;
+  font-size: 16px;
+  font-family: $font-roboto;
+  left: 10px;
+  top: 1px;
+}
+
+.brew-other-methods-tooltip {
+  position: absolute;
+  right: -22px;
+  top: 3px;
+}
+
+// grinding
+#brew-grinding-wrapper {
+  margin-bottom: 45px;
+}
+
+#brew-grinding-wrapper div:nth-child(2n) {
+  position: relative;
+  top: -15px;
+}
+
+#brew-grinding-text-fine {
+  position: absolute;
+  bottom: -20px;
+  left: 42%;
+  z-index: 1000;
+}
+
+#brew-grinding-text-medium-fine {
+  position: absolute;
+  bottom: -36px;
+  left: 29%;
+  z-index: 1000;
+}
+
+#brew-grinding-text-medium {
+  position: absolute;
+  bottom: -20px;
+  left: 38%;
+  z-index: 1000;
+}
+
+#brew-grinding-text-medium-coarse {
+  position: absolute;
+  bottom: -36px;
+  left: 26%;
+  z-index: 1000;
+}
+
+#brew-grinding-text-coarse {
+  position: absolute;
+  bottom: -20px;
+  left: 42%;
+  z-index: 1000;
+}
+
+// ratio
+.brew-ratio-tooltip {
+  cursor: pointer;
+}
+
+.brew-ratio {
+  width: 48px;
+  height: 48px;
+  padding: 5px 5px;
+  margin-right: 10px;
+}
+
+#brew-coffee-ratio {
+  margin-right: 60px;
+}
+
+#brew-coffee-water-calculation-wrapper {
+  margin-top: 15px;
+}
+
+#brew-calculated-ratio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 30;
+  text-align: center;
+}
+
+// time
+#brew-time-wrapper {
+  padding-left: 100px;
+}
+
+#brew-time-wrapper .btn-link {
+  color: green !important;
+}
+
+#brew-next-button {
+  width: 120px;
+  height: 40px;
+  background: #002147;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  border-radius: 9px;
+  border-color: white;
+  margin-right: 15px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-family: $font-sanspro;
+  cursor: pointer;
+}
+
+// comments
+#brew-svg-comments-icon-holder {
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+// results
+#brew-from-country-text {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: $font-roboto;
+  margin-left: 23px;
+}
+
+// MOBILE VIEW BEGIN
+
+@media screen and (max-width: 767px) {
+  #brew-grinding-wrapper div:nth-child(2n) {
+    position: relative;
+    top: 0px;
+  }
+
+  #brew-grinding-wrapper div {
+    padding: 20px;
+  }
+
+  #brew-grinding-text-fine {
+    margin-left: 35px;
+  }
+
+  #brew-grinding-text-medium-fine {
+    margin-left: 6px;
+  }
+
+  #brew-grinding-text-medium {
+    margin-left: 23px;
+  }
+
+  #brew-grinding-text-medium-coarse {
+    margin-left: 20px;
+  }
+
+  #brew-grinding-text-coarse {
+    margin-left: 23px;
+  }
+
+  #brew-coffee-ratio {
+    margin-right: 30px;
+  }
+  #brew-step-container {
+    border-top: 0px solid $coffee-steps-border-container-color;
+    border-right: 0px solid $coffee-steps-border-container-color;
+  }
+
+  #brew-grinding-text-fine {
+    position: absolute;
+    bottom: -20px;
+    left: 27%;
+    z-index: 1000;
+  }
+
+  #brew-grinding-text-medium-fine {
+    position: absolute;
+    bottom: -36px;
+    left: 26%;
+    z-index: 1000;
+  }
+
+  #brew-grinding-text-medium {
+    position: absolute;
+    bottom: -20px;
+    left: 26%;
+    z-index: 1000;
+  }
+
+  #brew-grinding-text-medium-coarse {
+    position: absolute;
+    bottom: -36px;
+    left: 15%;
+    z-index: 1000;
+  }
+
+  #brew-grinding-text-coarse {
+    position: absolute;
+    bottom: -20px;
+    left: 29%;
+    z-index: 1000;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #brew-next-button {
+    float: right;
+    top: 10px;
+    position: relative;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #brew-ratio-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #brew-coffee-water-calculation-wrapper {
+    text-align: center;
+  }
+
+  #brew-calculated-ratio {
+    position: relative;
+    left: -20px;
+  }
+}
+
+// MOBILE VIEW END

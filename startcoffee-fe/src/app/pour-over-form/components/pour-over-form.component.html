@@ -1,0 +1,40 @@
+<!--Stepper-->
+<app-stepper></app-stepper>
+
+<div id="coffee-guidelines-txt" (click)="myFunc()" class="row">
+  <app-svg-guidelines-down *ngIf="!toggle"></app-svg-guidelines-down>
+  <app-svg-guidelines-up *ngIf="toggle"></app-svg-guidelines-up>
+</div>
+
+
+<div *ngIf="toggle">
+  <div class="card card-body mb-2 font-roboto">
+    <!--origin -->
+    <ul *ngIf="stepIndex===0">
+      <li>Only single origin coffees can be entered</li>
+      <li>All the comments added at the bottom will be saved throughout steps</li>
+      <li>Side bar—recently added coffees will appear</li>
+      <li>Filling all 3 steps shouldn’t take more than 1 minute </li>
+      <li>All 3 steps should be completed to add coffees and brews to the site</li>
+    </ul>
+    <!--brewing-->
+    <ul *ngIf="stepIndex===1">
+      <li>Enter the info related to pour over brewing process</li>
+      <li>Use a scale and timer to get more precise data</li>
+      <li>To select grinding, click on one of the grinding images</li>
+      <li>Ratio calculation formula is: water (grams)/coffee (grams)</li>
+      <li>Time is shown in format minutes:seconds</li>
+      <li>Adding, editing, or deleting comments is available on every step</li>
+    </ul>
+    <!--attributes-->
+    <ul *ngIf="stepIndex===2">
+      <li>Try your coffee straight, without dairy or added sugar</li>
+      <li>Rating is within scale 1-10 (1 low, 10 high)</li>
+      <li>If you recognize additional flavors mark the appropriate checkbox</li>
+      <li>Once you’re done click “Submit” and save your data to your profile</li>
+    </ul>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

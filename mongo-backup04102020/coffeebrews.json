@@ -1,0 +1,2563 @@
+[
+          {
+              "_id" : ObjectId("5c4de6e05c4c6326e4307d49"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "11.0",
+                  "coffeeNumerator" : "20",
+                  "waterDenominator" : "220"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:13",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4de6705c4c6326e4307d46"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4de8365c4c6326e4307d4b"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:19",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4de6705c4c6326e4307d46"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4deba85c4c6326e4307d4d"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : "14.7",
+                  "coffeeNumerator" : "17",
+                  "waterDenominator" : "250"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "00"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:33",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4de6705c4c6326e4307d46"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4ded945c4c6326e4307d50"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : "11.5",
+                  "coffeeNumerator" : "20",
+                  "waterDenominator" : "230"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:41",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4ded945c4c6326e4307d4f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4dee175c4c6326e4307d52"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "14.0",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "210"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "00"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:44",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4ded945c4c6326e4307d4f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4def335c4c6326e4307d54"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "12.0",
+                  "coffeeNumerator" : "20",
+                  "waterDenominator" : "240"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "38"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:47",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4ded945c4c6326e4307d4f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df0cc5c4c6326e4307d57"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "11.0",
+                  "coffeeNumerator" : "20",
+                  "waterDenominator" : "220"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:54",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df0cc5c4c6326e4307d56"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df1595c4c6326e4307d59"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "01/27/2019, 18:57",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df0cc5c4c6326e4307d56"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df45e5c4c6326e4307d61"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "50"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:11",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df4085c4c6326e4307d5e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df51c5c4c6326e4307d63"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:12",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df4085c4c6326e4307d5e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df5885c4c6326e4307d65"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "10"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:16",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df4085c4c6326e4307d5e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df63a5c4c6326e4307d67"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "15.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "230"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "40"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:18",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df4085c4c6326e4307d5e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df6bb5c4c6326e4307d69"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "14.7",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "220"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:20",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df4085c4c6326e4307d5e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4df8745c4c6326e4307d6f"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "40"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:28",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df8735c4c6326e4307d6e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4dfa8b5c4c6326e4307d71"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:36",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df8735c4c6326e4307d6e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4dfcc65c4c6326e4307d73"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : "15.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "230"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "17"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:46",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df8735c4c6326e4307d6e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4dfdba5c4c6326e4307d76"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "15.4",
+                  "coffeeNumerator" : "13",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "41"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:49",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4dfe3e5c4c6326e4307d78"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "55"
+              },
+              "brewSubmitDate" : "01/27/2019, 19:52",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4e21cecb804718e4329646"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "15.4",
+                  "coffeeNumerator" : "13",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "10"
+              },
+              "brewSubmitDate" : "01/27/2019, 22:24",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4e22dccb804718e4329648"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "55"
+              },
+              "brewSubmitDate" : "01/27/2019, 22:27",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4e2374cb804718e432964a"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : "15.4",
+                  "coffeeNumerator" : "13",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "01/27/2019, 22:31",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4dfdba5c4c6326e4307d75"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4e24e8cb804718e432964e"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "14.7",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "220"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "25"
+              },
+              "brewSubmitDate" : "01/27/2019, 22:38",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4df8735c4c6326e4307d6e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c4e2829cb804718e4329659"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : "13.3",
+                  "coffeeNumerator" : "15",
+                  "waterDenominator" : "200"
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "00"
+              },
+              "brewSubmitDate" : "01/27/2019, 22:51",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c4e2829cb804718e4329658"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c63ed2b8fdf5d3270956dae"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 14.3,
+                  "coffeeNumerator" : 14,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "50"
+              },
+              "brewSubmitDate" : "02/13/2019, 11:08",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c6403a58fdf5d3270956db3"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15.6,
+                  "coffeeNumerator" : 18,
+                  "waterDenominator" : 280
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "20"
+              },
+              "brewSubmitDate" : "02/13/2019, 12:43",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c65204e0757291e107396c5"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 16.7,
+                  "coffeeNumerator" : 18,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "02/14/2019, 08:57",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c6546e90757291e107396c8"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 15,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "02/14/2019, 11:40",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c6546e90757291e107396c7"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c66730b0b555a29b426a07e"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 13,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 260
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "10"
+              },
+              "brewSubmitDate" : "02/15/2019, 09:02",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c6962cec830700b9c17e8c6"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "25"
+              },
+              "brewSubmitDate" : "02/17/2019, 14:26",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c63ed2a8fdf5d3270956dad"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c6bd988cdbe7e19ec8ead5f"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "02/19/2019, 11:21",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c6546e90757291e107396c7"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c6be544cdbe7e19ec8ead61"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "20"
+              },
+              "brewSubmitDate" : "02/19/2019, 12:13",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c6546e90757291e107396c7"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c72be1529453a1670843369"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 16.7,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "10"
+              },
+              "brewSubmitDate" : "02/24/2019, 16:50",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c716cf0756a5742f487dc73"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c73a35929453a167084336b"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 13.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "50"
+              },
+              "brewSubmitDate" : "02/25/2019, 09:06",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c716cf0756a5742f487dc73"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c75118c97e19109c86042bf"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 20,
+                  "coffeeNumerator" : 10,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "10"
+              },
+              "brewSubmitDate" : "02/26/2019, 11:09",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c716cf0756a5742f487dc73"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c83b478d0f48430587a24c3"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15.4,
+                  "coffeeNumerator" : 13,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "07"
+              },
+              "brewSubmitDate" : "03/09/2019, 13:39",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c716cf0756a5742f487dc73"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5c979d0835365e3600772992"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 15,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 225
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "03/24/2019, 16:03",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c979d0835365e3600772991"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5cbaf265228e8f3e7419af08"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 16.9,
+                  "coffeeNumerator" : 13,
+                  "waterDenominator" : 220
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "04/20/2019, 12:18",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5c979d0835365e3600772991"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5cbc7a6a34a2cfa2965ddf87"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "04/21/2019, 16:12",
+              "user_FK" : ObjectId("5cbc7a4434a2cfa2965ddf85"),
+              "coffeeOrigin_FK" : ObjectId("5cbc7a6a34a2cfa2965ddf86"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5cbc7b1934a2cfa2965ddf8a"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "04/21/2019, 16:15",
+              "user_FK" : ObjectId("5cbc7a4434a2cfa2965ddf85"),
+              "coffeeOrigin_FK" : ObjectId("5cbc7b1934a2cfa2965ddf89"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5cdd45ced90c0f2f98a4951e"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15.6,
+                  "coffeeNumerator" : 16,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "40"
+              },
+              "brewSubmitDate" : "05/16/2019, 13:12",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5cdd45ced90c0f2f98a4951d"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2304ba0b9db61a83b2ffea"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "07/08/2019, 10:46",
+              "user_FK" : ObjectId("5d2301400b9db61a83b2ffe8"),
+              "coffeeOrigin_FK" : ObjectId("5d2304ba0b9db61a83b2ffe9"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d25abd17eec5a032281daa5"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 11.5,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 230
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "07/10/2019, 11:10",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d25abd17eec5a032281daa4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d25ac8a7eec5a032281daa7"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 11,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 220
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "07/10/2019, 11:14",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d25abd17eec5a032281daa4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2601e77eec5a032281daa9"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 13.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:16",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d25abd17eec5a032281daa4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2603077eec5a032281daac"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15.4,
+                  "coffeeNumerator" : 13,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "41"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:22",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d2603077eec5a032281daab"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d26056f7eec5a032281daae"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 13.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "55"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:32",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d2603077eec5a032281daab"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2606107eec5a032281dab1"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 13.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "15"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:36",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d26060f7eec5a032281dab0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2607ad7eec5a032281dab4"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 13.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "02"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:43",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d2607ad7eec5a032281dab3"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2607c87eec5a032281dab6"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "02"
+              },
+              "brewSubmitDate" : "07/10/2019, 17:43",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d2607ad7eec5a032281dab3"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d2850d97eec5a032281dace"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 3,
+                  "coffeeNumerator" : 25,
+                  "waterDenominator" : 75
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "00",
+                  "second" : "57"
+              },
+              "brewSubmitDate" : "07/12/2019, 11:19",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d2850d87eec5a032281dacd"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5d285d447eec5a032281dad1"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1.7,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 25
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "07"
+              },
+              "brewSubmitDate" : "07/12/2019, 12:13",
+              "user_FK" : ObjectId("5d25aa207eec5a032281daa3"),
+              "coffeeOrigin_FK" : ObjectId("5d285d447eec5a032281dad0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5e9c406ac87cd12170c0e3b3"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 14,
+                  "coffeeNumerator" : 25,
+                  "waterDenominator" : 350
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "03"
+              },
+              "brewSubmitDate" : "04/19/2020, 14:12",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5e9c406ac87cd12170c0e3b2"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5ebecde4b946c51a18f556b5"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 16.7,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "55"
+              },
+              "brewSubmitDate" : "05/15/2020, 19:13",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5ebecde4b946c51a18f556b4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5ec0fc7c8c81ab0ab031f84c"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 12.5,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "55"
+              },
+              "brewSubmitDate" : "05/17/2020, 10:56",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5ebecde4b946c51a18f556b4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5ee1f3575938412894c8fb7e"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 4.3,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 150
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "06/11/2020, 11:03",
+              "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+              "coffeeOrigin_FK" : ObjectId("5ee1f2995938412894c8fb7b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5ee1f3915938412894c8fb80"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 6.3,
+                  "coffeeNumerator" : 64,
+                  "waterDenominator" : 400
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "00"
+              },
+              "brewSubmitDate" : "06/11/2020, 11:04",
+              "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+              "coffeeOrigin_FK" : ObjectId("5ee1f2995938412894c8fb7b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5ee1f3d95938412894c8fb82"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 11.4,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 400
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "00"
+              },
+              "brewSubmitDate" : "06/11/2020, 11:05",
+              "user_FK" : ObjectId("5cd83963278bf23aa4741731"),
+              "coffeeOrigin_FK" : ObjectId("5ee1f2995938412894c8fb7b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f3f95bf43a0d723c4876830"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 15.8,
+                  "coffeeNumerator" : 19,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "40"
+              },
+              "brewSubmitDate" : "08/21/2020, 11:32",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f3f95bf43a0d723c487682f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f40d0e820fc3e1aa89a0a72"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 13.5,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 270
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "25"
+              },
+              "brewSubmitDate" : "08/22/2020, 09:59",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f3f95bf43a0d723c487682f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f44d92bc30d7b1f8823bf50"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15.4,
+                  "coffeeNumerator" : 13,
+                  "waterDenominator" : 200
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "12"
+              },
+              "brewSubmitDate" : "08/25/2020, 11:22",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f3f95bf43a0d723c487682f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46103ecef3f03280dad0e1"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 20,
+                  "coffeeNumerator" : 25,
+                  "waterDenominator" : 500
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "59"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:32",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46108fcef3f03280dad0e3"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 24,
+                  "coffeeNumerator" : 25,
+                  "waterDenominator" : 600
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:34",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46111dcef3f03280dad0e5"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 65,
+                  "waterDenominator" : 650
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:36",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4613d7cef3f03280dad0e7"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 19.2,
+                  "coffeeNumerator" : 52,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:48",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461402cef3f03280dad0e9"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 17.1,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 600
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:48",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461421cef3f03280dad0eb"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 350
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:49",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46144bcef3f03280dad0ed"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 350
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:50",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46146ccef3f03280dad0ef"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 2.8,
+                  "coffeeNumerator" : 354,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 09:51",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f46103ecef3f03280dad0e0"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461abbcef3f03280dad0f2"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 100,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 3500
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:17",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461af0cef3f03280dad0f4"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 20,
+                  "coffeeNumerator" : 50,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:18",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461cc0cef3f03280dad0f6"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 17.1,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 600
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:26",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461ceecef3f03280dad0f8"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 90,
+                  "waterDenominator" : 900
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:27",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461d0ccef3f03280dad0fa"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 28.6,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:27",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461d25cef3f03280dad0fc"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 18.1,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 635
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:28",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f461d42cef3f03280dad0fe"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 2.8,
+                  "coffeeNumerator" : 356,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:28",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f461abbcef3f03280dad0f1"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f462471cef3f03280dad101"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 28.6,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:59",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462470cef3f03280dad100"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46248ccef3f03280dad103"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 100.3,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 3510
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 10:59",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462470cef3f03280dad100"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4624b5cef3f03280dad105"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 11.1,
+                  "coffeeNumerator" : 45,
+                  "waterDenominator" : 500
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:00",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462470cef3f03280dad100"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4624d5cef3f03280dad107"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 104.4,
+                  "coffeeNumerator" : 35,
+                  "waterDenominator" : 3654
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:00",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462470cef3f03280dad100"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4624fecef3f03280dad109"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 8,
+                  "waterDenominator" : 8
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:01",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462470cef3f03280dad100"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f462539cef3f03280dad10c"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 45,
+                  "waterDenominator" : 450
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:02",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462538cef3f03280dad10b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f462562cef3f03280dad10e"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 10,
+                  "coffeeNumerator" : 45,
+                  "waterDenominator" : 450
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:03",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462538cef3f03280dad10b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f46257bcef3f03280dad110"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 43.3,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 650
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:03",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462538cef3f03280dad10b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f462595cef3f03280dad112"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 12.5,
+                  "coffeeNumerator" : 45,
+                  "waterDenominator" : 562
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:04",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462538cef3f03280dad10b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4625b3cef3f03280dad114"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 34,
+                  "coffeeNumerator" : 15,
+                  "waterDenominator" : 510
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/26/2020, 11:04",
+              "user_FK" : ObjectId("5f15ffaacaff7f1d5caa1504"),
+              "coffeeOrigin_FK" : ObjectId("5f462538cef3f03280dad10b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a850e46b88310ec371057"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1.9,
+                  "coffeeNumerator" : 80,
+                  "waterDenominator" : 150
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "59"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:40",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a850d46b88310ec371056"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a855f46b88310ec371059"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1.8,
+                  "coffeeNumerator" : 90,
+                  "waterDenominator" : 160
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:41",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a850d46b88310ec371056"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a86c446b88310ec37105c"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 3.2,
+                  "coffeeNumerator" : 50,
+                  "waterDenominator" : 160
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:47",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a86c346b88310ec37105b"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a874d46b88310ec37105f"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 1.8,
+                  "coffeeNumerator" : 100,
+                  "waterDenominator" : 180
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:50",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a874d46b88310ec37105e"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a879346b88310ec371062"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 16.7,
+                  "coffeeNumerator" : 18,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:51",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a879246b88310ec371061"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a87ea46b88310ec371065"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 17.5,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 350
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 18:52",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a87ea46b88310ec371064"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a8a8646b88310ec371067"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 12.5,
+                  "coffeeNumerator" : 80,
+                  "waterDenominator" : 1000
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "08/29/2020, 19:03",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a87ea46b88310ec371064"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f4a8b4746b88310ec371069"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 1.5,
+                  "coffeeNumerator" : 198,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "01",
+                  "minute" : "06",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "08/29/2020, 19:06",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a87ea46b88310ec371064"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f54f65650777323104cd74b"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "09/06/2020, 16:46",
+              "user_FK" : ObjectId("5ef07ee2a1059b3814c4a290"),
+              "coffeeOrigin_FK" : ObjectId("5f4a87ea46b88310ec371064"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f5c747cc3d0921aa478dacf"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 13.9,
+                  "coffeeNumerator" : 18,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "30"
+              },
+              "brewSubmitDate" : "09/12/2020, 09:07",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f3f95bf43a0d723c487682f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f5dafe831180b2fdc6461e8"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 15,
+                  "coffeeNumerator" : 20,
+                  "waterDenominator" : 300
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "45"
+              },
+              "brewSubmitDate" : "09/13/2020, 07:33",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f3f95bf43a0d723c487682f"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f5dc18131180b2fdc6461eb"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 13.9,
+                  "coffeeNumerator" : 18,
+                  "waterDenominator" : 250
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "35"
+              },
+              "brewSubmitDate" : "09/13/2020, 08:46",
+              "user_FK" : ObjectId("5beb544fc056dd327877e25a"),
+              "coffeeOrigin_FK" : ObjectId("5f5dc18131180b2fdc6461ea"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e1378beb2131cc3f0cdf"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "03",
+                  "second" : "02"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:49",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1378beb2131cc3f0cde"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e1678beb2131cc3f0ce5"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:49",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1678beb2131cc3f0ce4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e17a8beb2131cc3f0ce7"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:50",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1678beb2131cc3f0ce4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e18e8beb2131cc3f0ce9"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 7,
+                  "waterDenominator" : 7
+              },
+              "brewTime" : {
+                  "hour" : "01",
+                  "minute" : "17",
+                  "second" : "07"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:50",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1378beb2131cc3f0cde"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e1b98beb2131cc3f0ceb"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "55",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:51",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1378beb2131cc3f0cde"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e1d48beb2131cc3f0ced"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "55",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:51",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e1678beb2131cc3f0ce4"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e2108beb2131cc3f0cf3"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:52",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e20f8beb2131cc3f0cf2"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e2288beb2131cc3f0cf6"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 2,
+                  "waterDenominator" : 2
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "02"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:53",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2288beb2131cc3f0cf5"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e2d88beb2131cc3f0d01"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "21",
+                  "second" : "22"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:56",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e20f8beb2131cc3f0cf2"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74e6258beb2131cc3f0d09"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 22:10",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2288beb2131cc3f0cf5"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74ef000062835536ef2d71"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 4,
+                  "waterDenominator" : 4
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "04",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:47",
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "coffeeOrigin_FK" : ObjectId("5ee5dc52e04f9e0bfddc06ab"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f74f0320062835536ef2d75"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 2,
+                  "waterDenominator" : 2
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "09/30/2020, 21:53",
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "coffeeOrigin_FK" : ObjectId("5ebc610b0463d125fbbbf077"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f78eec90d811c1eefd881cb"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "001",
+                  "second" : "001"
+              },
+              "brewSubmitDate" : "10/03/2020, 22:36",
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "coffeeOrigin_FK" : ObjectId("5f78eec80d811c1eefd881ca"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f79e40a5840e63b04435e74"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 3,
+                  "waterDenominator" : 3
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "10/04/2020, 16:02",
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "coffeeOrigin_FK" : ObjectId("5f79983f4b7268373fe9b067"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a0dd5ecb5265886634715"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 33,
+                  "waterDenominator" : 33
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "01",
+                  "second" : "01"
+              },
+              "brewSubmitDate" : "10/04/2020, 19:00",
+              "user_FK" : ObjectId("5cb63d0c901285032656d114"),
+              "coffeeOrigin_FK" : ObjectId("5f7a0dd5ecb5265886634714"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a15cfb7bf69319863e882"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 8,
+                  "waterDenominator" : 8
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "08",
+                  "second" : "08"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:34",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e28b8beb2131cc3f0cfb"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a15e1b7bf69319863e884"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 8,
+                  "waterDenominator" : 8
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "08",
+                  "second" : "08"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:35",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2ab8beb2131cc3f0cfe"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a173eb7bf69319863e887"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:40",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f7a173eb7bf69319863e886"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a1752b7bf69319863e889"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Chemex",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:41",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2ab8beb2131cc3f0cfe"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a1763b7bf69319863e88b"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Clever Dripper",
+              "grindType" : "coarse",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 6,
+                  "waterDenominator" : 6
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "06",
+                  "second" : "06"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:41",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2ab8beb2131cc3f0cfe"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a1776b7bf69319863e88d"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:41",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e2ab8beb2131cc3f0cfe"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a1786b7bf69319863e88f"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "medium-fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 8,
+                  "waterDenominator" : 8
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "08",
+                  "second" : "08"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:42",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e28b8beb2131cc3f0cfb"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a17b5b7bf69319863e891"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Flat bottom dripper",
+              "grindType" : "medium",
+              "ratio" : {
+                  "ratio" : 11,
+                  "coffeeNumerator" : 6,
+                  "waterDenominator" : 66
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "02",
+                  "second" : "06"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:42",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f7a173eb7bf69319863e886"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a17c5b7bf69319863e893"),
+              "isArchived" : true,
+              "technique" : "pour_over",
+              "brewMethod" : "Small hole(s)",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 8,
+                  "waterDenominator" : 8
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "08",
+              },
+              "brewSubmitDate" : "10/04/2020, 20:43",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f74e28b8beb2131cc3f0cfb"),
+              "__v" : 0
+          },
+          {
+              "_id" : ObjectId("5f7a1835b7bf69319863e896"),
+              "isArchived" : false,
+              "technique" : "pour_over",
+              "brewMethod" : "Hario V60",
+              "grindType" : "fine",
+              "ratio" : {
+                  "ratio" : 1,
+                  "coffeeNumerator" : 5,
+                  "waterDenominator" : 5
+              },
+              "brewTime" : {
+                  "hour" : "00",
+                  "minute" : "05",
+                  "second" : "05"
+              },
+              "brewSubmitDate" : "10/04/2020, 20:45",
+              "user_FK" : ObjectId("5f03743d5017dd3be0021296"),
+              "coffeeOrigin_FK" : ObjectId("5f7a1835b7bf69319863e895"),
+              "__v" : 0
+          }
+      ]

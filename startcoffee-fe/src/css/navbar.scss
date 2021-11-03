@@ -1,0 +1,53 @@
+#angular-header-navbar {
+  background: rgba(242, 234, 223, 0.89);
+  padding: 0 10px;
+  margin-bottom: 3px;
+  box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+#angularNavbarNavDropdown ul li {
+  padding-left: 30px;
+}
+
+#angularNavbarNavDropdown ul li a {
+  color: #01482a;
+  font-size: 16px;
+  font-family: $font-roboto;
+}
+
+.dropdown-toggle::after {
+  color: #0ba6ff;
+}
+
+.navbar {
+  padding-right: 0px;
+  padding-left: 0px;
+  border: 0px;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0px;
+}
+
+#angular-user-icon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#angular-header-navbar-title-sm {
+  position: relative;
+  left: -30px;
+  font-size: 18px;
+  color: $main-green-text-color;
+}
+
+.menu-overwrite {
+  transform: none !important;
+  top: 59px !important;
+  position: absolute;
+  right: 0px !important;
+  left: auto !important;
+  padding: 0px;
+}

@@ -1,0 +1,56 @@
+<div>
+  <h3 id="community-heading">
+    Community
+  </h3>
+
+  <p id="community-introduction-text">
+    Explore the CoffeeToCup community. Find your
+    preferences and use them with your
+    own recipe. Share your results with <br>
+    others and introduce yourself to the unique coffees and brewing recipes.
+  </p>
+
+
+  <!-- DESKTOP VIEW-->
+  <div class="community-links row d-none d-sm-flex">
+    <div class="col-sm-6">
+      <p #generalStatistics class="community-general-statistics" (click)="navigateToGeneralStatistics()">
+        General statistics
+      </p>
+      <p #mostCoffees class="community-most-coffees" (click)="navigateToMostCoffeesAdded()">
+        Most coffees added
+      </p>
+      <p #mostBrews class="community-most-brews" (click)="navigateToMostBrewsAdded()">
+        Most brews added
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <app-user-search-box class="community-user-search-box">
+      </app-user-search-box>
+    </div>
+  </div>
+
+  <!-- MOBILE VIEW-->
+  <div class="community-links row d-sm-none">
+    <div>
+      <p #generalStatisticsSm class="community-general-statistics" (click)="navigateToGeneralStatistics()">
+        General statistics
+      </p>
+      <p #mostCoffeesSm class="community-most-coffees" (click)="navigateToMostCoffeesAdded()">
+        Most coffees added
+      </p>
+      <p #mostBrewsSm class="community-most-brews" (click)="navigateToMostBrewsAdded()">
+        Most brews added
+      </p>
+    </div>
+    <div class="m-3 w-100">
+      <app-user-search-box class="community-user-search-box">
+      </app-user-search-box>
+    </div>
+  </div>
+
+
+
+
+  <router-outlet></router-outlet>
+</div>

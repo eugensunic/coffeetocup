@@ -1,0 +1,187 @@
+<div class="container">
+  <h5 id="settings-main-title">Account settings</h5>
+  <!--navbar-->
+  <div class="row bootstrap-row-padding d-none d-md-flex" style="padding-bottom:0px!important">
+    <div id="settings-general-tab" (click)="openBasicSettings()">
+      <p class="settings-nav-tab-title">General settings</p>
+      <div *ngIf="settings.basic" class="settings-nav-tab-line"></div>
+    </div>
+    <div *ngIf="!isSocialMedia" id="settings-change-password-tab" (click)="openChangePassword()">
+      <p class="settings-nav-tab-title">Change password</p>
+      <div *ngIf="settings.changePassword" class="settings-nav-tab-line"></div>
+    </div>
+    <div id="settings-delete-account-tab" (click)="openDeleteAccount()">
+      <p class="settings-nav-tab-title">Delete account</p>
+      <div *ngIf="settings.deleteAccount" class="settings-nav-tab-line"></div>
+    </div>
+  </div>
+
+  <div id="settings-navbar-sm" class="d-md-none">
+    <p #generalSettingsSm (click)="openBasicSettings()" class="cursor-pointer font-lato"> General settings </p>
+    <p #changePasswordSm (click)="openChangePassword()" class="cursor-pointer font-lato"> Change password </p>
+    <p #deleteAccountSm (click)="openDeleteAccount()" class="cursor-pointer font-lato"> Delete account</p>
+  </div>
+
+  <!--image upload content-->
+  <div id="settings-main-container">
+    <div *ngIf="settings.basic" id="settings-image-upload-wrapper" class="row">
+      <div *ngIf="insertImage">
+        <div id="settings-delete-icon-wrapper" (click)="deleteProfileImage()">
+          <app-svg-delete-coffee-icon></app-svg-delete-coffee-icon>
+        </div>
+        <img *ngIf="insertImage" id="settings-profile-picture" [src]="insertImage" alt="profile image" width="130"
+          height="130" />
+      </div>
+      <div id="settings-image-file-wrapper-sm">
+        <label for="settings-image-file-sm">
+          <app-svg-upload-image></app-svg-upload-image>
+        </label>
+        <input id="settings-image-file-sm" type="file" name="file" (change)="onFileChange($event)" class="d-none" />
+      </div>
+      <div id="settings-image-and-text-file-wrapper">
+        <label for="settings-image-file">
+          <app-svg-upload-image></app-svg-upload-image>
+        </label>
+        <input id="settings-image-file" type="file" name="file" (change)="onFileChange($event)" class="d-none" />
+        <br>
+        <p class="font-roboto">You can upload an image which has a max. file size of 3 MB.
+        </p>
+      </div>
+    </div>
+
+    <!--user input content-->
+    <div id="settings-user-entries-wrapper" class="container"
+      [ngClass]="{'justify-content-center':settings.changePassword || settings.deleteAccount, 'align-items-center':settings.changePassword || settings.deleteAccount}">
+      <!-- basic-settings -->
+      <ng-container *ngIf="settings.basic">
+        <div>
+          <div *ngIf="isProfileSaved" class="alert alert-success text-center" role="alert">
+            Changes applied!
+          </div>
+          <div *ngIf="formErrorMessage" class="alert alert-danger text-center" role="alert">
+            {{formErrorMessage}}
+          </div>
+          <h6 class="font-lato" style="font-size: 15px;">Account Info</h6>
+          <div id="settings-basic-info">
+            <p><strong>Username:</strong> {{profileBasicData.username}}</p>
+            <p><strong>First name:</strong> {{profileBasicData.firstName}}</p>
+            <p><strong>Last name:</strong> {{profileBasicData.lastName}}</p>
+            <p><strong>Email:</strong> {{profileBasicData.email}}</p>
+            <p><strong>City:</strong> {{profileBasicData?.city}}</p>
+            <p><strong>Country:</strong> {{profileBasicData?.country}}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--username-->
+          <p *ngIf="isSocialMedia" class="font-roboto text-center">
+            If you created an account via Google or Facebook you have to define a Username, Email, and Password.
+            Creating
+            a username is important in order for your coffees to be visible within Coffees and Community sections.
+          </p>
+          <div class="col-sm-6 form-group">
+            <label class="disabled" for="settings-add-username">Username</label>
+            <input id="settings-add-username" type="text" class="form-control" placeholder="Enter your username"
+              [disabled]="isSocialMedia?null:''" [(ngModel)]="userName" autocomplete="new-password">
+          </div>
+          <div *ngIf="isSocialMedia" class="col-sm-6">
+            <p style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 28px;">Once created Username cannot be changed </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <label for="settings-add-email">Email</label>
+            <input id="settings-add-email" type="text" class="form-control"
+              [placeholder]="emailAddress || 'Enter your email'" [(ngModel)]="emailAddress" autocomplete="new-password">
+          </div>
+          <div *ngIf="isSocialMedia" class="col-sm-6 form-group">
+            <label for="settings-add-password">Password</label>
+            <input id="settings-add-password" type="password" class="form-control" [placeholder]="'Enter your password'"
+              [(ngModel)]="passwordValue" autocomplete="new-password">
+            <div id="settings-password-eye-icon"
+              (click)="handleOnPasswordToggle(2,'settings-add-password')"
+              class="position-relative" style="cursor:pointer;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye open-icon1" style="position: absolute;right: 9px;top: -24px; display: none;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-slash closed-icon1" style="position: absolute;right: 9px;top: -24px;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+                <path
+                  d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+                <path
+                  d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884l-12-12 .708-.708 12 12-.708.708z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <label for="settings-add-city">City</label>
+            <input id="settings-add-city" type="text" class="form-control" placeholder="Enter your city"
+              [(ngModel)]="cityName" autocomplete="new-password">
+          </div>
+          <div class="col-sm-6 form-group">
+            <label for="settings-add-country">Country</label>
+            <input id="settings-add-country" type="text" class="form-control" placeholder="Enter your country"
+              [(ngModel)]="countryName" autocomplete="new-password">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <label for="settings-first-name">First name</label>
+            <input id="settings-first-name" type="text" class="form-control" placeholder="Enter your First name"
+              [(ngModel)]="firstName" autocomplete="new-password">
+          </div>
+          <div class="col-sm-6 form-group">
+            <label for="settings-last-name">Last name</label>
+            <input id="settings-last-name" type="text" class="form-control" placeholder="Enter your Last name"
+              [(ngModel)]="lastName" autocomplete="new-password">
+          </div>
+        </div>
+
+        <div>
+          <button (click)="onSaveBasicSettings()" class="btn btn-success float-right font-sanspro">
+            Save changes
+          </button>
+        </div>
+        <div class="clearfix"></div>
+        <h6 *ngIf="basicSettingsSaved" class="row justify-content-center clearfix">
+          Data successfully saved
+        </h6>
+
+      </ng-container>
+
+      <!-- change password-settings -->
+      <div *ngIf="settings.changePassword && !isSocialMedia" id="settings-change-password">
+        <app-change-password [showCurrentPasswordField]="true" [showChangePasswordField]="false"
+          changePasswordUrl='/api/user/settings/password/change'></app-change-password>
+      </div>
+
+      <!-- delete account-settings -->
+      <div *ngIf="settings.deleteAccount" id="settings-delete-account-wrapper">
+        <h6 id="settings-delete-account-title">Delete account</h6>
+        <p class="font-roboto">After clicking on delete your account
+          along with all of your data <br class="d-none d-md-block" />(origin, brew, tastes
+          archived coffee, user profile and others)
+          will be deleted permanently.
+        </p>
+        <button id="settings-delete-account-button" (click)="deleteAccount()" class="btn btn-danger font-sanspro">
+          Delete account
+        </button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>

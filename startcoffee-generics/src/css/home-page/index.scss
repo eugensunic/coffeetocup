@@ -1,0 +1,278 @@
+// **FIRST PAGE**
+#home-page-first-text-content-wrapper {
+  width: 100%;
+  margin-top: 100px;
+}
+#header-navbar {
+  width: 100%;
+}
+#home-page-first {
+  height: 100%;
+  width: 100%;
+}
+
+#home-page-first h1 {
+  margin-bottom: 42px;
+  margin-top: 47px;
+}
+
+#home-page-first h3 {
+  margin-bottom: 47px;
+  letter-spacing: 0.05em;
+  font-size: 37px;
+}
+
+#home-page-first #img-bg-wrapper {
+  background-image: linear-gradient(
+      180deg,
+      #151515 5.21%,
+      rgba(255, 255, 255, 0) 58.33%
+    ),
+    url("/images/home/main_image.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
+#home-page-first-text-content {
+  color: white;
+  padding-left: 100px;
+  letter-spacing: 0.08em;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.53);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 100px;
+  width: 100%;
+}
+
+#home-page-first-text-content > h1 {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.07em;
+}
+
+#home-page-first-btn-main {
+  border: none;
+  margin-left: 150px;
+  margin-top: -20px;
+  color: white;
+  font-size: 18px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: $main-green-text-color;
+  padding: 0px 40px;
+}
+
+// **SECOND PAGE**
+#btn-get-started {
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 38px;
+  color: #01482a;
+  border: 2px solid #01482a;
+  position: relative;
+  top: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+.background-light-blue {
+  background: #c3d0d6;
+  width: 100%;
+  height: 165px;
+}
+
+#home-page-second .col-sm-4 {
+}
+
+#home-page-second .background-light-blue {
+  padding-bottom: 50px;
+}
+
+#open-sign-up {
+  position: absolute;
+  right: 18px;
+
+  width: 90px;
+  height: 35px;
+
+  border: 1px solid $main-green-border-color;
+  background: #ffffff;
+  color: $main-green-text-color;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+
+  align-items: center;
+  text-align: center;
+}
+
+#open-login {
+  position: absolute;
+  right: 130px;
+
+  background: $main-green-background-color;
+  width: 90px;
+  height: 35px;
+
+  border: 1px solid #ffffff;
+  color: #ffffff;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 33px;
+
+  align-items: center;
+  text-align: center;
+  margin-left: 25px;
+  z-index: 1000;
+}
+
+#home-page-coffee-step-title {
+  font-size: 23px;
+  letter-spacing: 0.04em;
+}
+
+.home-page-coffee-step-text {
+  padding: 0px 29px;
+}
+
+.home-page-coffee-step-heading {
+  letter-spacing: 0.05em;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  #open-login {
+    position: relative;
+    width: 90px;
+    right: 0;
+    left: -17px;
+  }
+
+  #open-sign-up {
+    position: relative;
+    width: 90px;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #home-page-first h1 {
+    font-size: 37px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    letter-spacing: 0.09em;
+    line-height: 40px;
+  }
+
+  #home-page-first h3 {
+    font-size: 23px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0px;
+  }
+
+  #home-page-first-text-content {
+    text-align: left;
+    padding: 40px;
+    margin-left: 0px;
+  }
+
+  #home-page-first-btn-main-wrapper {
+    margin: 0 auto;
+  }
+
+  #home-page-first-btn-main {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #home-page-first-btn-main {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #open-login {
+    width: 70px;
+    margin-left: 0px;
+  }
+  #open-sign-up {
+    width: 70px;
+  }
+}
+
+@media (max-width: 740px) {
+  .background-light-blue {
+    height: 220px;
+  }
+}
+
+@media (max-width: 575px) {
+  .background-light-blue {
+    height: auto;
+  }
+
+  .coffee-step-card {
+    background: #c3d0d6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+  }
+  .home-page-coffee-step-text {
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-page-coffee-step-text {
+    padding: 0px;
+  }
+
+  #home-page-first-btn-main {
+    font-size: 16px;
+    margin: 0px 30px;
+  }
+
+  #open-login {
+    width: 60px;
+    left: -10px;
+  }
+  #open-sign-up {
+    width: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  #home-page-first-text-content-wrapper {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 320px) {
+  #home-page-first-text-content-wrapper {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 280px) {
+  #home-page-first-btn-main {
+    height: auto;
+  }
+}

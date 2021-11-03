@@ -1,0 +1,85 @@
+// stepper BEGIN
+.stepper {
+  clear: left;
+  float: left;
+  margin: 20px 0px;
+}
+
+#stepper {
+  margin-top: 10px;
+}
+
+.step {
+  float: left;
+  font-size: 15px;
+  margin: 0 12px;
+}
+
+.blur-icon {
+  opacity: 0.3;
+}
+
+.divider {
+  border-bottom: 1px solid #cfcfcf;
+  float: left;
+  height: 12px;
+  margin: 0 12px;
+  width: 45px;
+}
+
+.circle {
+  background: $light-green-background-color;
+  border-radius: 50%;
+  color: black;
+  float: left;
+  font-size: 13px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  width: 24px;
+  font-weight: 600;
+}
+
+.label {
+  color: #cfcfcf;
+  float: left;
+  line-height: 24px;
+  margin-left: 8px;
+}
+
+.active {
+  .circle {
+  }
+
+  .label {
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.complete {
+  .circle {
+    background: #747875;
+  }
+
+  .icon {
+    font-size: 30px;
+    position: relative;
+    top: -3px;
+  }
+
+  .label {
+    color: #5b5b5b;
+    font-weight: 400;
+  }
+}
+// stepper END
+
+@media screen and (max-width: 450px) {
+  #stepper-first-step-sm,
+  #stepper-second-step-sm,
+  #stepper-third-step-sm {
+    width: 70px;
+    height: 70px;
+  }
+}

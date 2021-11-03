@@ -1,0 +1,27 @@
+<!-- Chart section -->
+<div *ngIf="coffeeJson" id="chart-data">
+  <h3 style="margin-top:30px;">All user coffees Charts</h3>
+  <div class="row d-flex justify-content-center align-items-center" style="margin-top:50px">
+    <!-- coffees chart -->
+    <app-chart-element [coffeeJson]="coffeeJson" [type]="'pie'" [labels]="uniqueCountries"
+      [func]="chart.getTotalCoffeesPerCountry.bind(this)" [showDropdownMenu]="false">
+    </app-chart-element>
+  </div>
+  <hr />
+  <!-- attributes per grinding chart -->
+  <h3 style="margin-top:30px;">Tastes per Grinding chart</h3>
+  <app-chart-element [coffeeJson]="coffeeJson" [type]="'bar'" [labels]="[
+      'coarse',
+      'medium-coarse',
+      'medium',
+      'medium-fine',
+      'fine'
+    ]" [funcMultipleSets]="chart.getAttributesPerGrind.bind(this)" [showDropdownMenu]="true"
+    [dropdownData]="uniqueCountries">
+  </app-chart-element>
+
+  <h3 style="margin-top:30px;">Attribute Chart</h3>
+  <app-chart-element [coffeeJson]="coffeeJson" [type]="'polarArea'" [labels]="uniqueCountries"
+    [func]="chart.getAvgOfAvgPerOrigin.bind(this)" [showDropdownMenu]="false">
+  </app-chart-element>
+</div>

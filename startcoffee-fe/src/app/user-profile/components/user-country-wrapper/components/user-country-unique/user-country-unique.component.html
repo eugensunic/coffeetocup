@@ -1,0 +1,34 @@
+<!-- COUNTRY-FILTERED TABLE on country item click -->
+<!-- ------------------------------LG,XL--------------------------------- -->
+<div class="d-none d-md-flex row">
+  <app-data-table [isGuest]="false" [useCoffee]="useCoffee.bind(this)" [archiveCoffee]="archiveCoffee.bind(this)"
+    [editOrigin]="editOrigin.bind(this)" [showTable]="true" [showBrewsNums]="showBrewsNums"
+    [showAttributesNums]="showAttributesNums" [showActionSection]="true" [showDeleteCoffeeAttributes]="true"
+    [showDeleteCoffeeOrigin]="false" [showComments]="openModalCommentSection.bind(this)" [coffeeJson]="coffeeJson">
+  </app-data-table>
+</div>
+<!-- ------------------------------SM,XS--------------------------------- -->
+<div class="d-md-none">
+  <app-data-list [isGuest]="false" [useCoffee]="useCoffee.bind(this)" [archiveCoffee]="archiveCoffee.bind(this)"
+    [editOrigin]="editOrigin.bind(this)" [showButtonSection]="true" [showActionPartSmDefault]="showActionPartSmDefault"
+    [showBrewsNums]="showBrewsNums" [showAttributesNums]="showAttributesNums" [showTable]="true"
+    [showActionSection]="true" [showDeleteCoffeeOrigin]="false" [showComments]="openModalCommentSection.bind(this)"
+    [coffeeJson]="coffeeJson">
+  </app-data-list>
+</div>
+
+<ng-container *ngIf="coffeeJson && coffeeJson.length === 0">
+  <p class="font-roboto text-center">No matching items!
+
+  </p>
+  <p class="text-center font-roboto ">
+    When you add your coffee, the list of entered coffee's details will appear here. It will include the
+    <br> data regarding
+    Origin, Brewing process and Coffee taste.
+
+  </p>
+  <p class="text-center font-roboto "> To add the coffee, click the <span class="font-weight-bold">button. "Add new
+      coffee"</span>
+  </p>
+</ng-container>
+

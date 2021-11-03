@@ -1,0 +1,77 @@
+$body-color: slateblue;
+$background-body: #e9e9e9;
+
+$text-grey-color: #6c757d;
+$main-green-text-color: #01482a;
+$main-green-border-color: #01482a;
+$main-green-background-color: rgba(1, 72, 42, 0.8);
+
+body {
+  background: $background-body;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.text-grey {
+  color: $text-grey-color;
+}
+
+.background-main-green {
+  background: $main-green-background-color;
+}
+
+.text-main-green {
+  color: $main-green-text-color;
+}
+
+// fonts begin
+.font-lato {
+  font-family: lato;
+}
+
+.font-roboto {
+  font-family: Roboto;
+}
+
+.font-sanspro {
+  font-family: "Source Sans Pro";
+}
+// fonts end
+
+label {
+  font-size: 15px;
+}
+
+.logo-wrapper-margin {
+  margin-left: 0px;
+}
+
+@media (max-width: 992px) {
+  .logo-wrapper-margin {
+    margin-left: -86px;
+  }
+}
+
+// global
+@import "./social-media";
+@import "./bootstrap-overwrite/modal.scss";
+@import "./bootstrap-overwrite/navbar.scss";
+@import "./shared.scss";
+
+// user-access (login-modal, register page, forgot/reset password)
+@import "./user-access/shared.scss";
+@import "./user-access/login.scss";
+@import "./user-access/register.scss";
+
+// forgot password
+@import "./user-access/forgot-password/forgot-password.scss";
+@import "./user-access/forgot-password/reset-password.scss";
+
+// navigation bar
+
+// home page
+@import "./home-page/index.scss";

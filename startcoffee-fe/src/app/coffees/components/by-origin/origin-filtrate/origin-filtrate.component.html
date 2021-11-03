@@ -1,0 +1,20 @@
+<!-- ------------------------------LG,XL--------------------------------- -->
+<h4 class="font-lato coffees-main-heading">Origin list</h4>
+<p id="coffees-origin-filtrate-heading-text" class="font-roboto">
+  This list shows all added coffees listed by origin.
+  <br class="d-none d-md-block"> Clicking on "Show brewing details" you will
+  narrow your search and only the selected origin brews will appear.
+  <!-- <a id="coffees-rating-explainer" href="#">rating explainer</a>. -->
+</p>
+
+<label>
+  <input id="coffees-filter-country" type="text" [(ngModel)]="countryFilter"
+    (ngModelChange)="onCountryNameChange($event)" placeholder="Search Origin" maxlength="60"
+    class="form-control filter-country-input" />
+</label>
+
+<app-origin-display [coffeeJson]="coffeeJson" [coffeesHtmlView]="coffeesHtmlView" [allUsers]="allUsers"
+  [countryFilter]="countryFilter" [selectedCountry]="selectedCountry"
+  [onCountryNameChange]="onCountryNameChange.bind(this)" [navigateOnClick]="navigateOnClick.bind(this)"
+  [svgName]="'brews'">
+</app-origin-display>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CoffeeToCup | Brew smarter and better</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/tab_icon.png">
+
+  <link href="/assets/third-party/fonts/lato.css" rel="stylesheet" type="text/css">
+  <link href="/assets/third-party/fonts/roboto.css" rel="stylesheet" type="text/css">
+  <link href="/assets/third-party/fonts/sanspro.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="/assets/third-party/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <script src="/assets/third-party/scripts/slim.min.js" crossorigin="anonymous" defer></script>
+  <script src="/assets/third-party/scripts/popper.min.js" crossorigin="anonymous" defer></script>
+  <script src="/assets/third-party/scripts/bootstrap.min.js" crossorigin="anonymous" defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EXQZ7FGN2"></script>
+
+</head>
+
+<body>
+  <script>
+    function parseCookie(param) {
+      var nameEQ = param + '=';
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    if (!parseCookie('auth') && !window.location.href.includes('/shared/')) {
+      window.location.href = '';
+    }
+  </script>
+  <app-root></app-root>
+</body>
+
+</html>

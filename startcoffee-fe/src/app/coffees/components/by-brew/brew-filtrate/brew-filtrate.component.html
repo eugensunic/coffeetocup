@@ -1,0 +1,10 @@
+<h4 class="font-lato coffees-main-heading">Brew list</h4>
+<p id="coffees-brew-filtrate-heading-text" class="font-roboto">
+  This list shows all added coffees listed by pour over brewing methods. <br class="d-none d-md-block">
+  Clicking on "Show origins" you will
+  narrow your search and only the selected brewing methods will appear.
+</p>
+
+<app-brew-display [allUsers]="allUsers" [coffeeJson]="coffeeJson" [byBrewList]="byBrewList"
+  [navigateOnClick]="navigateOnClick.bind(this)" [svgName]="'origins'">
+</app-brew-display>

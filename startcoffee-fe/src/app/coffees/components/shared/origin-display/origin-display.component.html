@@ -1,0 +1,164 @@
+<!-- ------------------------------LG,XL--------------------------------- -->
+<div class="d-none d-md-flex row">
+  <table *ngIf="coffeesHtmlView" class="table">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 30px;">#</th>
+        <th (click)="sortCountry()" scope="col" class="th-green-text cursor-pointer" style="width: 100px;">Origin
+          <app-sorting-wrapper [showWrapper]="showCountrySortingWrapper" [isDescSort]="sortCountryFlag">
+          </app-sorting-wrapper>
+        </th>
+        <th (click)="sortTotalCoffees()" scope="col" class="th-green-text coffees-origin-th">Coffees
+          <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortTotalCoffeesFlag ">
+          </app-sorting-wrapper>
+        </th>
+        <th (click)="sortTotalBrews()" scope="col" class="th-green-text coffees-origin-th">Brews
+          <app-sorting-wrapper [showWrapper]="showTotalBrewsSortingWrapper" [isDescSort]="sortTotalBrewsFlag">
+          </app-sorting-wrapper>
+        </th>
+        <th (click)="sortOriginSubmitDate()" scope="col" class="th-green-text">Last submitted coffee
+          <app-sorting-wrapper [showWrapper]="showOriginSubmitDateSortingWrapper"
+            [isDescSort]="sortOriginSubmitDateFlag"></app-sorting-wrapper>
+        </th>
+        <th scope="col">Flavors</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of coffeesHtmlView | filterCountries:countryFilter; let i = index">
+        <ng-container *ngIf="item.totalBrew?.amount">
+          <tr style="height: 145px;">
+            <td>{{ i + 1 + '.' }}</td>
+            <td class="td-country-name"><span (click)="navigateOnClick(item.country)"
+                class="cursor-pointer">{{ item.country }}</span></td>
+            <td>{{ item.totalCoffee.amount }}</td>
+            <td>{{ item.totalBrew.amount }}</td>
+            <td>{{ item.date }}</td>
+            <td>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Fruity'" [propValue]="item.flavor.amount.fruity"
+                  [backgroundColor]=fruityBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Nutty'" [propValue]="item.flavor.amount.nutty"
+                  [backgroundColor]=nuttyBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Choco'" [propValue]="item.flavor.amount.choco"
+                  [backgroundColor]=chocoBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Caramel'" [propValue]="item.flavor.amount.caramel"
+                  [backgroundColor]=caramelBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+              <span class="d-block">
+                <app-coffee-horizontal-bar [propName]="'Floral'" [propValue]="item.flavor.amount.floral"
+                  [backgroundColor]=floralBarBackgroundColor>
+                </app-coffee-horizontal-bar>
+              </span>
+            </td>
+            <td>
+              <div (click)="navigateOnClick(item.country)" class="cursor-pointer">
+                <app-svg-show-brewing-details *ngIf="svgName==='brews'" class="coffees-origin-brewing-details-svg">
+                </app-svg-show-brewing-details>
+                <app-svg-show-users *ngIf="svgName==='users'" class="coffees-origin-brewing-details-svg">
+                </app-svg-show-users>
+              </div>
+            </td>
+          </tr>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<!-- ------------------------------SM,XS--------------------------------- -->
+<div class="d-md-none">
+  <div class="grid-sorting-wrapper">
+    <h6 class="d-inline">Sort by:</h6>
+    <div class="grid-sorting-list">
+      <span #sortByOrigin (click)="sortCountry()">Origin
+        <app-sorting-wrapper [showWrapper]="showCountrySortingWrapper" [isDescSort]="sortCountryFlag">
+        </app-sorting-wrapper>
+      </span>
+      <span #sortByCoffee (click)="sortTotalCoffees()">Coffees
+        <app-sorting-wrapper [showWrapper]="showTotalCoffeesSortingWrapper" [isDescSort]="sortTotalCoffeesFlag ">
+        </app-sorting-wrapper>
+      </span>
+      <span #sortByBrewing (click)="sortTotalBrews()">Brews
+        <app-sorting-wrapper [showWrapper]="showTotalBrewsSortingWrapper" [isDescSort]="sortTotalBrewsFlag">
+        </app-sorting-wrapper>
+      </span>
+      <span #sortByDate (click)="sortOriginSubmitDate()">Last coffee
+        <app-sorting-wrapper [showWrapper]="showOriginSubmitDateSortingWrapper" [isDescSort]="sortOriginSubmitDateFlag">
+        </app-sorting-wrapper>
+      </span>
+    </div>
+  </div>
+
+
+  <div *ngIf="coffeesHtmlView ">
+    <ng-container *ngFor="let item of coffeesHtmlView | filterCountries:countryFilter; let i = index">
+      <ng-container *ngIf="item.totalBrew?.amount">
+        <div class="coffees-grid-list-wrapper item-card">
+          <div class="span-2-column text-left font-weight-bold">{{ i + 1 + '.' }}
+            <span (click)="navigateOnClick(item.country)" class="cursor-pointer">{{ item.country }}</span>
+          </div>
+          <div>
+            <span class="font-weight-bold margin-left-vertical-align">Coffees: </span>
+            <span>{{ item.totalCoffee.amount }}</span>
+          </div>
+          <div class="text-center">
+            <span class="font-weight-bold">Brews: </span>
+            <span>{{ item.totalBrew.amount }}</span>
+          </div>
+          <div class="span-2-column text-center">
+            <span class="d-block font-weight-bold">Last submitted coffee</span>
+            <span class="d-block">{{ item.date }}</span>
+          </div>
+
+          <div class="margin-left-vertical-align span-2-column origin-flavors-wrapper">
+            <span class="d-block font-weight-bold mb-2">Flavors</span>
+            <span class="d-block">
+              <app-coffee-horizontal-bar [propName]="'Fruity'" [propValue]="item.flavor.amount.fruity"
+                [backgroundColor]=fruityBarBackgroundColor>
+              </app-coffee-horizontal-bar>
+            </span>
+            <span class="d-block">
+              <app-coffee-horizontal-bar [propName]="'Nutty'" [propValue]="item.flavor.amount.nutty"
+                [backgroundColor]=nuttyBarBackgroundColor>
+              </app-coffee-horizontal-bar>
+            </span>
+            <span class="d-block">
+              <app-coffee-horizontal-bar [propName]="'Choco'" [propValue]="item.flavor.amount.choco"
+                [backgroundColor]=chocoBarBackgroundColor>
+              </app-coffee-horizontal-bar>
+            </span>
+            <span class="d-block">
+              <app-coffee-horizontal-bar [propName]="'Caramel'" [propValue]="item.flavor.amount.caramel"
+                [backgroundColor]=caramelBarBackgroundColor>
+              </app-coffee-horizontal-bar>
+            </span>
+            <span class="d-block">
+              <app-coffee-horizontal-bar [propName]="'Floral'" [propValue]="item.flavor.amount.floral"
+                [backgroundColor]=floralBarBackgroundColor>
+              </app-coffee-horizontal-bar>
+            </span>
+          </div>
+          <div class="span-2-column">
+            <app-svg-horizontal-line></app-svg-horizontal-line>
+          </div>
+          <div class="span-2-column text-right cursor-pointer" (click)="navigateOnClick(item.country)">
+            <app-svg-show-brewing-details *ngIf="svgName==='brews'">
+            </app-svg-show-brewing-details>
+            <app-svg-show-users *ngIf="svgName==='users'">
+            </app-svg-show-users>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

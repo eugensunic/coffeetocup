@@ -1,0 +1,96 @@
+#origin-step-container {
+  padding: 0px;
+  border-top: 3px solid $coffee-steps-border-container-color;
+  border-right: 3px solid $coffee-steps-border-container-color;
+}
+
+// coffee country maker
+#origin-coffee-maker {
+  padding-top: 5px;
+  height: 36px;
+  position: relative;
+  top: -3.5px;
+}
+
+#origin-roaster-label {
+  display: inline;
+  position: relative;
+  top: -5px;
+}
+
+// coffee roaster
+.origin-roaster-tooltip {
+  display: inline-flex;
+  margin-bottom: 23px;
+  margin-left: 5px;
+  cursor: pointer;
+  top: -3px;
+  position: relative;
+}
+
+#origin-roasting-text-light {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 100px;
+  font-family: $font-roboto;
+}
+
+#origin-roasting-text-medium {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 100px;
+  font-family: $font-roboto;
+}
+
+#origin-roasting-text-dark {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 100px;
+  font-family: $font-roboto;
+}
+
+#origin-roasting-date-container {
+  margin-left: 50px;
+}
+
+#origin-next-button {
+  font-family: $font-sanspro;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  top: -40px;
+  background: #002147;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  border-radius: 9px;
+  border-color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.origin-validation-error {
+  border: 1px solid #dc3545;
+  padding: 2px;
+}
+
+// MOBILE VIEW BEGIN
+
+@media screen and (max-width: 767px) {
+  #origin-step-container {
+    border-top: 0px solid $coffee-steps-border-container-color;
+    border-right: 0px solid $coffee-steps-border-container-color;
+  }
+  
+}
+@media screen and (max-width: 575px) {
+  #origin-next-button {
+    top: 10px;
+  }
+}
+// MOBILE VIEW END
+
+

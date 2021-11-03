@@ -1,0 +1,131 @@
+<div id="user-profile-wrapper" class="font-lato">
+  <!--Profile desktop view BEGIN-->
+  <div class="d-none d-md-flex row">
+    <div class="user-profile-basic-info-wrapper col-sm-6">
+      <img class="user-profile-picture" [src]="userSettingsObject?.profileImagePath
+          ? userSettingsObject?.profileImagePath
+          : '/profile-image/default-image.png'" alt="profile image" width="140" height="140" />
+      <p class="user-profile-firstname d-inline">
+        {{ userObject?.firstName }}
+      </p>
+      <p class="user-profile-lastname d-inline">{{ userObject?.lastName }}</p>
+      <br>
+      <p class="user-profile-country d-inline">{{ userSettingsObject?.country }}</p>
+      <p class="user-profile-city d-inline">{{ userSettingsObject?.city }}</p>
+      <p class="user-profile-username">{{ userSettingsObject?.username }}</p>
+      <p class="user-profile-username">Member since: {{ userObject?.registrationTime }}</p>
+    </div>
+    <div class="user-profile-action-buttons-wrapper col-sm-6">
+      <div *ngIf="!isGuest" class="user-profile-add-new-coffee" (click)="createNewCoffee()">
+        <app-svg-plus-icon class="user-profile-svg-plus-icon"></app-svg-plus-icon><span class="font-sanspro">Add new
+          coffee</span>
+      </div>
+      <app-svg-chart-icon *ngIf="!isGuest" class="user-profile-open-charts d-block cursor-pointer"
+        (click)="navigateToChartProfile()">
+      </app-svg-chart-icon>
+    </div>
+  </div>
+
+  <div class="d-none d-md-flex row" style="margin-bottom:30px;">
+    <div class="user-profile-3-links col-sm-4">
+      <p #profileCoffeeByCountry class="user-profile-coffee-by-country" (click)="navigateToCountryProfile()"
+        [ngClass]="{ 'disable-link': isGuest }">
+        Origins ({{ header.countryAmount }})
+      </p>
+      <p #profileAllCoffee class="user-profile-all-coffee" (click)="navigateToCoffeeDefault()"
+        [ngClass]="{ 'disable-link': isGuest }">
+        All Coffees ({{ coffeeStats.defaultAmount }})
+      </p>
+      <p class="user-profile-archive" [ngStyle]="{'visibility': isGuest ? 'hidden': 'visible' }"
+        (click)="navigateToUserArchive()">
+        Archive ({{ header.archiveAmount }})
+      </p>
+      <p *ngIf="!isGuest && header.isCountryUnique">
+        <span class="font-weight-bold user-profile-filtrated-title">Origin &rarr; </span> <span
+          class="user-profile-filtrated-origin ">{{ header.originName }}</span>
+      </p>
+    </div>
+    <div class="user-profile-coffee-stats col-sm-8">
+      <div style="position:relative;top:-12px;">
+        <div class="user-profile-coffee-stats-icon d-inline">
+          <app-svg-profile-coffee-stats></app-svg-profile-coffee-stats>
+        </div>
+        <p class="d-inline"><strong>Coffees</strong> ({{ coffeeStats.originAmount }})</p>
+      </div>
+      <div style="position:relative;top:25px;">
+        <div class="user-profile-brew-stats-icon d-inline">
+          <app-svg-profile-brew-stats></app-svg-profile-brew-stats>
+        </div>
+        <p class="d-inline"><strong>Brews </strong> ({{ coffeeStats.brewAttributesAmount }})</p>
+      </div>
+    </div>
+  </div>
+  <!--Profile desktop view END-->
+
+
+  <!--Profile mobile view BEGIN-->
+  <div class="d-md-none row" style="padding:0px 15px">
+    <div class="user-profile-basic-info-wrapper col-12">
+      <img class="user-profile-picture" [src]="userSettingsObject?.profileImagePath
+          ? userSettingsObject?.profileImagePath
+          : '/profile-image/default-image.png'" alt="profile image" width="140" height="140" />
+      <p class="user-profile-firstname d-inline">
+        {{ userObject?.firstName }}
+      </p>
+      <p class="user-profile-lastname d-inline">{{ userObject?.lastName }}</p>
+      <br>
+      <p class="user-profile-country d-inline">{{ userSettingsObject?.country }}</p>
+      <p class="user-profile-city d-inline">{{ userSettingsObject?.city }}</p>
+      <p>{{ userSettingsObject?.username }}</p>
+      <p class="user-profile-username">Member since: {{ userObject?.registrationTime }}</p>
+    </div>
+
+    <div class="user-profile-3-links col-6">
+      <p #profileCoffeeByCountrySm class="user-profile-coffee-by-country" (click)="navigateToCountryProfile()"
+        [ngClass]="{ 'disable-link': isGuest }">
+        Origins ({{ header.countryAmount }})
+      </p>
+      <p #profileAllCoffeeSm class="user-profile-all-coffee" (click)="navigateToCoffeeDefault()"
+        [ngClass]="{ 'disable-link': isGuest }">
+        All Coffees ({{ coffeeStats.defaultAmount }})
+      </p>
+      <p *ngIf="!isGuest" class="user-profile-archive" (click)="navigateToUserArchive()">
+        Archive ({{ header.archiveAmount }})
+      </p>
+      <p id="selected-origin-wrapper" *ngIf="!isGuest && header.isCountryUnique">
+        <span class="user-profile-filtrated-title">Origin &rarr; </span> <span class="user-profile-filtrated-origin ">{{
+          header.originName }}</span>
+      </p>
+    </div>
+    <div class="user-profile-coffee-stats col-6">
+      <div style="position:relative;top:-12px;">
+        <div class="user-profile-coffee-stats-icon d-inline">
+          <app-svg-profile-coffee-stats></app-svg-profile-coffee-stats>
+        </div>
+        <p class="d-inline"><strong>Coffees</strong> ({{ coffeeStats.originAmount }})</p>
+      </div>
+      <div style="position:relative;top:20px;">
+        <div class="user-profile-brew-stats-icon d-inline">
+          <app-svg-profile-brew-stats></app-svg-profile-brew-stats>
+        </div>
+        <p class="d-inline user-profile-brew-stats-text"><strong>Brews </strong> ({{ coffeeStats.brewAttributesAmount
+          }})</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-profile-action-buttons-wrapper d-md-none row">
+    <app-svg-chart-icon *ngIf="!isGuest" class="user-profile-open-charts d-block" (click)="navigateToChartProfile()">
+    </app-svg-chart-icon>
+    <div *ngIf="!isGuest" class="user-profile-add-new-coffee" (click)="createNewCoffee()">
+      <app-svg-plus-icon class="user-profile-svg-plus-icon"></app-svg-plus-icon><span>Add new
+        coffee</span>
+    </div>
+  </div>
+
+  <!--Profile mobile view END-->
+</div>
+
+
+<router-outlet></router-outlet>
+<div *ngIf="showLoadingSpinner" id="spinner-profile" class="loader"></div>

@@ -1,0 +1,21 @@
+.margin-left-vertical-align {
+  margin-left: 17px;
+}
+
+.coffees-back-navigation {
+  color: $main-green-text-color;
+  text-decoration: underline;
+}
+.coffees-main-heading {
+  padding: 10px 0px;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+  .coffees-main-heading {
+    font-size: 18px;
+  }
+  .coffee-users-list {
+    margin-left: 15px;
+  }
+}

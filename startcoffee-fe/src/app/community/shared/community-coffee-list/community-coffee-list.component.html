@@ -1,0 +1,52 @@
+<!-- ------------------------------LG,XL--------------------------------- -->
+<div class="d-none d-md-flex row justify-content-center align-items-center">
+  <h4 [id]="titleId">{{title}}</h4>
+  <table [id]="tableId" class="table">
+    <thead>
+      <tr>
+        <th style="width: 10px;">#</th>
+        <th>Username</th>
+        <th>Location</th>
+        <th>{{mainColumnName}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of dataHtml | sortByObjProp:sortCriteria; let i = index">
+        <tr>
+          <td>{{i+1}}</td>
+          <td (click)="navigateToUserProfile(item.id, item.username)" class="username-value">
+            {{item.username? item.username:'Not defined'}}
+          </td>
+          <td class="">{{item.location? item.location:'Unknown'}}</td>
+          <td class="">{{item[sortCriteria]}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+
+<!-- ------------------------------SM,XS--------------------------------- -->
+<div class="d-md-none">
+  <ul class="list-group font-roboto">
+    <h3 [id]="titleId" class="text-center">{{title}}</h3>
+    <ng-container *ngFor="let item of dataHtml | sortByObjProp:sortCriteria; let i = index">
+      <li class="list-group-item disabled item-card">
+        <span>{{i+1}}.</span>
+        <br>
+        <span class="font-weight-bold">Username:
+        </span>
+        <span class="username-value" (click)="navigateToUserProfile(item.id, item.username)">
+          {{item.username? item.username:'Not defined'}}
+        </span>
+        <br>
+        <span class="font-weight-bold">Location:</span>
+        {{item.location? item.location:'Unknown'}}
+        <br>
+        <span class="font-weight-bold">{{mainColumnName}}:</span>
+        {{item[sortCriteria]}}
+      </li>
+    </ng-container>
+  </ul>
+</div>
+
+<div *ngIf="showLoadingSpinner" [id]="spinnerId" class="loader"></div>

@@ -1,0 +1,185 @@
+#settings-main-container {
+  background: white;
+}
+
+#settings-main-title {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-family: $font-lato;
+  font-size: 20px;
+}
+
+.settings-nav-tab-line {
+  border: 2px solid black;
+  background: black;
+}
+
+.settings-nav-tab-title {
+  height: 30px;
+}
+
+// navtabs
+#settings-general-tab {
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: $font-lato;
+}
+
+#settings-change-password-tab {
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: $font-lato;
+}
+
+#settings-delete-account-tab {
+  cursor: pointer;
+  font-family: $font-lato;
+}
+
+// basic info profile image section
+#settings-image-upload-wrapper {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+#settings-delete-icon-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+#settings-profile-picture {
+  border-radius: 100px;
+  padding: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+// delete account section
+#settings-delete-account-wrapper {
+  padding: 10px 0px;
+  padding-left: 30px;
+}
+
+#settings-delete-account-button {
+  float: right;
+  width: 180px;
+  border-radius: 9px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+// basic section user inputs
+
+#settings-basic-input-form {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 300px;
+  }
+  .form-group:nth-child(2n) {
+    margin-left: 100px;
+  }
+}
+
+#settings-user-entries-wrapper {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding: 25px !important;
+}
+#settings-user-entries-wrapper label {
+  font-size: 15px;
+  font-family: $font-lato;
+}
+#settings-basic-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: $font-roboto;
+}
+
+#settings-email-text,
+#settings-username-text {
+  top: 35px;
+  height: 10px;
+  font-family: $font-roboto;
+}
+
+#settings-delete-account-title {
+  font-size: 15px;
+  font-family: $font-lato;
+}
+
+@media screen and (max-width: 767px) {
+  #settings-navbar-sm {
+    display: flex;
+    background-color: white;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  #settings-navbar-sm > p {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: $main-green-text-color;
+  }
+
+  #settings-email-text,
+  #settings-username-text {
+    top: 0px;
+    height: 0px;
+    padding-bottom: 50px;
+  }
+
+  #settings-image-and-text-file-wrapper {
+    position: relative;
+    top: -20px;
+  }
+
+  #settings-image-and-text-file-wrapper label {
+    display: none;
+  }
+
+  #settings-image-file-wrapper-sm label {
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 490px) {
+  #settings-navbar-sm {
+    padding: 0px 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #settings-image-file-wrapper-sm label {
+    display: none;
+  }
+  #settings-image-and-text-file-wrapper label {
+    display: block;
+  }
+  #settings-image-and-text-file-wrapper {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #settings-image-and-text-file-wrapper label {
+    display: block !important;
+  }
+
+  #settings-image-file-wrapper-sm {
+    display: none;
+  }
+}

@@ -1,0 +1,193 @@
+@import './shared.scss';
+
+.view-user-profile {
+  font-weight: bold;
+  color: #00635d;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.back-to-default-users {
+  width: 115px;
+  height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #01482a;
+  border: 1px solid #01482a;
+  position: relative;
+  box-shadow: 2px 2px 1px #736c6c;
+  border-radius: 9px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-sanspro;
+}
+
+#coffees-open-charts {
+  position: absolute;
+  right: 120px;
+  top: 188px;
+}
+
+.coffees-origin-brewing-details-svg {
+  position: relative;
+  top: 55px;
+  left: -19px;
+}
+
+.coffees-origin-th {
+  width: 130px;
+}
+#coffees-heading-wrapper {
+  display: flex;
+}
+
+#coffees-brew-filtrate-heading-text,
+#coffees-origin-filtrate-heading-text {
+  line-height: 30px;
+}
+
+#coffees-country-display {
+  position: relative;
+  top: 40px;
+}
+
+.coffees-svg-show-countries {
+  position: absolute;
+  top: 100px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.coffees-svg-show-users {
+  position: absolute;
+  top: 121px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#coffees-show-all-users-text {
+  width: 150px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+#coffees-rating-explainer {
+  color: $main-green-text-color;
+  font-weight: 600;
+}
+
+#coffees-show-all-users {
+  width: 150px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+#coffees-chart-section-button {
+  float: right;
+  border: 1px solid grey;
+  padding: 5px;
+  box-shadow: 1px 1px 1px grey;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  #coffees-open-charts {
+    right: 10px;
+  }
+}
+
+// MOBILE VIEW BEGIN
+@media screen and (max-width: 767px) {
+  #coffees-open-charts {
+    top: 200px;
+    left: 65px;
+  }
+  #coffees-heading-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    text-transform: uppercase;
+    background: $white-background-color;
+  }
+
+  #coffees-heading-wrapper h3 {
+    font-size: 19px;
+    color: $main-green-text-color;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    font-family: $font-lato;
+  }
+
+  #coffees-brew-filtrate-heading-text,
+  #coffees-origin-filtrate-heading-text {
+    text-align: center;
+  }
+
+  .coffees-grid-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: $grid-list-wrapper-mg-top;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px;
+    font-family: $font-roboto;
+  }
+
+  .coffees-grid-list-wrapper > div {
+    padding-top: 5px;
+  }
+
+  .coffees-grid-list-wrapper > div:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.origin-flavors-wrapper {
+  padding: 10px 80px;
+}
+
+.user-origin-search-wrapper-lg {
+  display: inline;
+}
+
+.user-origin-search-wrapper-sm {
+  display: none;
+}
+
+@media screen and (max-width: 765px) {
+  .user-origin-search-wrapper-lg {
+    display: none;
+  }
+
+  .user-origin-search-wrapper-sm {
+    display: inline;
+    padding-top: 15px;
+  }
+
+  .user-origin-back-to-origin-list {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .coffees-origin-th {
+    width: 80px;
+  }
+  .coffees-origin-brewing-details-svg {
+    left: -19px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .origin-flavors-wrapper {
+    padding: 0px 15px;
+  }
+}

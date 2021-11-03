@@ -1,0 +1,39 @@
+STATES
+------
+- states are managing data which go to the database
+- variables which contain snapshot state data are never mutated (immutable) on state change! use them wisely, preferably,
+immediately above the code which will consume them
+example:
+    const originState = this.store.selectSnapshot(CoffeeOriginStates.inputFormOrigin);
+    
+    this.coffeeSubmitService
+      .getCoffeeResult(URL.apiCoffeeBrewResult, { params: { country: originState.country } })
+      .subscribe(x => (this.coffeeOriginJson = this.combineBrewAndAttributes(x)));
+
+SERVICES
+--------
+services are managing XHR request and communication via components
+
+BOOLEAN METHODS
+--------
+- should start with an is prefix and should check valid, example: isValid, not isInvalid but !isValid() when
+checking the condition
+
+INTERFACE
+--------
+- should contain method signature when called and implementation attached in a class
+
+
+
+
+USERS EXPLANATION
+-----------------
+- undefined argument represents the currently logged in user
+- urlProps['id'] argument means that we are on some other user profile
+
+ this.userProfileService.getUserSettingsData(URL.settingsBasic, {
+          params: { otherUserId: undefined }
+        })
+ this.userProfileService.getUserSettingsData(URL.settingsBasic, {
+          params: { otherUserId: urlProps['id'] }
+        })

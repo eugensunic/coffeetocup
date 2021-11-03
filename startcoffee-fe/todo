@@ -1,0 +1,2 @@
+- remove the comments in index.html scripts after sanity testing the app
+- bootstrap .css and .js on index.html need do be loaded from coffeetocup not from third party url

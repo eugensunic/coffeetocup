@@ -1,0 +1,62 @@
+.user-country-profile-country-name {
+}
+
+.user-country-profile-details-svg {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.horizontal-bar-sm {
+  padding: 10px 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .user-country-profile-grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 0px;
+    font-family: $font-roboto;
+  }
+
+  .user-country-profile-grid-list div:not(:last-child) {
+    padding: 10px 15px;
+  }
+
+  .user-country-profile-grid-list div:nth-child(odd):not(:last-child) {
+    padding-left: 50px;
+  }
+
+  .user-country-profile-grid-list :nth-child(even):not(:last-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-country-profile-coffee-brews {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+  }
+  .user-country-profile-coffee-brews span:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .user-country-profile-grid-list {
+    padding: 10px 0px;
+  }
+
+  .user-country-profile-grid-list div:not(:last-child) {
+    padding: 10px 0px;
+  }
+
+  .user-country-profile-grid-list div:nth-child(odd):not(:last-child) {
+    padding-left: 5px;
+  }
+  .horizontal-bar-sm {
+    padding: 0px 15px;
+  }
+}
