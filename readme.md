@@ -15,6 +15,7 @@ Technical info: Calculating data based on brewing input parameters.
 
 ## Host and run on server (digital ocean)
 to login to digital ocean use coffeetocup@proton. Password is a popular house location belive it or not.
+To login to the mail address wich is used the mail and pass is the same as above.
 
 __Console__.
 The credentials are stored on eugen.sunic@gmail.com
