@@ -14,11 +14,8 @@ Technical info: Calculating data based on brewing input parameters.
 4. open the application on [http://localhost:5000/](http://localhost:5000)
 
 ## Host and run on server (digital ocean)
-[Bitbucket credentials](https://id.atlassian.com/login) where all the repos are: username, password (see eugen.sunic@mgail.com)
+to login to digital ocean use coffeetocup@proton. Password is a popular house location belive it or not.
 
-Use master branch only for new changes and app deployment
-
-Make sure the droplet is turned ON. Inside the droplet click on access and login to the server using the 
 __Console__.
 The credentials are stored on eugen.sunic@gmail.com
 
@@ -37,6 +34,7 @@ npm run prod
 it will ask for bitbucket credentials, (see eugen.sunic@gmail.com) and the app will start shortly after installing.
 
 ## DNS host 
+check DNS host expiration: https://www.godaddy.com/en-ph/whois
 https://www.namecheap.com/myaccount/login/?ReturnUrl=%2f 
 
 ## Sending mails with app
@@ -70,11 +68,9 @@ Bootstrap 4
 ### Contact person (product owner)
 
 Marko Koprivnjak 
-
-**skype**: Marko Koprivnjak
-
 **gmail**: marko.koprivnjak1@gmail.com
 
 ### Other
 
 Refer to https://www.youtube.com/watch?v=oykl1Ih9pMg for setting up firewall, https, nginx and upload the app online among others.
+
