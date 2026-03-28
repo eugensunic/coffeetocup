@@ -3,18 +3,18 @@ const User = require("../../mongo/model/user/user.model.js");
 const utils = require('../../global/utils.js');
 
 module.exports = {
-  /* 
-    configure crendentials on this link
-    https://console.developers.google.com/apis/credentials?clientUpdateTime=2020-04-04T19:31:20.591255Z&project=web-generics 
-   
+  /*
+    Configure credentials in environment variables:
+    GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET
+    Get them from: https://console.cloud.google.com/apis/credentials
+
   */
   googleStrategyMiddleware: passport => {
     passport.use(
       new GoogleStrategy(
         {
-          clientID:
-            "831319876929-t97hqlfdh6babotlb44a1rg2bpgtnbb6.apps.googleusercontent.com",
-          clientSecret: "8iaNnef-dwqR8nPJqogl6WYs",
+          clientID: process.env.GOOGLE_CLIENT_ID,
+          clientSecret: process.env.GOOGLE_CLIENT_SECRET,
           callbackURL: global.socialMediaCallbackHost + "auth/google/callback",
           passReqToCallback: true
         },
@@ -22,7 +22,7 @@ module.exports = {
           console.log("Google account: ", profile);
           User.findOne(
             {
-              emailId: profile._json.sub
+              emailId: profile._json.email
             },
             (err, user) => {
               console.log("google user: ", user);
@@ -38,7 +38,7 @@ module.exports = {
               const userNew = new User({
                 firstName: profile._json.given_name,
                 lastName: profile._json.family_name,
-                emailId: profile._json.sub,
+                emailId: profile._json.email,
                 registrationTime: utils.getCurrentDateTimeString(),
                 password: null
               });

@@ -1,3 +1,5 @@
+require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
+
 const express = require('express');
 const passport = require('passport');
 const middleware = require('./global/node-global-middleware.js');
@@ -19,7 +21,7 @@ const staticPages = require('../static-pages/index.js');
 const app = express();
 
 const dbName = process.env.NODE_ENV === 'develop' ? 'coffeestartdev' : 'coffeestart';
-const connectionString =
+const connectionString = process.env.DATABASE_URL ||
   'mongodb+srv://esunic:mili7788@cluster0-dndis.mongodb.net/' +
   dbName +
   '?retryWrites=true';

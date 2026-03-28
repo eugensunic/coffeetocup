@@ -5,14 +5,13 @@ module.exports = {
     app.get(
       "/auth/google",
       passport.authenticate("google", {
-        scope: "https://www.googleapis.com/auth/plus.login"
+        scope: ["email", "profile"]
       })
     );
 
     app.get(
       "/auth/google/callback",
       passport.authenticate("google", {
-        scope: "https://www.googleapis.com/auth/plus.login",
         failureRedirect: "/error"
       }),
       (req, res) => {

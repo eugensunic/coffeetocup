@@ -1,0 +1,5 @@
+(node:71646) [DEP0170] DeprecationWarning: The URL mongodb://esunic:mili7788@cluster0-shard-00-02-dndis.mongodb.net:27017,cluster0-shard-00-01-dndis.mongodb.net:27017,cluster0-shard-00-00-dndis.mongodb.net:27017/coffeestartdev?authSource=admin&replicaSet=Cluster0-shard-0&retryWrites=trueundefined&ssl=true is invalid. Future versions of Node.js will throw an error.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Database connection successful
+APP MODE: DEVELOP
+Server started on port 5000

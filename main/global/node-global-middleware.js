@@ -12,10 +12,10 @@ module.exports.initMiddleware = (app, passport) => {
   no matter how deeply nested are the folders after
   static-pages, you just need to put the parent folder without slashes 
  */
-app.use(express.static('uploads'));
-app.use(express.static('public'));
-app.use(express.static('angular'));
-app.use(express.static('static-pages'));
+app.use(express.static(path.join(__dirname, '../../uploads')));
+app.use(express.static(path.join(__dirname, '../../public')));
+app.use(express.static(path.join(__dirname, '../../angular')));
+app.use(express.static(path.join(__dirname, '../../static-pages')));
 
   app.use(bodyParser.json());
   app.use(

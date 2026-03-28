@@ -13,12 +13,13 @@ module.exports.init = (app) => {
   // SEO SSR rendering from angular pages
   const ABOUT_HTML = fs.readFileSync(__dirname + "/html/about.html");
   const PRIVACY_POLICY_HTML = fs.readFileSync(__dirname + "/html/privacy-policy.html");
+  const TERMS_OF_SERVICE_HTML = fs.readFileSync(__dirname + "/html/terms-of-service.html");
   const BREW_COLLECT_EXPLORE = fs.readFileSync(__dirname + "/html/brew-collect-explore.html");
   const HOW_IT_WORKS = fs.readFileSync(__dirname + "/html/how-it-works.html");
   const LEARN = fs.readFileSync(__dirname + "/html/learn.html");
   const COOKIE_POLICY = fs.readFileSync(__dirname + "/html/cookie-policy.html");
 
-  const ANGULAR_PAGE = fs.readFileSync("./angular/profile.html");
+  const ANGULAR_PAGE = fs.readFileSync(__dirname + "/../angular/profile.html");
 
   // OUTSIDE ANGULAR PAGES SSR rendering for SEO
   app.route("/").get((req, res) => {
@@ -66,6 +67,11 @@ module.exports.init = (app) => {
   app.route("/privacy-policy").get((req, res) => {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(PRIVACY_POLICY_HTML);
+  });
+
+  app.route("/terms").get((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end(TERMS_OF_SERVICE_HTML);
   });
 
   app.route("/cookie-policy").get((req, res) => {

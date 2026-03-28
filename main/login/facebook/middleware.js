@@ -4,22 +4,16 @@ const utils = require("../../global/utils.js");
 
 module.exports = {
   facebookStrategyMiddleware: passport => {
-    /*   
-        go to https://developers.facebook.com/apps/846055832573108/settings/basic/
-        App ID is clientID
-        App Secret is clientSecret
-        Site URL is callbackURL  
+    /*
+        Configure credentials in environment variables:
+        FACEBOOK_APP_ID and FACEBOOK_APP_SECRET
+        Get them from: https://developers.facebook.com/apps/
     */
-    const devId = '760976481213490';
-    const devSecret = '0debae3207aa51ac0604ebacb3016dd9';
-    const prodId = '751304782460812';
-    const prodSecret = '8afdf399d03f68a8d4fb61586f393baa';
-
     passport.use(
       new FacebookStrategy(
         {
-          clientID: process.env.NODE_ENV === 'develop' ? devId : prodId,
-          clientSecret: process.env.NODE_ENV === 'develop' ? devSecret : prodSecret,
+          clientID: process.env.FACEBOOK_APP_ID,
+          clientSecret: process.env.FACEBOOK_APP_SECRET,
           callbackURL: global.socialMediaCallbackHost + "auth/facebook/callback",
           profileFields: ["id", "name", "email"]
         },
@@ -27,7 +21,7 @@ module.exports = {
           console.log("Facebook profile: ", profile);
           User.findOne(
             {
-              emailId: profile._json.id
+              emailId: profile._json.email || profile._json.id
             },
             (err, user) => {
               if (err) {
@@ -42,7 +36,7 @@ module.exports = {
               const userNew = new User({
                 firstName: profile._json.first_name,
                 lastName: profile._json.last_name,
-                emailId: profile._json.id,
+                emailId: profile._json.email || profile._json.id,
                 registrationTime: utils.getCurrentDateTimeString(),
                 password: null,
               });
