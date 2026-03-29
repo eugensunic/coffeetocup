@@ -15,7 +15,8 @@ module.exports = {
           clientID: process.env.FACEBOOK_APP_ID,
           clientSecret: process.env.FACEBOOK_APP_SECRET,
           callbackURL: global.socialMediaCallbackHost + "auth/facebook/callback",
-          profileFields: ["id", "name", "email"]
+          profileFields: ["id", "name", "email"],
+          configId: "940570925187892"
         },
         (accessToken, refreshToken, profile, done) => {
           console.log("Facebook profile: ", profile);
