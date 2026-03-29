@@ -43,6 +43,10 @@
   <!-- generics css -->
   <link rel="stylesheet" href="./generics/bundle.css" />
   <style>
+    #google-login {
+      margin-left: -38px!important;
+    }
+
     .login-mobile-wrapper {
       display: contents;
     }
@@ -81,25 +85,6 @@
 </head>
 
 <body style="background:white;">
-  <!-- fb analytics script -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        appId: '846055832573108',
-        xfbml: true,
-        version: 'v9.0'
-      });
-      FB.AppEvents.logPageView();
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { return; }
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
 
 
   <!-- -----------------------------------Login BEGIN----------------------------------- -->
@@ -177,7 +162,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-4 text-center">
+                  <div class="col-12 text-center">
                     <svg id="google-login" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" viewBox="0 0 40 40"
                       width="50" height="50">
                       <path fill="#8bb7f0"
@@ -210,18 +195,6 @@
                         <path fill="#ffeea3"
                           d="M7,20c0-1.869,0.402-3.642,1.112-5.248l-4.056-3.09C2.749,14.156,2,16.989,2,20 c0,2.858,0.684,5.55,1.869,7.951L8,25C7.357,23.461,7,21.772,7,20z" />
                       </g>
-                    </svg>
-                  </div>
-                  <div class="col-4"></div>
-                  <div class="col-4 text-center">
-                    <svg id="facebook-login" width="50" height="50" class="cursor-pointer" viewBox="0 0 46 46"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M22.9999 0C35.7032 0 46 10.2982 46 23.0001C46 35.7033 35.7032 46 22.9999 46C10.2967 46 0 35.7032 0 23.0001C0 10.2982 10.2968 0 22.9999 0Z"
-                        fill="#3B5998" />
-                      <path
-                        d="M25.8001 15.834H28.7643V11.4553H25.2799V11.4711C21.0579 11.6206 20.1925 13.9939 20.1163 16.4866H20.1076V18.673H17.2327V22.961H20.1076V34.4552H24.4403V22.961H27.9895L28.6751 18.673H24.4417V17.352C24.4417 16.5096 25.0023 15.834 25.8001 15.834Z"
-                        fill="white" />
                     </svg>
                   </div>
                 </div>
